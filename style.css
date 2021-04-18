@@ -1,17 +1,283 @@
-@font-face {
-    font-family: 'Raleway-Medium';
-    src: url('raleway/Raleway-Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-}
-    
 *
 {
-    font-family: Raleway-Regular, Arial, Helvetica, sans-serif;
+    font-family: Raleway, sans-serif;
 }
-h1,h3
+
+.search, .starb, .hebgt, .activ, .inscrip /*icones filtres, etoile bleues et menu*/
+{
+    color: #0065FC;
+    
+}
+
+.starg /*etoiles grises*/
+{
+   /* color: #F2F2F2; c'est cette couleur qu'il faudra mettre*/
+    color: grey;
+}
+
+
+/* problème mise en forme mappour border-radius*/
+.map
+{
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.input /* champs recherche marseille, france*/
+{
+    color: black;
+    font-weight: bolder;
+    width: 200px;
+    height: 40px;
+    border-right: none;
+    border-left: none;
+   /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+    border-top: 1px solid gray;
+    /*border-left: 1px solid gray ;*/
+    border-bottom:1px solid gray ;
+}
+
+
+/* FAIRE MISE EN FORME LOUPE
+.search*/
+
+
+.recherche .fa-stack
+{
+    color: gray; /* c'est ce gris qu'il faudra #F2F2F2*/
+    font-size: 20px;
+}
+
+.survol .fa-stack { font-size: 1.3em; color: #DEEBFF; }
+/*i { vertical-align: middle;}*/
+.eco, .fam, .rom, .dog
+{ 
+    color: #0065FC;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.cercle
+{
+    color: gray; /* c'est ce gris qu'il faudra #F2F2F2*/
+    font-size: 30px;
+}
+
+.info
+{
+    color: #0065FC ;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+.hebgt, .activ, .inscrip, .srvlec, .srvlfam, .srvlrom, .srvlan
+{
+    text-decoration: none;
+}
+
+.inscrip/* s'inscrire*/
 {
     font-weight: bolder;
+}
+
+/* PROBLEME DE SURVOL*/
+.srvlec, .srvlfam, .srvlrom, .srvlan :hover
+{
+    color: #0065FC
+   
+}
+.srvlec, .srvlfam, .srvlrom, .srvlan/*filtres*/
+{
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+}
+
+.srvlec, .srvlfam, .srvlrom, .srvlan
+{
+    border: 1px solid gray; /* c'est ce gris qu'il faudra #F2F2F2*/
+    border-left: none;
+    border-top-right-radius:50px;
+    border-bottom-right-radius: 50px;
+    padding: 10px;
+}
+
+
+/*FOOTER*/
+.foot
+{
+    color: black;
+    text-decoration: none;
+}
+
+.propos  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}   
+   
+.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}
+
+.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}
+
+
+/* GRID*/
+
+/* header*/
+.entete
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
     
+}
+
+.inscrip
+{
+    grid-column: 4;
+    grid-row: 1;
+}
+.logo
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+.hebgt
+{
+    grid-column: 1;
+    grid-row: 4;
+}
+.activ
+{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+
+.survol
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    
+}
+.eco
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+.srvlec
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+.fam
+{
+    grid-column: 3;
+    grid-row: 1;
+}
+.srvlfam
+{
+    grid-column:4 ;
+    grid-row: 1;
+}
+.rom
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+.srvlrom
+{
+    grid-column:2 ;
+    grid-row:2 ;
+}
+.dog
+{
+    grid-column:1 ;
+    grid-row:3 ;
+}
+.srvlan
+{
+    grid-column:2 ;
+    grid-row:3 ;
+}
+
+.inform
+{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    
+ }
+
+ .cercle, .info
+ {
+    grid-column:1 ;
+    
+ }
+.dispo
+{
+    grid-column:2 ;
+    
+    
+ }
+
+ .pop
+{
+    display: grid;
+    grid-template-columns: 70% 10%;
+    grid-template-rows: 1fr;
+    
+
+.titrepop
+{
+    grid-column:2 ;
+    grid-row:1 ;
+        
+}
+
+
+
+
+
+
+
+
+
+/*PARTIE bouton-loupe-rechercher A RESOUDRE avec media queries*/
+
+.bouton
+{
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+    height: 40px ;
+    font-weight: bolder;
 }

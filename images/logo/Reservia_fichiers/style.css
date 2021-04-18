@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+*
+{
+    font-family: Raleway, sans-serif;
+}
+
+.search, .eco, .fam, .rom, .dog, .info, .starb, .hebgt, .activ, .inscrip /*icones filtres, etoile bleues et menu*/
+{
+    color: #0065FC;
+    
+}
+
+.starg /*etoiles grises*/
+{
+   /* color: #F2F2F2; c'est cette couleur qu'il faudra mettre*/
+    color: grey;
+}
+
+
+.eco, .fam, .rom, .dog /*icones filtres*/
+{
+    font-size: 12px ;
+}
+
+.hebgt, .activ, .inscrip, .survol
+{
+    text-decoration: none;
+}
+
+.inscrip/* s'inscrire*/
+{
+    font-weight: bolder;
+}
+.survol/*filtres*/
+{
+    color: black;
+    font-weight: bolder;
+}
+
+.survol :hover /*problème de survol, à revoir*/
+{
+    color: red;
+}
+
+.survol
+{
+border: 1px solid gray;
+border-left: none;
+border-top-right-radius:50px;
+border-bottom-right-radius: 50px;
+padding: 10px;
+}
+
+
+
+/*PARTIE bouton-loupe-rechercher A RESOUDRE avec media queries*/
+
+
+.input /* champs recherche marseille, france*/
+{
+    color: black;
+    font-weight: bolder;
+    width: 200px;
+    height: 40px;
+    border-right: none;
+    border-left: none;
+   /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+    border-top: 1px solid gray;
+    /*border-left: 1px solid gray ;*/
+    border-bottom:1px solid gray ;
+}
+
+/* FAIRE MISE EN FORME LOUPE
+.search*/
+
+.bouton
+{
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+    height: 40px ;
+    font-weight: bolder;
+}
+
+/* MISE en forme icones, cercle, etc...*/
+
+
+.map /* centrer icone et revoir sa taille*/
+{
+    font-size: 27px;
+    width:40px;
+    height: 40px;
+     /* ce sont ce gris qu'il faudra mettre en
+    background-color: #F2F2F2; 
+    border: #F2F2F2;*/
+    background-color: grey;
+    border: grey;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.eco, .fam, .rom, .dog /* à centrer*/
+{ 
+    height: 50px; 
+    width: 50px; 
+    background-color: #DEEBFF; /* il faudra mettre ce gris #F2F2F2*/
+    border: 1px solid #DEEBFF; /* il faudra mettre ce gris #F2F2F2*/
+    border-radius: 50%; 
+} 
+
+/*.eco, .fam, .rom, .dog   à centrer
+{ 
+    height: 20px; 
+    width: 25px; 
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%; 
+} */
+
+
+.info /* à centrer*/
+{
+    /*height: 20px; 
+    width: 20px;
+    /*background-color: #DEEBFF;
+        border: 1px solid #DEEBFF;
+    /*border: #F2F2F2;  c'est cette couleur qu'il faudra mettre
+    border: 1px solid black;
+    border-radius: 50%;*/
+    
+    width: 20px;
+    height: 20px;
+    
+    border: solid 1px;
+    
+   border-radius: 50%;
+/*padding-left: 25px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 10px;*/
+padding: 10px
+   
+}
+
+
+
+
+
+
+/*FOOTER*/
+.foot
+{
+    color: black
+}
+
+.foot
+{
+    text-decoration: none;
+}
+
+.propos  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}   
+   
+    
+.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}
+
+.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}
+
+
+
+
+/* MEDIA QUERIES
+media queries  mettre à l'horizontale avec flex box et grid css
+pour version desktop et tablette
+
+ - PARTIE HEADER
+diposition s'inscrire - hebergement - activités
+bouton rechercher à la place de la loupe
+alignement des filtres
+
+ - PARTIE MAIN
+ faire disposition et mise en forme des 3 sections
+
+
+- PARTIE FOOTER
+
+disposition à l'horizontale
+
+.propos  #F2F2F2 c'est ce gris qu'il faudra mettre
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}   
+   
+    
+.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}
+
+.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre
+{
+    background-color: lightpink;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;
+}*/
+
+
+/*@media only screen and (min-width: 768px)
+{
+    .search
+    {
+        display: none; ça marche pas
+    }
+}*/
+/*.bouton   *bouton rechercher*
+{
+    font-weight: bolder;
+}*/
+/*@media only screen and (min-width: 768px)
+{
+    .input_mobile
+    {
+        display: none;
+    }
+}*/
+
+/*PARTIE bouton-loupe-rechercher à résoudre*/
+/*@media only screen and (min-width: 768px)
+{
+    .search
+    {
+        visibility: hidden;
+    }
+   .input /*filtres et champs texte marseille, france
+    {
+        color: black;
+        font-weight: bolder;
+    }
+    
+    .input_desktop /* champs recherche marseille, france
+    {
+        width: 200px;
+        height: 35px;
+        border-right: none;
+        border-left: none;
+       /*#F2F2F2 c'est ce gris qu'il faudra mettre
+        border-top: 1px solid gray;
+        /*border-left: 1px solid gray ;
+        border-bottom:1px solid gray ;
+    }
+}*/
