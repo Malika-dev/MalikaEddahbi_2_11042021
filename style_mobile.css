@@ -13,8 +13,7 @@
 .map { color: black;font-size: 20px;}
 
 
-/* champs recherche marseille, france*/
-.input 
+.input /* champs recherche marseille, france*/
 {   color: black;
     font-weight: bolder;
     width: 200px;
@@ -29,98 +28,51 @@
 
 /* FAIRE MISE EN FORME LOUPE .search*/
 
-
 .recherche .fa-stack /*icone map c'est ce gris qu'il faudra #F2F2F2*/
-{   color: gray; 
-    font-size: 20px; }
-
+{   color: lightgray; font-size: 20px; }
 
 .survol .fa-stack { font-size: 1.3em; color: #DEEBFF; }
 
+.eco, .fam, .rom, .dog {   color: #0065FC;  font-size: 15px;}
 
-.eco, .fam, .rom, .dog 
-{   color: #0065FC;
-    font-size: 15px;
-    vertical-align: middle;}
+.cercle {   color: gray; /* c'est ce gris qu'il faudra #F2F2F2*/}
 
-.cercle
-{color: gray; /* c'est ce gris qu'il faudra #F2F2F2*/
-    font-size: 30px;}
-
-.info
-{   color: #0065FC ;
-    vertical-align: middle;
-    font-size: 10px;}
+.info   {   color: #0065FC ; font-size: 10px;}
 
 .hebgt, .activ, .inscrip, .srvlan, .srvlec, .srvlfam, .srvlrom
 {   text-decoration: none;}
 
-.inscrip
-{   font-weight: bolder;}
+.inscrip {  font-weight: bolder;}
+
 
 /* Mise en forme des filtres*/
-
 
 /* PROBLEME DE SURVOL*/
 .srvlec, .srvlfam, .srvlrom, .srvlan :hover
 {   color: #0065FC}
 
 .srvlan, .srvlec, .srvlfam, .srvlrom
-{ 
-    color: black;
+{   color: black;
     font-weight: bold;
-    
     border: 1px solid black;
     border-left: none;
-   
     border-top-right-radius: 50px;
-  
     border-bottom-right-radius:50px ;
     width: 1000px; 
-	height:600px;
-	
-}
+	height:600px;}
 
 
 .hebergement, .activites { margin-left: 15px;}  /*titres h3*/
 
-    /*FOOTER version mobile*/
-.foot { color: black; text-decoration: none;}
-
-.propos  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
-{   background-color: lightblue;
-    width: 380px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    text-align:justify;}   
-   
-.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
-{   background-color: lightblue;
-    width: 380px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    text-align:justify;}
-
-.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
-{   background-color: lightblue;
-    width: 380px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    text-align:justify;}
-
-
-/* GRID version mobile*/
+    
+/* GRID*/
 
 /* header*/
 .entete
 {   display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    border:1px solid white;
-}
+    border:1px solid white;}
 
 .logo {grid-column: 1; grid-row: 1; padding-left: 10px;}
 
@@ -131,51 +83,35 @@
 .activ {grid-column: 2; grid-row: 4; padding-bottom: 50px;}
 
 
-/*.survol
-{
-    display:grid;
-    grid-template-columns: 10% 40% 10% 40%;
+.survol
+{   display:grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
     border: 1px solid white;
-    gap: 20px;
-    
-    width: 100px;
-    height: 50px;*
-}
+    gap: 20px;}
 
-.logoeco {grid-column-start: 1;grid-column-end: 2; grid-row: 1;}
-.filtreco {grid-column: 2; grid-row: 1;}
+.logoeco    {grid-column-start:1; grid-column-end:2; grid-row: 1;}
+.filtreco   {grid-column: 2; grid-row: 1;}
 
 .logofamille {grid-column: 3; grid-row:1 ;}
 .filtrefami {grid-column: 4; grid-row:1 ;}
 
-.logoromantic {grid-column: 1; grid-row:2 ;}
-.filtreroman{grid-column: 2; grid-row: 2;}
+.logoromantic   {grid-column: 1; grid-row:2 ;}
+.filtreroman    {grid-column: 2; grid-row: 2;}
 
-.logoanimaux{grid-column: 1; grid-row:3 ;}
-.filtreanimo{grid-column: 2; grid-row:3 ;}*/
+.logoanimaux    {grid-column: 1; grid-row:3 ;}
+.filtreanimo    {grid-column-start: 2; grid-column-end: 4; grid-row:3 ;}
 
 
-.inform
-{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    
-}
+.inform { display: grid; grid-template-columns: 10% 90%;}
 
- .cercle, .info
- {
-    grid-column:1 ; 
-    
- }
-.dispo
-{
-    grid-column:2 ; font-size: 15px;
-    
-}
-/* les plus populaires  pour version mobile*/
+.cercle, .info  { grid-column:1 ; }
+.dispo  { grid-column:2 ; font-size: 15px;}
+
+
+/* les plus populaires*/
  .pop
-{display: grid;
+{   display: grid;
     grid-template-columns: 90% 10%;
     grid-template-rows: 1fr;}
     
@@ -183,16 +119,12 @@
 
 .chart { grid-column: 2; padding-top: 40px;}
 
-
-/*populaires*/
-
 .sectionpop 
-{   background-color: lightblue;
-    border: 1px solid lightblue;
+{   background-color: lightgray;
+    border: 1px solid lightgray;
     width: 380px;
     height: 620px;}
 
-/**************************************/
 
 .hotelmat
 {
@@ -200,7 +132,7 @@
     grid-template-columns: 50% 50%;
     border: 1px solid white;
     background-color: white;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    box-shadow: 6px 6px 5px gray;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -208,10 +140,8 @@
     width: 320px;
     height: 130px;
     margin-left: 15px;
-    margin-bottom: 10px;
- 
-    
-}
+    margin-bottom: 10px;}
+
 .matin 
 { 
     grid-column:1; 
@@ -221,8 +151,8 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px ;
     margin-top: 4px;
-    margin-left: 4px;
-}
+    margin-left: 4px;}
+
 .infosmat { grid-column:2; text-align: left;}
 /**************************************/
 
@@ -233,7 +163,7 @@
     grid-template-columns: 50% 50%;
     border: 1px solid white;
     background-color: white;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    box-shadow: 6px 6px 5px gray;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -241,8 +171,8 @@
     width: 320px;
     height: 130px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .coeurdeleau 
 { 
     grid-column:1; 
@@ -252,8 +182,7 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px ;
     margin-top: 4px;
-    margin-left: 4px;
-}
+    margin-left: 4px;}
 .infoscoeur { grid-column:2; text-align: left;}
 /**************************************/
 
@@ -264,7 +193,7 @@
     grid-template-columns: 50% 50%;
     border: 1px solid white;
     background-color: white;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    box-shadow: 6px 6px 5px gray;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -272,8 +201,8 @@
     width: 320px;
     height: 130px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .bleublanc
 { 
     grid-column:1; 
@@ -283,8 +212,8 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px ;
     margin-top: 4px;
-    margin-left: 4px;
-}
+    margin-left: 4px;}
+
 .infosbleu { grid-column:2; text-align: left;}
 
 /* hébergements à marseille pour version mobile*/
@@ -293,9 +222,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -303,8 +231,8 @@
     width: 320px;
     height: 140px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .cannebiere 
 {
     grid-row: 1; 
@@ -314,9 +242,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
-    margin-left: 8px;
-}
-
+    margin-left: 8px;}
 
 .infoscann {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
@@ -326,9 +252,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -336,8 +261,8 @@
     width: 320px;
     height: 140px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .hotelduport 
 {
     grid-row: 1; 
@@ -347,8 +272,8 @@
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
-    margin-left: 8px;
-}
+    margin-left: 8px;}
+
 .infoshoteldup {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
 /**************************************/
@@ -357,9 +282,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -367,8 +291,8 @@
     width: 320px;
     height: 140px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .lesmouettes 
 {
     grid-row: 1; 
@@ -378,8 +302,8 @@
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
-    margin-left: 8px;
-}
+    margin-left: 8px;}
+
 .infosmouett {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
 /**************************************/
@@ -388,9 +312,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -398,8 +321,8 @@
     width: 320px;
     height: 140px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .delamer 
 {
     grid-row: 1; 
@@ -409,8 +332,8 @@
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
-    margin-left: 8px;
-}
+    margin-left: 8px;}
+
 .infoslamer {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
 /**************************************/
@@ -419,9 +342,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -429,8 +351,8 @@
     width: 320px;
     height: 140px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .lepanier 
 {
     grid-row: 1; 
@@ -440,8 +362,8 @@
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
-    margin-left: 8px;
-}
+    margin-left: 8px;}
+
 .infospanier {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
 /**************************************/
@@ -450,9 +372,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -460,8 +381,8 @@
     width: 320px;
     height: 140px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
+
 .chezamina 
 {
     grid-row: 1; 
@@ -471,20 +392,19 @@
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
-    margin-left: 8px;
-}
+    margin-left: 8px;}
+
 .infoamina {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
-/**************************************/
-/* activités pour version mobile*/
+
+/* activités*/
 
 .actvieup
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -514,9 +434,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -545,9 +464,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -576,9 +494,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -606,9 +523,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -636,9 +552,8 @@
 {
     display: grid;
     grid-template-rows: 50% 50%;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    box-shadow: 6px 6px 5px #F2F2F2;
+    border: 1px solid lightgray; 
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -662,5 +577,30 @@
 .parclong {grid-row: 2; margin-left: 30px; margin-top: 40px; }
 
 
+/*FOOTER*/
+.foot { color: black; text-decoration: none;}
 
+.propos  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{   background-color: lightgray;
+    width: 380px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;}   
+   
+.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{   background-color: lightgray;
+    width: 380px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;}
+
+.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+{   background-color: lightgray;
+    width: 380px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:justify;}
 
