@@ -27,6 +27,10 @@
 
 
 /* FAIRE MISE EN FORME LOUPE .search*/
+@media screen and (max-width: 380px)
+{
+    .bouton { visibility: none;}
+}
 
 .recherche .fa-stack /*icone map c'est ce gris qu'il faudra #F2F2F2*/
 {   color: lightgray; font-size: 20px; }
