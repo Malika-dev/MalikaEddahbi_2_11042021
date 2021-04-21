@@ -145,7 +145,6 @@
 .matin 
 { 
     grid-column:1; 
-    background-size: cover;
     width: 80%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -176,7 +175,7 @@
 .coeurdeleau 
 { 
     grid-column:1; 
-    background-size: cover;
+
     width: 80%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -206,7 +205,7 @@
 .bleublanc
 { 
     grid-column:1; 
-    background-size: cover;
+    
     width: 80%;
     height: 60%;
     border-top-left-radius: 20px;
@@ -236,7 +235,7 @@
 .cannebiere 
 {
     grid-row: 1; 
-    background-size: cover;
+    
     width: 95%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -266,7 +265,7 @@
 .hotelduport 
 {
     grid-row: 1; 
-    background-size: cover;
+    
     width: 95%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -296,7 +295,7 @@
 .lesmouettes 
 {
     grid-row: 1; 
-    background-size: cover;
+    
     width: 95%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -326,7 +325,7 @@
 .delamer 
 {
     grid-row: 1; 
-    background-size: cover;
+    
     width: 95%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -356,7 +355,7 @@
 .lepanier 
 {
     grid-row: 1; 
-    background-size: cover;
+    
     width: 95%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -386,7 +385,7 @@
 .chezamina 
 {
     grid-row: 1; 
-    background-size: cover;
+    
     width: 95%;
     height: 95%;
     border-top-left-radius: 20px;
@@ -416,17 +415,16 @@
 }
 
 .vieuxport
-{
-    grid-row: 1; 
-    background-size: cover;
+{   grid-row: 1; 
     width: 95%;
     height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
-    margin-left: 8px;
-}
+    margin-left: 8px;}
+
 .vp {grid-row: 2; margin-left: 30px; margin-top: 40px; }
+
 /**************************************/
 
 
@@ -446,9 +444,7 @@
     margin-bottom: 10px;
 }
 .pomegues
-{
-    grid-row: 1; 
-    background-size: cover;
+{   grid-row: 1; 
     width: 95%;
     height: 100%;
     border-top-left-radius: 20px;
@@ -478,7 +474,6 @@
 .frioul
 {
     grid-row: 1; 
-    background-size: cover;
     width: 95%;
     height: 100%;
     border-top-left-radius: 20px;
@@ -508,8 +503,7 @@
 .calanques
 {
     grid-row: 1; 
-    background-size: cover;
-    width: 95%;
+     width: 95%;
     height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
@@ -537,7 +531,6 @@
 .notredame
 {
     grid-row: 1; 
-    background-size: cover;
     width: 95%;
     height: 100%;
     border-top-left-radius: 20px;
@@ -566,7 +559,6 @@
 .longchamp
 {
     grid-row: 1; 
-    background-size: cover;
     width: 95%;
     height: 100%;
     border-top-left-radius: 20px;
