@@ -7,7 +7,7 @@
 
 /*PARTIE bouton-loupe-rechercher A RESOUDRE avec media queries*/
 
-.loupe { visibility: none;}
+.boutonloupe { visibility: hidden;}
 
 .bouton
 {
@@ -34,17 +34,17 @@
     border:1px solid white;
 }
 
-.logo {grid-column: 1; padding-top: 20px;}
+.logo {grid-column: 1;}
 
-.hebgt {grid-column: 2; padding-top: 20px;}
+.hebgt {grid-column: 2;}
 
-.activ {grid-column: 3; padding-top: 20px;}
+.activ {grid-column: 3;}
 
 .inscrip {grid-column: 4; padding-top: 20px;}
 
 
 
-/* les filtres*/
+/* les filtres*
 .survol
 {
     display:grid;
@@ -53,7 +53,7 @@
     border: 1px solid white;
     gap: 20px;
     
-    /*width: 100px;*/
+    /*width: 100px;*
     height: 50px;
 }
 
@@ -69,7 +69,7 @@
 .logoanimaux {grid-column:7}
 .filtreanimo {grid-column:8}
 
-/*information disponibilités*/
+/*information disponibilités*
 .inform
 {
     display: grid;
@@ -79,7 +79,7 @@
 .dispo  {   grid-column:2 ; font-size: 15px;}
 
 
-/* mise en forme les plus populaires*/
+/* mise en forme les plus populaires*
  .pop
 {display: grid;
     grid-template-columns: 90% 10%;
@@ -90,7 +90,7 @@
 .chart { grid-column: 2; padding-top: 30px;}
 
 
-/**************************************/
+/**************************************
 
 .sectionpop 
 {   background-color: lightgrey;
@@ -103,7 +103,7 @@
     height: 500px;
 padding-bottom: 30px;}
 
-/**************************************/
+/**************************************
 
 .hotelmat
 {
@@ -135,7 +135,7 @@ padding-bottom: 30px;}
     margin-left: 4px;
 }
 .infosmat { grid-column:2; text-align: left;}
-/**************************************/
+/**************************************
 
 
 .hotelcoeur
@@ -166,7 +166,7 @@ padding-bottom: 30px;}
     margin-left: 4px;
 }
 .infoscoeur { grid-column:2; text-align: left;}
-/**************************************/
+/**************************************
 
 
 .hotelbleu
@@ -198,7 +198,7 @@ padding-bottom: 30px;}
 }
 .infosbleu { grid-column:2; text-align: left;}
 
-/* hébergements à marseille*/
+/* hébergements à marseille*
 
 .hotelcann
 {
@@ -232,7 +232,7 @@ padding-bottom: 30px;}
 
 .infoscann {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
-/**************************************/
+/**************************************
 
 .hoteldup
 {
@@ -265,7 +265,7 @@ padding-bottom: 30px;}
 }
 .infoshoteldup {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
-/**************************************/
+/**************************************
 
 .hotelmouett
 {
@@ -298,7 +298,7 @@ padding-bottom: 30px;}
 }
 .infosmouett {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
-/**************************************/
+/**************************************
 
 .hotelmer
 {
@@ -331,7 +331,7 @@ padding-bottom: 30px;}
 }
 .infoslamer {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
-/**************************************/
+/**************************************
 
 .hotelpanier
 {
@@ -364,7 +364,7 @@ padding-bottom: 30px;}
 }
 .infospanier {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
-/**************************************/
+/**************************************
 
 .hotelamina
 {
@@ -397,7 +397,7 @@ padding-bottom: 30px;}
 }
 .infoamina {grid-row: 2; font-size: 10px; margin-left: 20px; }
 
-/*mise en forme grille hotels marseille*/
+/*mise en forme grille hotels marseille*
 
 .marseille
 {
@@ -413,7 +413,7 @@ padding-bottom: 30px;}
     width: 690px;
     height: 500px;
     gap: 10px;
-    /*margin-left: 15px*/;
+    /*margin-left: 15px*;
     
 }
 
@@ -425,11 +425,11 @@ padding-bottom: 30px;}
 .hotelpanier { grid-column:2 ; grid-row:3 ;}
 .hotelamina { grid-column: 3; grid-row:3 ;}
 .afficherplus { grid-column:1 ; grid-row:4 ; font-weight: bold;margin-left: 10px}
-/**************************************/
+/**************************************
 
 /* activités*/
 
-/* mise en forme grille activités*/
+/* mise en forme grille activités*
 
 .activafaire
 {
@@ -463,7 +463,7 @@ padding-bottom: 30px;}
 .actlongchamp { grid-column:4; grid-row:3 ;}
 
 
-/*****redimension image longues********/
+/*****redimension image longues********
 .actvieup
 {
     display: grid;
@@ -490,7 +490,7 @@ padding-bottom: 30px;}
     margin-left: 8px;
 }
 .vp {grid-row: 2; margin-left: 30px; margin-top: 25px;}
-/**************************************/
+/**************************************
 
 
 .actcalanc
@@ -521,7 +521,7 @@ padding-bottom: 30px;}
 .parc {grid-row: 2; margin-left: 30px; margin-top: 25px;}
 /**************************************/
 
-/******* redimension images courtes*****/
+/******* redimension images courtes*****
 
 .actpomg
 {
@@ -551,7 +551,7 @@ padding-bottom: 30px;}
 }
 
 .fort {grid-row: 2; margin-left: 30px; margin-top: 40px; padding-bottom: 20px; }
-/**************************************/
+/**************************************
 
 .actfrioul
 {
@@ -578,8 +578,7 @@ padding-bottom: 30px;}
     margin-left: 8px;
 }
 .iles {grid-row: 2; margin-left: 30px; margin-top: 40px; }
-/**************************************/
-
+/**************************************
 .actnotred
 {
     display: grid;
@@ -606,7 +605,7 @@ padding-bottom: 30px;}
     margin-left: 8px;
 }
 .delagarde {grid-row: 2; margin-left: 30px; margin-top: 40px; }
-/**************************************/
+/**************************************
 
 .actlongchamp
 {
@@ -636,10 +635,10 @@ padding-bottom: 30px;}
 .parclong {grid-row: 2; margin-left: 30px; margin-top: 40px; }
 
 
-/*FOOTER*/
+/*FOOTER*
 .foot { color: black; text-decoration: none;}
 
-.propos  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+.propos  /*#F2F2F2 c'est ce gris qu'il faudra mettre*
 {   background-color: lightgrey;
     width: 380px;
     padding-top: 10px;
@@ -647,7 +646,7 @@ padding-bottom: 30px;}
     padding-left: 25px;
     text-align:justify;}   
    
-.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre*
 {   background-color: lightgrey;
     width: 380px;
     padding-top: 10px;
@@ -655,7 +654,7 @@ padding-bottom: 30px;}
     padding-left: 25px;
     text-align:justify;}
 
-.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre*
 {   background-color: lightgrey;
     width: 380px;
     padding-top: 10px;
@@ -684,7 +683,7 @@ padding-bottom: 30px;}
 
     .activafaire { grid-column: 1; grid-row:2 ;}*/
 
- } /*fin media queries desktop*/
+ } /*fin media queries desktop*/*/
 
 
 

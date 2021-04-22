@@ -4,573 +4,200 @@
 
 /*icones filtres, etoile bleues et menu*/
 .search, .starb, .hebgt, .activ, .inscrip {color: #0065FC;}
+.starg { color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
 
-/*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
-.starg { color: grey;}
+.inscrip { font-weight: bold; text-decoration: none;}
+.hebgt, .activ {    text-decoration: none;}
 
+.activ:hover {   color: red}
+.hebgt:hover {   color: red}
 
-/* problème mise en forme map pour border-radius*/
-.map { color: black;font-size: 20px;}
+/*icone map*/
+/*   à revoir plus tard  .map 
+{   border: 1px solid grey; 
+    background-color: grey; 
+    border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+width: 30px;
+height: 30px;}*/
 
-
-.input /* champs recherche marseille, france*/
-{   color: black;
-    font-weight: bolder;
-    width: 200px;
+/* champs recherche marseille, france*/
+ /*A RESOUDRE* mettre taille en rem/
+/*.input
+{   width: 200px;
     height: 40px;
     border-right: none;
     border-left: none;
-   /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+   /*#F2F2F2 c'est ce gris qu'il faudra mettre
     border-top: 1px solid gray;
-    /*border-left: 1px solid gray ;*/
-    border-bottom:1px solid gray ;}
+    /*border-left: 1px solid gray ;
+    border-bottom:1px solid gray ;}*/
+.input::placeholder { color: black; font-weight: bold;} /* ne se met pas en noir, à revoir*/
 
+.boutonloupe 
+{   border: 1px solid #0065FC; 
+    background-color: #0065FC; 
+    border-radius: 0.8rem;
+    width: 2.6rem;
+    height: 2.6rem}
+.loupe { color: white; font-size: 1rem;}
 
-/* FAIRE MISE EN FORME LOUPE .search*/
 @media screen and (max-width: 380px)
 {
-    .bouton { visibility: none;}
+    .bouton { display: none;}
 }
 
-.recherche .fa-stack /*icone map c'est ce gris qu'il faudra #F2F2F2*/
-{   color: lightgray; font-size: 20px; }
+/** mise en forme icones+filtres*/
+.categories i
 
-.survol .fa-stack { font-size: 1.3em; color: #DEEBFF; }
+{   display:flex;
+    color: #0065FC ;
+    border: 1px solid #DEEBFF;
+    background-color: #DEEBFF;
+    font-size: 1rem;
+    border-radius:100%;
+    width: 2.4rem;
+    height: 2.4rem;
+    justify-content: center;
+    align-items: center;}
+    
+.categories a   { text-decoration: none; color: black; font-weight: bold;}
 
-.eco, .fam, .rom, .dog {   color: #0065FC;  font-size: 15px;}
-
-.cercle {   color: gray; /* c'est ce gris qu'il faudra #F2F2F2*/}
-
-.info   {   color: #0065FC ; font-size: 10px;}
-
-.hebgt, .activ, .inscrip, .srvlan, .srvlec, .srvlfam, .srvlrom
-{   text-decoration: none;}
-
-.inscrip {  font-weight: bolder;}
-
-
-/* Mise en forme des filtres*/
-
-/* PROBLEME DE SURVOL*/
-.srvlec, .srvlfam, .srvlrom, .srvlan :hover
-{   color: #0065FC}
-
-.srvlan, .srvlec, .srvlfam, .srvlrom
-{   color: black;
-    font-weight: bold;
-    border: 1px solid black;
+.categories .filtre
+{   display: flex;
+    border:1px solid grey; 
+    border-radius: 5rem;
     border-left: none;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius:50px ;
-    width: 1000px; 
-	height:600px;}
-
-
-.hebergement, .activites { margin-left: 15px;}  /*titres h3*/
-
+    height: 2.5rem;
+    justify-content:flex-start;
+    align-items: baseline;} /* réfléchir à largeur pour chacun -methode "dry"*/
     
-/* GRID*/
+.info
+{   display: flex;
+    color: #0065FC ;
+    border: 1px solid grey;
+    font-size: 0.6rem;
+    border-radius:100%;
+    width: 1.4rem;
+    height: 1.4rem;
+    justify-content: center;
+    align-items: center;}
 
-/* header*/
-.entete
-{   display: grid;
+    /*photos populaires*/
+    .imgpop
+    {display: flex;
+    width: 120px;
+    height: 130px;
+    grid-column: 1;
+     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;} 
+    
+    /* grille titre les + pop + chart*/
+
+    .pop
+    {   display: grid;
+        grid-template-rows: 1fr;  
+        grid-template-columns:90% 10%;
+        margin-bottom: 20px;}
+        
+    .titrepop {grid-column: 1; padding-left: 15px; padding-top: 20px;}  
+    
+    .chart { grid-column: 2; padding-top: 40px;}
+
+/* mise forme hotels populaires*/
+
+.hotelmat,.hotelcoeur,.hotelbleu
+{
+    display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    border:1px solid white;}
-
-.logo {grid-column: 1; grid-row: 1; padding-left: 10px;}
-
-.inscrip {grid-column: 2; grid-row: 1; padding-left: 30px; padding-top: 15px;}
-
-.hebgt {grid-column: 1; grid-row: 2; padding-top: 30px;}
-
-.activ {grid-column: 2; grid-row: 4; padding-bottom: 50px;}
-
-
-.survol
-{   display:grid;
-    grid-template-columns: 1fr 3fr 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    border: 1px solid white;
-    gap: 20px;}
-
-.logoeco    {grid-column-start:1; grid-column-end:2; grid-row: 1;}
-.filtreco   {grid-column: 2; grid-row: 1;}
-
-.logofamille {grid-column: 3; grid-row:1 ;}
-.filtrefami {grid-column: 4; grid-row:1 ;}
-
-.logoromantic   {grid-column: 1; grid-row:2 ;}
-.filtreroman    {grid-column: 2; grid-row: 2;}
-
-.logoanimaux    {grid-column: 1; grid-row:3 ;}
-.filtreanimo    {grid-column-start: 2; grid-column-end: 4; grid-row:3 ;}
-
-
-.inform { display: grid; grid-template-columns: 10% 90%;}
-
-.cercle, .info  { grid-column:1 ; }
-.dispo  { grid-column:2 ; font-size: 15px;}
-
-
-/* les plus populaires*/
- .pop
-{   display: grid;
-    grid-template-columns: 90% 10%;
-    grid-template-rows: 1fr;}
+    grid-template-rows: 10% 10% 20% 10%;
+    background-color: white;
+    box-shadow: 6px 6px 5px gray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    width: 350px;
+    height: 130px;
+    margin-left: 15px;
+    margin-bottom: 10px;}
     
-.titrepop {grid-column: 1; padding-left: 15px; padding-top: 20px;}  
+.imgpop { grid-column: 1; object-fit: cover;}
+.nomhotelpop { grid-column: 2; grid-row: 1; font-weight: bold; }
+.tarifpop { grid-column: 2; grid-row: 2;}
+.etoilespop { grid-column: 2; grid-row: 4;padding-bottom: 3rem;}
 
-.chart { grid-column: 2; padding-top: 40px;}
+/* fond grille les plus pop*/
 
 .sectionpop 
-{   background-color: lightgray;
-    border: 1px solid lightgray;
+{   background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2*/
+    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*/
     width: 380px;
-    height: 620px;}
+    height: 620px;
+padding-right: 50px;}
 
 
-.hotelmat
+/* recoupe-photos marseille*/
+
+.imgmars
 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid white;
-    background-color: white;
-    box-shadow: 6px 6px 5px gray;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 130px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.matin 
-{ 
-    grid-column:1; 
-    width: 80%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius:20px ;
-    margin-top: 4px;
-    margin-left: 4px;}
-
-.infosmat { grid-column:2; text-align: left;}
-/**************************************/
-
-
-.hotelcoeur
-{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid white;
-    background-color: white;
-    box-shadow: 6px 6px 5px gray;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 130px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.coeurdeleau 
-{ 
-    grid-column:1; 
-
-    width: 80%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius:20px ;
-    margin-top: 4px;
-    margin-left: 4px;}
-.infoscoeur { grid-column:2; text-align: left;}
-/**************************************/
-
-
-.hotelbleu
-{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid white;
-    background-color: white;
-    box-shadow: 6px 6px 5px gray;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 130px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.bleublanc
-{ 
-    grid-column:1; 
-    
-    width: 80%;
-    height: 60%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius:20px ;
-    margin-top: 4px;
-    margin-left: 4px;}
-
-.infosbleu { grid-column:2; text-align: left;}
-
-/* hébergements à marseille pour version mobile*/
-
-.hotelcann
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.cannebiere 
-{
-    grid-row: 1; 
-    
-    width: 95%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;}
-
-.infoscann {grid-row: 2; font-size: 10px; margin-left: 20px; }
-
-/**************************************/
-
-.hoteldup
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.hotelduport 
-{
-    grid-row: 1; 
-    
-    width: 95%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;}
-
-.infoshoteldup {grid-row: 2; font-size: 10px; margin-left: 20px; }
-
-/**************************************/
-
-.hotelmouett
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.lesmouettes 
-{
-    grid-row: 1; 
-    
-    width: 95%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;}
-
-.infosmouett {grid-row: 2; font-size: 10px; margin-left: 20px; }
-
-/**************************************/
-
-.hotelmer
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.delamer 
-{
-    grid-row: 1; 
-    
-    width: 95%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;}
-
-.infoslamer {grid-row: 2; font-size: 10px; margin-left: 20px; }
-
-/**************************************/
-
-.hotelpanier
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.lepanier 
-{
-    grid-row: 1; 
-    
-    width: 95%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;}
-
-.infospanier {grid-row: 2; font-size: 10px; margin-left: 20px; }
-
-/**************************************/
-
-.hotelamina
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;}
-
-.chezamina 
-{
-    grid-row: 1; 
-    
-    width: 95%;
-    height: 95%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;}
-
-.infoamina {grid-row: 2; font-size: 10px; margin-left: 20px; }
-
-
-/* activités*/
-
-.actvieup
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-
-.vieuxport
-{   grid-row: 1; 
-    width: 95%;
+    display: flex;
+    width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;}
+    border-top-right-radius:20px ;}
 
-.vp {grid-row: 2; margin-left: 30px; margin-top: 40px; }
+    /* grille titre hébergements à marseille*/
+.hebergement {display: flex;margin-top: 100px; margin-left: 15px;}
 
-/**************************************/
-
-
-.actpomg
+/* mise en forme hotel marseille*/
+.hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
 {
     display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
+    grid-template-rows: 58% 10% 10% 10%;
+   
     box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
+    width: 350px;
+    height: 190px;
     margin-left: 15px;
-    margin-bottom: 10px;
-}
-.pomegues
-{   grid-row: 1; 
-    width: 95%;
+    margin-bottom: 10px;}
+
+.imgmars {  grid-row: 1; object-fit: cover;}
+.nomhotelmars   {grid-row: 2; font-weight: bold;}
+.tarifmars {    grid-row: 3;}
+.etoilesmars {  grid-row: 4;}
+
+/* activité marseille*/
+
+/*recoupe-photos activités*/
+
+.imgactiv
+{
+    width: 100%;
     height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;
-}
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px ;}
 
-.fort {grid-row: 2; margin-left: 30px; margin-top: 40px; }
-/**************************************/
-
-.actfrioul
+/* mise en forme activités*/
+.actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
 {
     display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
+    grid-template-rows: 70% 30%;
     box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-.frioul
-{
-    grid-row: 1; 
-    width: 95%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;
-}
-.iles {grid-row: 2; margin-left: 30px; margin-top: 40px; }
-/**************************************/
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius:25px ;
+    width: 350px;
+    height: 190px;
+    margin-bottom: 25px;}
 
-
-.actcalanc
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-.calanques
-{
-    grid-row: 1; 
-     width: 95%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;
-}
-.parc {grid-row: 2; margin-left: 30px; margin-top: 40px; }
-/**************************************/
-
-.actnotred
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-.notredame
-{
-    grid-row: 1; 
-    width: 95%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;
-}
-.delagarde {grid-row: 2; margin-left: 30px; margin-top: 40px; }
-/**************************************/
-
-.actlongchamp
-{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    border: 1px solid lightgray; 
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    width: 320px;
-    height: 140px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-.longchamp
-{
-    grid-row: 1; 
-    width: 95%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 4px;
-    margin-left: 8px;
-}
-.parclong {grid-row: 2; margin-left: 30px; margin-top: 40px; }
+.imgactiv   {  grid-row: 1; object-fit: cover;}
+.nomactiv {grid-row: 2; font-weight: bold; padding-left: 20px;}
 
 
 /*FOOTER*/
@@ -599,4 +226,32 @@
     padding-bottom: 30px;
     padding-left: 25px;
     text-align:justify;}
+
+
+
+
+
+
+
+/* GRID
+
+/* header
+.entete
+{   display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border:1px solid white;}
+
+.logo {grid-column: 1; grid-row: 1; padding-left: 10px;}
+
+.inscrip {grid-column: 2; grid-row: 1; padding-left: 30px; padding-top: 15px;}
+
+.hebgt {grid-column: 1; grid-row: 2; padding-top: 30px;}
+
+.activ {grid-column: 2; grid-row: 4; padding-bottom: 50px;}
+
+
+
+
+
 
