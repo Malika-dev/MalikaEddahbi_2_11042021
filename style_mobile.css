@@ -2,15 +2,31 @@
 
 * { font-family: Raleway, sans-serif;}
 
-/*icones filtres, etoile bleues et menu*/
-.search, .starb, .hebgt, .activ, .inscrip {color: #0065FC;}
-.starg { color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
 
-.inscrip { font-weight: bold; text-decoration: none;}
-.hebgt, .activ {    text-decoration: none;}
+.starb  {   color: #0065FC;} /*etoile bleue*/
+.starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
 
-.activ:hover {   color: red}
-.hebgt:hover {   color: red}
+.inscrip, .hebgt  {  color: #0065FC; font-weight: bold; text-decoration: none;}
+.hebgt  {   border-bottom: 2px solid #0065FC; padding-bottom: 10px;}
+.activ  {   color: black; text-decoration: none; border-bottom: 2px solid grey ; padding-bottom: 10px;} /* border, c'est ce gris qu'il faut color: #F2F2F2; */
+
+.activ:hover {   color: #0065FC}
+.hebgt:hover {   color: grey}
+
+/* grille entete*/
+
+.entete /* à revoir*/
+{   display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border:1px solid white;}
+
+.logo {grid-column: 1; grid-row: 1;}
+
+.inscription {grid-column: 2; grid-row: 1;}
+
+.navigation {grid-column: 1; grid-row: 2;}
+
 
 /*icone map*/
 /*   à revoir plus tard  .map 
@@ -56,32 +72,64 @@ height: 30px;}*/
     background-color: #DEEBFF;
     font-size: 1rem;
     border-radius:100%;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2.7rem;
+    height: 2.7rem;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    margin-left: 0.04rem;}
     
-.categories a   { text-decoration: none; color: black; font-weight: bold;}
+.categories a   { text-decoration: none; color: black; font-weight: bold; padding-left: 10px;}
 
-.categories .filtre
+.filtreco, .filtrefam, .filtrerom, .filtreanimo
 {   display: flex;
-    border:1px solid grey; 
+    border: 1.5px solid grey; /* c'est ce gris qu'il faut #F2F2F2 */
     border-radius: 5rem;
     border-left: none;
-    height: 2.5rem;
-    justify-content:flex-start;
-    align-items: baseline;} /* réfléchir à largeur pour chacun -methode "dry"*/
-    
+    height: 2.6rem;
+    justify-content:start;
+    align-items:center;
+    margin-bottom: 0.7rem;}
+
+.filtreco   {   display: flex; width: 10.4rem;}
+.filtrefam  {   display: flex; width: 8.8rem;}
+.filtrerom  {   display: flex; width: 10.2rem;}
+.filtreanimo    {   display: flex; width: 13.4rem;}
+
+/* grille filtres*/
+
+.categories
+{   display: grid;
+    grid-template-columns:2 ;
+    grid-template-rows:3 ;
+    margin-left: 10px;
+    margin-right:10px ;}
+
+.filtreco   {   grid-column: 1;grid-row:1 ;}
+.filtrefam  {   grid-column: 2;grid-row: 1;}
+.filtrerom  {   grid-column: 1;grid-row: 2;}
+.filtreanimo    {   grid-column: 1;grid-row:3 ;}
+
+
+ /****icone info****/   
 .info
 {   display: flex;
     color: #0065FC ;
     border: 1px solid grey;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     border-radius:100%;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1rem;
+    height: 1rem;
     justify-content: center;
     align-items: center;}
+
+    /**grille info-dipo*/
+.inform
+{   display: grid;
+    grid-template-columns:5% 95%;
+}
+    
+.info {grid-column: 1;}  
+.dispo { grid-column: 2; font-size: 17px;}
 
     /*photos populaires*/
     .imgpop
@@ -96,13 +144,14 @@ height: 30px;}*/
 
     .pop
     {   display: grid;
-        grid-template-rows: 1fr;  
         grid-template-columns:90% 10%;
-        margin-bottom: 20px;}
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 25px;}
         
-    .titrepop {grid-column: 1; padding-left: 15px; padding-top: 20px;}  
+    .titrepop {grid-column: 1; padding-top: 1.4rem;}  
     
-    .chart { grid-column: 2; padding-top: 40px;}
+    .chart { grid-column: 2; padding-top: 2.5rem; font-size: 1.4rem;}
 
 /* mise forme hotels populaires*/
 
@@ -233,22 +282,7 @@ padding-right: 50px;}
 
 
 
-/* GRID
 
-/* header
-.entete
-{   display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    border:1px solid white;}
-
-.logo {grid-column: 1; grid-row: 1; padding-left: 10px;}
-
-.inscrip {grid-column: 2; grid-row: 1; padding-left: 30px; padding-top: 15px;}
-
-.hebgt {grid-column: 1; grid-row: 2; padding-top: 30px;}
-
-.activ {grid-column: 2; grid-row: 4; padding-bottom: 50px;}
 
 
 

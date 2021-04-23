@@ -632,13 +632,13 @@ padding-bottom: 30px;}
     margin-top: 4px;
     margin-left: 8px;
 }
-.parclong {grid-row: 2; margin-left: 30px; margin-top: 40px; }
+.parclong {grid-row: 2; margin-left: 30px; margin-top: 40px; }*/
 
 
-/*FOOTER*
+/*FOOTER*/
 .foot { color: black; text-decoration: none;}
 
-.propos  /*#F2F2F2 c'est ce gris qu'il faudra mettre*
+.propos, .hebt, .aide, /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
 {   background-color: lightgrey;
     width: 380px;
     padding-top: 10px;
@@ -646,33 +646,15 @@ padding-bottom: 30px;}
     padding-left: 25px;
     text-align:justify;}   
    
-.hebt /*#F2F2F2 c'est ce gris qu'il faudra mettre*
-{   background-color: lightgrey;
-    width: 380px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    text-align:justify;}
-
-.aide /*#F2F2F2 c'est ce gris qu'il faudra mettre*
-{   background-color: lightgrey;
-    width: 380px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    text-align:justify;}
-
-    .classfoot
-    {
-        display:grid;
+.classfoot
+    {   display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         border: 1px solid lightgrey;
-        width: 1200px;
-        
-    }
-    .propos { grid-column: 1;}
-    .hebt { grid-column: 2;}
-    .aide { grid-column: 3;}
+        width: 1200px;}
+
+.propos { grid-column: 1;}
+.hebt { grid-column: 2;}
+.aide { grid-column: 3;}
 
     /*grille page
     .mapage { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 3fr 1fr;}
