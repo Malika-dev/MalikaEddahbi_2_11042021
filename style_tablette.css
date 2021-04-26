@@ -1,0 +1,20 @@
+@media screen and (min-width: 601px) and (max-width: 1250px)
+{
+
+/*bouton-loupe-rechercher résolution tablette-desktop*/
+
+.boutonloupe { display: none;}
+
+.boutonrecherche /* problème de mise en forme dans cette résolution*/
+{   background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+    height: 2.6rem ;
+    font-weight: bolder;}
+
+
+
+
+} /*fin media queries*/

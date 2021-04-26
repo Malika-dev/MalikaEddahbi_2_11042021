@@ -13,35 +13,22 @@
 .activ:hover {   color: #0065FC}
 .hebgt:hover {   color: grey}
 
-/* grille entete avec grid   entête à revoir avec grid ou flexbox
+/* grille entete avec grid   entête à revoir*/
 
-.entete /* à revoir
+.entete 
 {   display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    border:1px solid white;}
+grid-template-areas: 
+"logo logo" 
+"hebgt hebgt" 
+"inscrip inscrip" 
+"activ activ"}
 
-.logo {grid-column: 1; grid-row: 1;}
-
-.inscription {grid-column: 2; grid-row: 1;}
-
-.navigation {grid-column: 1; grid-row: 2;}*/
-
-/* test grille entete avec flexbox*/
-
-.entete
-{   display: flex;
-    flex-direction: row;
-   /* border: 1.5px solid black; height: 50px;*/
-   /*justify-content:start;
-    align-items:center;*/
-  
-    flex-wrap: wrap;}
-    
-/*.logo   {order:1 ;}
-.inscription    {order:2 ;}
-.hebgt  {order:3 ;}
-.activ  {order:4 ;}*/
+.logo {grid-area:logo ;}
+.hebgt  {grid-area:hebgt ;}
+.inscrip    {grid-area:inscrip ;}
+.activ  {grid-area: activ;}
 
 
 /*fonction recherche à revoir*/
@@ -78,10 +65,10 @@
     border-radius: 0.8rem;
     width: 2.6rem;
     height: 2.6rem;
-    margin-right: 10px;}
+    /*margin-right n'a pas d'effet*/}
 .loupe { color: white; font-size: 1rem;}
 
-@media screen and (max-width: 380px)
+@media screen and (max-width: 600px)
 {
     .boutonrecherche { display: none;}
 }
@@ -145,7 +132,7 @@
     justify-content: center;
     align-items: center;}
 
-    /**grille info-dipo avec grid*/
+    /**grille info-dispo avec grid*/
 /*.inform
 {   display: grid;
     grid-template-columns:5% 95%;
@@ -154,7 +141,7 @@
 .info {grid-column: 1;}  
 .dispo { grid-column: 2; font-size: 17px;}
 
-   /* test info-dispo avec flex-box*/ 
+   /* test info-dispo avec flex-box sur mobile et desktop*/ 
    .inform
 {   display: flex;
     flex-wrap: wrap;flex-direction: column;  border: 1px solid white; width: 330px; height: 50px;
@@ -179,16 +166,20 @@
 
     
 /*photos populaires*/
-    .imgpop
-    {
-    width: 120px;
-    height: 130px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;} 
+    
+.imgmat, .imgcoeur,.imgbleu
+    {   border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-left: 4.5px;
+        margin-top: 4.5px;
+        object-fit: cover;}
+
+.imgmat {   width: 54%;height: 92%;}
+.imgcoeur   {   width: 61%;height: 92%;}
+.imgbleu    {   width: 55%;height: 92%;}
 
 /* mise forme hotels populaires*/
- 
+
 .hotelmat,.hotelcoeur,.hotelbleu
 { display: flex; flex-direction: row;
     background-color: white;
@@ -200,19 +191,24 @@
     width: 330px;
     height: 130px;
     margin-left: 15px;
-    margin-bottom:20px;
-    
-}
+    margin-bottom:20px;}
+
+    /* problème étiquette texte*/
 .detailshotelpop { display: flex;flex-direction: column; margin-left: 30px;}
 .nomhotelpop { font-weight: bold;}
 .tarifpop { font-size: 14px;}
 .etoilespop {font-size: 11px; }
 
+/*.detailshotelpop { grid-template-rows: 3;}
+.nomhotelpop {grid-row:1 ; font-weight: bold;}
+.tarifpop { grid-row:2 ; font-size: 14px;}
+.etoilespop {grid-row: 3;font-size: 11px; }*/
+
 /* fond grille les plus pop*/
 
 .sectionpop 
 { display: flex; flex-direction: column;
-    background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2*/
+    background-color: gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*/
     width: 380px;
     height: 620px;
@@ -228,12 +224,16 @@
 
 /* mise en forme étiquettes hotels marseille */
 
-
-.imgcann, .imghduport, .imghmouette, .imghmer, .imghpanier, .imghamina
-{   width: 100%; height: 110px;
+.imghcann, .imghduport, .imghmouette, .imghmer, .imghpanier, .imghamina
+{   width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     object-fit: cover;}
+
+.imghcann, .imghduport, .imghmouette {   width: 100%; height: 50%;}
+.imghmer    {   height: 37%;}
+.imghpanier {   height: 60%;}
+.imghamina  {   height: 23%;}
 
 
 .hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
@@ -248,7 +248,7 @@
     height: 190px;
     margin-left: 15px;
     margin-bottom: 20px;}
-
+/* problème étiquette texte*/
 .detailshotelmars { padding-left: 10px}
 .nomhotelmars { font-weight: bold; font-size: 10px;}
 .tarifmars { font-size: 12px;}
@@ -263,15 +263,23 @@
 
 .titreactivites { margin-left: 15px;}
 
-
-/*photos activités*/
+/*photos activités  à revoir problème avec hauteur en px ou en % le texte 
+disparait quand la height est en %*/
 
 .imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl
-{ width: 100%;
+{   width: 100%;
     height: 135px;
     border-top-left-radius: 21px;
     border-top-right-radius:21px ;
     object-fit: cover;}
+
+/*.imgvp  {   height:60%;}
+.imgfdp {   height:24%;}
+.imgidf {   height:50%;}
+.imgpnc {   height:50%;}
+.imgndlag  {   height:55%;} 
+.imgpl  {   height:50%;}*/
+    
 
 .actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
 { display: flex; flex-direction:column;
