@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 * { font-family: Raleway, sans-serif;}
-
+@media screen and (max-width: 600px)  { 
 
 .starb  {   color: #0065FC;} /*etoile bleue*/
 .starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
@@ -31,7 +31,7 @@ grid-template-areas:
 .activ  {grid-area: activ;}
 
 
-/*fonction recherche à revoir*/
+/*recherche*/
 
 .recherche {display: flex; margin-top: 30px;}
 
@@ -56,7 +56,7 @@ grid-template-areas:
     border-right: none;
     border-left: none;}
 
-.input::placeholder { color:black; font-weight: bolder;text-align: center;} /* ne se met pas en noir, à revoir*/
+.input::placeholder { color:black; font-weight: bolder;text-align: center; opacity: 1;} 
 
 
 .boutonloupe 
@@ -68,10 +68,8 @@ grid-template-areas:
     /*margin-right n'a pas d'effet*/}
 .loupe { color: white; font-size: 1rem;}
 
-@media screen and (max-width: 600px)
-{
-    .boutonrecherche { display: none;}
-}
+.boutonrecherche { display: none;}
+
 
 /** mise en forme icones+filtres*/
 .categories i
@@ -94,7 +92,6 @@ grid-template-areas:
 {   display: flex;
     border: 1.5px solid grey; /* c'est ce gris qu'il faut #F2F2F2 */
     border-radius: 5rem;
-    border-left: none;
     height: 2.6rem;
     justify-content:start;
     align-items:center;
@@ -108,6 +105,7 @@ grid-template-areas:
 
 
 /* grille filtres*/
+ 
 .categories { display: flex; 
     flex-direction:column;
     flex-wrap: wrap; margin-top: 20px; 
@@ -142,6 +140,7 @@ grid-template-areas:
 .dispo { grid-column: 2; font-size: 17px;}
 
    /* test info-dispo avec flex-box sur mobile et desktop*/ 
+   
    .inform
 {   display: flex;
     flex-wrap: wrap;flex-direction: column;  border: 1px solid white; width: 330px; height: 50px;
@@ -150,7 +149,7 @@ grid-template-areas:
 .info {order: 1;margin-top: 15px;}  
 .dispo { order: 2; margin-left: 10px;} /* texte des disponiblités*/
 
-    
+ 
     /* grille titre les + pop + chart avec grid*/
 
     .pop
@@ -170,13 +169,13 @@ grid-template-areas:
 .imgmat, .imgcoeur,.imgbleu
     {   border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        height: 92%;
         margin-left: 4.5px;
         margin-top: 4.5px;
         object-fit: cover;}
-
-.imgmat {   width: 54%;height: 92%;}
-.imgcoeur   {   width: 61%;height: 92%;}
-.imgbleu    {   width: 55%;height: 92%;}
+.imgmat, .imgbleu  {   width: 45%;}
+.imgcoeur   {   width: 50%;}
+  
 
 /* mise forme hotels populaires*/
 
@@ -184,22 +183,20 @@ grid-template-areas:
 { display: flex; flex-direction: row;
     background-color: white;
     box-shadow: 6px 6px 5px gray;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
+    border-radius: 20px;
     width: 330px;
     height: 130px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-bottom:20px;}
 
     /* problème étiquette texte*/
-.detailshotelpop { display: flex;flex-direction: column; margin-left: 30px;}
-.nomhotelpop { font-weight: bold;}
+  
+/*.detailshotelpop { display: flex; flex-direction: column;}
+/*.nomhotelpop { font-weight: bold;}
 .tarifpop { font-size: 14px;}
-.etoilespop {font-size: 11px; }
+.etoilespop {font-size: 11px; }*/
 
-/*.detailshotelpop { grid-template-rows: 3;}
+/*.detailshotelpop { grid-template-rows: 3; margin-right: 100px;}
 .nomhotelpop {grid-row:1 ; font-weight: bold;}
 .tarifpop { grid-row:2 ; font-size: 14px;}
 .etoilespop {grid-row: 3;font-size: 11px; }*/
@@ -225,12 +222,14 @@ grid-template-areas:
 /* mise en forme étiquettes hotels marseille */
 
 .imghcann, .imghduport, .imghmouette, .imghmer, .imghpanier, .imghamina
-{   width: 100%;
+{   width: 97%;
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
+    margin-top: 4px;
+    margin-left: 5px;
     object-fit: cover;}
 
-.imghcann, .imghduport, .imghmouette {   width: 100%; height: 50%;}
+.imghcann, .imghduport, .imghmouette {  height: 50%;}
 .imghmer    {   height: 37%;}
 .imghpanier {   height: 60%;}
 .imghamina  {   height: 23%;}
@@ -239,11 +238,8 @@ grid-template-areas:
 .hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
 { display: flex; flex-direction:column;
     box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    background-color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
+    background-color: pink;
+    border-radius: 20px;
     width: 330px;
     height: 190px;
     margin-left: 15px;
@@ -257,7 +253,6 @@ grid-template-areas:
 .afficherplus { font-weight: bold; font-size: 16px; margin-left: 15px;}
 
 
-
 /* activité marseille*/
 /*titre*/
 
@@ -268,7 +263,7 @@ disparait quand la height est en %*/
 
 .imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl
 {   width: 100%;
-    height: 135px;
+    height: 135px; /*en % il y a pb de dimensions*/
     border-top-left-radius: 21px;
     border-top-right-radius:21px ;
     object-fit: cover;}
@@ -288,6 +283,7 @@ disparait quand la height est en %*/
     border-radius: 25px;
     width: 330px;
     height: 190px;
+    margin-left: 15px;
     margin-bottom: 25px;}
 
     .nomvp, .nomfdp, .nomidf, .nompnc, .nomndlag, .nompl
@@ -306,7 +302,7 @@ disparait quand la height est en %*/
     text-align:justify;}   
    
 
-
+} /*fin media queries mobile*/
 
 
 

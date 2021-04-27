@@ -1,252 +1,106 @@
-
 @media screen and (min-width: 1051px)   { 
 
-/*bouton-loupe-rechercher résolution tablette-desktop*/
+    .starb  {   color: #0065FC;} /*etoile bleue*/
+.starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
 
-.boutonloupe { display: none;}
+.inscrip, .hebgt  {  color: #0065FC; font-weight: bold; text-decoration: none;}
+.hebgt  {  border-width:50px; border-bottom: 2px solid #0065FC; padding-bottom: 10px;}
+.activ  {   color: black; text-decoration: none; border-bottom: 2px solid grey ; padding-bottom: 10px;} /* border, c'est ce gris qu'il faut color: #F2F2F2; */
 
-.boutonrecherche
-{   background-color: #0065FC;
-    border: 1px solid #0065FC;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    color: white;
-    height: 2.6rem ;
-    font-weight: bolder;}
+.activ:hover {   color: #0065FC}
+.hebgt:hover {   color: grey}
 
-/* header*/
-.hebgt {border-bottom:none; border-top: 2px solid #0065FC;padding-bottom: none;padding-top: 30px;}
-.activ {border-bottom:none; padding-bottom:none;}
+/* grille entete avec grid   entête à revoir*/
 
-/*.entete  à revoir aussi bien dans mobile que dans desktop
-- refaite en mobile avec grid area
-{   display: grid; grid-template-columns: 4;align-items: baseline;
-border: 1px solid blue; }
-.logo {grid-column: 1;}
-.hebgt {grid-column: 2;}
-.activ {grid-column: 3;}
-.inscription {grid-column: 4;}*/
+.entete 
+{   display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+grid-template-areas: 
+"logo logo" 
+"hebgt hebgt" 
+"inscrip inscrip" 
+"activ activ"}
 
-
-/** mise en forme icones+filtres*/
-.categories i   {   width: 2.3rem;height: 2.3rem;}
-    
-.categories a   { padding-left: 10px; font-size: 13px;}
-
-.filtreco, .filtrefam, .filtrerom, .filtreanimo
-{   height: 2.3rem;
-    margin-bottom: unset;}
-
-.filtreco   {  width: 10rem;}
-.filtrefam  {   width: 8.4rem;}
-.filtrerom  {    width: 8.5rem;}
-.filtreanimo    {  width: 13rem;}
-
-/* grille filtres*/
-
-.categories { display: flex; 
-    flex-direction:unset;
-    flex-wrap:unset; margin-top: 30px; 
-   border: unset; width:unset ; height: unset;
-   justify-content: space-around;
-   align-items: center;
-margin-right:200px;}
-
-.titrefiltres {order: 1;}
-.filtreco{order: 2;}
-.filtrefam{order: 3; margin-top:unset; margin-right:unset;}
-.filtrerom{order: 4;}
-.filtreanimo{order: 5;}
+.logo {grid-area:logo ;}
+.hebgt  {grid-area:hebgt ;}
+.inscrip    {grid-area:inscrip ;}
+.activ  {grid-area: activ;}
 
 
-/* test info-dispo avec flex-box sur mobile et desktop*/ 
-/*version mobile*/
-.inform
-{   display: unset;
-    flex-wrap:unset;flex-direction: unset;  border: unset; width: unset; height: unset;
-    margin-bottom: unset;margin-left: unset;}
-    
-.info {order: unset;margin-top: unset;}  
-.dispo { order: unset; margin-left: unset;} /* texte des disponiblités*/
+/*recherche*/
 
-/* version desktop*/
-.inform
-{display: grid; grid-template-columns: 2;}
-    
-.info {grid-column: 1;}
-.dispo {grid-column:2 ; }
+.recherche {display: flex; margin-top: 30px;}
 
-
-
-
-
-/* color fond les plus populaires*/
-.sectionpop {   border-radius: 20px;}
- 
-/* mise en forme étiquettes hotels marseille*/
-
-.hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
-{  width: 195px;
-    height:155px;
-    margin-left: none;
-    margin-bottom: none;}
-
-.detailshotelmars { padding-left: none}
-
-/*mise en forme grille hotels marseille*/
-
-/* essai avec flexbox
-.marseille
-{ display: flex; /*flex-direction: column;*
-    flex-wrap:wrap;
-    background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2*
-    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*
-    border-radius: 20px;
+/*icone map*/
+.map 
+{   display:flex;
+    background-color: grey; /*#F2F2F2 c'est ce gris qu'il faudra*/
+    font-size: 1rem;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius:0.8rem ;
+    width: 2.6rem;
+    height: 2.6rem;
     justify-content: center;
-    align-items: center;
-    width: 550px;
-    height: 620px;
-    padding-right: 50px;}
-
-    .hebergement {order:1 ; }
-.hotelcann { order: 2;}
-.hoteldup { order: 3;}
-.hotelmouett { order:4 ;}
-.hotelmer { order: 5;}
-.hotelpanier { order:6 ;}
-.hotelamina { order:7 ;}
-.afficherplus { order:8 ;}*/
-
-/*grille marseille avec grid*
-.marseille
-{display:grid;
-    grid-template-columns:3 ;
-    grid-template-rows: 4;
-    background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2*
-    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*} *
-    border-radius: 20px;
-    width: 550px;
-    height: 620px;}
-
-    .hebergement {grid-column:1 ;grid-row:1 ; }
-    .hotelcann {grid-column:1 ;grid-row:2 ; }
-    .hoteldup {grid-column:2 ;grid-row: 2; }
-    .hotelmouett {grid-column: 3;grid-row:2 ; }
-    .hotelmer {grid-column: 1;grid-row:3 ; }
-    .hotelpanier {grid-column:2 ;grid-row:3 ; }
-    .hotelamina {grid-column: 3;grid-row:3 ; }
-    .afficherplus {grid-column:1 ;grid-row: 4; }*/
+    align-items: center;}
 
 
 
 
 
-/* activité marseille*/
-
-/*photos activités  à revoir*/
-/*.imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl {   height: 100%;}*/
-.imgvp, .imgpnc  {   height: 260px;}
-.imgfdp {   height: 110px;}
-.imgidf {   height: 70px;}
-.imgndlag   {   height: 85px;}
-.imgpl  {   height: 105px;}
-
-/* noms activités*/
-.nomvp, .nomfdp, .nomidf, .nompnc, .nomndlag, .nompl
-{font-size: 14px; margin-left:none; }
-.nompl {padding-left:10px; }
-
-/* mise en forme étiquettes activités*/
-
-
-.actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
-  { display: flex; flex-direction:column;
-    background-color: white;
-     box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-     border-radius: 20px;
-     margin-bottom: none;}
-.actvieup, .actcalanc   { width: 220px; height: 320px;}
-.actpomg    {width: 220px;height: 165px;}
-.actfrioul {width: 220px;height: 125px;}
-.actnotred {width: 220px;height: 130px;}
-.actlongchamp {width: 220px;height: 150px;}
-
-
-/* mise en forme grille activités*/
-
-.lesactivites
-{
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows:3 ;
-    border: 1px solid lightgrey;
-    background-color: lightgrey;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px ;
-    /*width: 990px;
-    height:600px;*/
-    padding-left: 20px;
-    margin-left: 15px;
-    margin-bottom:10px ;}
-
-.activites { grid-column:1; grid-row: 1;}
-
-.actvieup { grid-column:1;  grid-row-start:2 ;grid-row-end: 3}
-
-.actpomg { grid-column:2; grid-row:2 ;}
-
-.actfrioul { grid-column:2; grid-row: 3;}
-
-.actcalanc { grid-column:3 ;  grid-row-start:2 ;grid-row-end: 3}
-
-.actnotred { grid-column:4; grid-row:2 ;}
-
-.actlongchamp { grid-column:4; grid-row:3 ;}
-
-
-
-   /*FOOTER*/
-
-.propos, .hebt, .aide  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
-   {   background-color: lightgray;
-       border: 1px solid lightgray;
-      padding-top: 10px;
-       padding-bottom: 30px;
-       padding-left: 25px;
-       text-align:justify;}  
-
-.propos,  .hebt {   width: 375px; height: 100px;} 
-
-.aide {   width: 230px; height: 100px;} 
-       
-       
-.classfoot
-    {   display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        border: 1px solid lightgrey;
-        width: 1200px;}
-
-.propos { grid-column: 1;}
-.hebt { grid-column: 2;}
-.aide { grid-column: 3;}
-
-} /*fin media queries desktop*/
-
-
-/*grille page
-    .mapage { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 3fr 1fr;}
-
-    .sectionpop { grid-column: 2; grid-row:1 ;}
-
-    .marseille { grid-column: 1; grid-row:1 ;}
-
-    .activafaire { grid-column: 1; grid-row:2 ;}*/
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+/*FOOTER DESKTOP*/
+        .foot { color: black; text-decoration: none; margin-bottom: 50px;}/* problème pour margin ou padding entre les .foot*/
+        .propos, .hebt, .aide  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+        {   background-color: lightgray;
+            border: 1px solid lightgray;
+           padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 25px;
+            text-align:justify;}  
+     
+     .propos,  .hebt {   width: 375px; height: 100px;} 
+     
+     .aide {   width: 230px; height: 100px;} 
+            
+            
+     .classfoot
+         {   display:grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             border: 1px solid lightgrey;
+             width: 1200px;}
+     
+     .propos { grid-column: 1;}
+     .hebt { grid-column: 2;}
+     .aide { grid-column: 3;}
+    
+    } /*fin media queries*/
+    
+    
+    
+
+
+
+
+        
 
 
