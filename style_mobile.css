@@ -30,6 +30,9 @@ grid-template-areas:
 .inscrip    {grid-area:inscrip ;}
 .activ  {grid-area: activ;}
 
+/*.entete {display: flex;flex-direction: row;}*/
+
+
 
 /*recherche*/
 
@@ -167,15 +170,13 @@ grid-template-areas:
 /*photos populaires*/
     
 .imgmat, .imgcoeur,.imgbleu
-    {   border-top-left-radius: 20px;
+    {   display: block; border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
+        width: 110px;
         height: 92%;
-        margin-left: 4.5px;
+       margin-left: 4.5px;
         margin-top: 4.5px;
         object-fit: cover;}
-.imgmat, .imgbleu  {   width: 45%;}
-.imgcoeur   {   width: 50%;}
-  
 
 /* mise forme hotels populaires*/
 
@@ -191,15 +192,12 @@ grid-template-areas:
 
     /* problème étiquette texte*/
   
-/*.detailshotelpop { display: flex; flex-direction: column;}
-/*.nomhotelpop { font-weight: bold;}
+.detailshotelpop { display:block;width: 150px; margin-left: 30px;}
+.nomhotelpop { font-weight: bold;}
 .tarifpop { font-size: 14px;}
-.etoilespop {font-size: 11px; }*/
+.etoilespop {font-size: 11px;padding-top: 15px; }
 
-/*.detailshotelpop { grid-template-rows: 3; margin-right: 100px;}
-.nomhotelpop {grid-row:1 ; font-weight: bold;}
-.tarifpop { grid-row:2 ; font-size: 14px;}
-.etoilespop {grid-row: 3;font-size: 11px; }*/
+
 
 /* fond grille les plus pop*/
 
@@ -217,12 +215,11 @@ grid-template-areas:
  /* titre hébergements à marseille*/
 .hebergement {margin-top: 50px; margin-left: 15px; margin-bottom: 25px;}
 
-
-
 /* mise en forme étiquettes hotels marseille */
 
 .imghcann, .imghduport, .imghmouette, .imghmer, .imghpanier, .imghamina
-{   width: 97%;
+{   display: block; border-top-left-radius: 20px;
+    width: 97%;
     border-top-left-radius: 20px;
     border-top-right-radius:20px ;
     margin-top: 4px;
@@ -230,13 +227,13 @@ grid-template-areas:
     object-fit: cover;}
 
 .imghcann, .imghduport, .imghmouette {  height: 50%;}
-.imghmer    {   height: 37%;}
+.imghmer    {   height: 100px;}
 .imghpanier {   height: 60%;}
 .imghamina  {   height: 23%;}
 
 
 .hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
-{ display: flex; flex-direction:column;
+{ display: flex; flex-direction: row;
     box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
     background-color: pink;
     border-radius: 20px;
@@ -245,7 +242,8 @@ grid-template-areas:
     margin-left: 15px;
     margin-bottom: 20px;}
 /* problème étiquette texte*/
-.detailshotelmars { padding-left: 10px}
+
+.detailshotelmars { display:block;}
 .nomhotelmars { font-weight: bold; font-size: 10px;}
 .tarifmars { font-size: 12px;}
 .etoilesmars {font-size: 11px; }

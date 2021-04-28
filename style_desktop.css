@@ -1,34 +1,56 @@
-@media screen and (min-width: 1051px)   { 
+@media screen and (min-width: 1051px){
 
-    .starb  {   color: #0065FC;} /*etoile bleue*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+* { font-family: Raleway, sans-serif;}
+
+
+.starb  {   color: #0065FC;} /*etoile bleue*/
 .starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
 
-.inscrip, .hebgt  {  color: #0065FC; font-weight: bold; text-decoration: none;}
-.hebgt  {  border-width:50px; border-bottom: 2px solid #0065FC; padding-bottom: 10px;}
-.activ  {   color: black; text-decoration: none; border-bottom: 2px solid grey ; padding-bottom: 10px;} /* border, c'est ce gris qu'il faut color: #F2F2F2; */
+.inscrip {  color: #0065FC; font-weight: bold; text-decoration: none;}
+
 
 .activ:hover {   color: #0065FC}
 .hebgt:hover {   color: grey}
 
-/* grille entete avec grid   entête à revoir*/
+/* header*/
 
-.entete 
-{   display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-grid-template-areas: 
-"logo logo" 
-"hebgt hebgt" 
-"inscrip inscrip" 
-"activ activ"}
 
-.logo {grid-area:logo ;}
-.hebgt  {grid-area:hebgt ;}
-.inscrip    {grid-area:inscrip ;}
-.activ  {grid-area: activ;}
+.logo { display: block;
+   width: 78px;height: auto;justify-content: center;}
+
+.hebgt  { color: #0065FC;
+     border-width:50px;  
+     text-decoration: none;
+      border-top: 2px solid #0065FC; 
+      padding-top:30px;
+       margin-left: 400px;}
+.activ  {   color: black;
+     text-decoration: none;
+     margin-left: 50px;  } /* border, c'est ce gris qu'il faut color: #F2F2F2; */
+
+
+/*.entete*/
+
+.entete {display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 120px; margin-top: 30px; margin-left: 15px;}
 
 
 /*recherche*/
+.boutonloupe { display: none;}
+
+.boutonrecherche
+{   background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+    height: 2.6rem ;
+    font-weight: bolder;}
 
 .recherche {display: flex; margin-top: 30px;}
 
@@ -44,63 +66,300 @@ grid-template-areas:
     justify-content: center;
     align-items: center;}
 
+/* champs recherche marseille, france*/
+
+.input
+{   width: 11rem;
+    height: 2.3rem;
+    border: 1.5px solid grey; /*#F2F2F2 c'est ce gris qu'il faudra*/
+    border-right: none;
+    border-left: none;}
+
+.input::placeholder { color:black; font-weight: bolder;text-align: center; opacity: 1;} 
 
 
+/** mise en forme icones+filtres*/
 
 
+.categories i
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{   display:flex;
+    color: #0065FC ;
+    border: 1px solid #DEEBFF;
+    background-color: #DEEBFF;
+    font-size: 1rem;
+    border-radius:100%;
+    width: 2.3rem;
+    height: 2.3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.04rem;}
 
     
-   
-/*FOOTER DESKTOP*/
-        .foot { color: black; text-decoration: none; margin-bottom: 50px;}/* problème pour margin ou padding entre les .foot*/
-        .propos, .hebt, .aide  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
-        {   background-color: lightgray;
-            border: 1px solid lightgray;
-           padding-top: 10px;
-            padding-bottom: 30px;
-            padding-left: 25px;
-            text-align:justify;}  
-     
-     .propos,  .hebt {   width: 375px; height: 100px;} 
-     
-     .aide {   width: 230px; height: 100px;} 
-            
-            
-     .classfoot
-         {   display:grid;
-             grid-template-columns: 1fr 1fr 1fr;
-             border: 1px solid lightgrey;
-             width: 1200px;}
-     
-     .propos { grid-column: 1;}
-     .hebt { grid-column: 2;}
-     .aide { grid-column: 3;}
     
-    } /*fin media queries*/
-    
-    
-    
+.categories a   { text-decoration: none; color: black; font-weight: bold; padding-left: 10px; font-size: 13px;}
 
 
 
 
+.filtreco, .filtrefam, .filtrerom, .filtreanimo
+{   display: flex;
+    border: 1.5px solid grey; /* c'est ce gris qu'il faut #F2F2F2 */
+    border-radius: 5rem;
+    height: 2.3rem;
+    justify-content:start;
+    align-items:center;
+    }
+
+    .filtreco   {  width: 10rem;}
+    .filtrefam  {   width: 8.4rem;}
+    .filtrerom  {    width: 8.5rem;}
+    .filtreanimo    {  width: 13rem;}
+
+
+
+/* grille filtres*/
+.categories { display: 
+    flex;margin-top:30px;justify-content:space-between;
+    align-items: center; margin-left: 15px;margin-right:300px;}
+
+ /****icone info****/   
+.info
+{   display: flex;
+    color: #0065FC ;
+    border: 1px solid grey;
+    font-size: 0.5rem;
+    border-radius:100%;
+    width: 1.1rem;
+    height: 1.1rem;
+    justify-content: center;
+    align-items: center;}
+
+.inform
+{   display: flex;
+    align-items: center; margin-left: 15px}
+    .dispo { margin-left: 15px}
+
+ 
+    /* grille titre les + pop + chart avec grid*/
+
+    .pop
+    {   display: grid;
+        grid-template-columns:90% 10%;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 25px;}
         
+    .titrepop {grid-column: 1; padding-top: 1.4rem;}  
+    
+    .chart { grid-column: 2; padding-top: 2.5rem; font-size: 1.4rem;}
+
+    
+/*photos populaires*/
+    
+.imgmat, .imgcoeur,.imgbleu
+    {   display: block; border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 110px;
+        height: 92%;
+       margin-left: 4.5px;
+        margin-top: 4.5px;
+        object-fit: cover;}
+
+/* mise forme hotels populaires*/
+
+.hotelmat,.hotelcoeur,.hotelbleu
+{ display: flex; flex-direction: row;
+    background-color: white;
+    box-shadow: 6px 6px 5px gray;
+    border-radius: 20px;
+    width: 330px;
+    height: 130px;
+    margin-left: 20px;
+    margin-bottom:20px;}
+
+    /* problème étiquette texte*/
+  
+.detailshotelpop { display:block;width: 150px; margin-left: 30px;}
+.nomhotelpop { font-weight: bold;}
+.tarifpop { font-size: 14px;}
+.etoilespop {font-size: 11px;padding-top: 15px; }
 
 
+
+/* fond grille les plus pop*/
+/* color fond les plus populaires*/
+
+.sectionpop 
+{ display: flex; flex-direction: column;
+    background-color: gray; /*c'est ce gris qu'il faudra #F2F2F2*/
+    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*/
+    border-radius: 20px;
+    width: 380px;
+    height: 620px;
+    padding-right: 50px;}
+
+
+/*photos marseille*/
+
+ /* titre hébergements à marseille*/
+.hebergement {margin-top: 50px; margin-left: 15px; margin-bottom: 25px;}
+
+
+
+/* mise en forme étiquettes hotels marseille  */
+
+
+
+.imghcann, .imghduport, .imghmouette, .imghmer, .imghpanier, .imghamina
+{   display: block; border-top-left-radius: 20px;
+    width: 97%;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
+    margin-top: 3px;
+    margin-left: 3px;
+    object-fit: cover;}
+
+    .imghcann {    height: 65%;}
+    .imghduport, .imghmouette {   height: 67%;}
+    .imghmer    {   height: 47%;}
+    .imghpanier {   height: 78%;}
+    .imghamina  {   height: 30%;}
+
+
+.hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
+{ display: flex; flex-direction: row;
+    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
+    background-color: pink;
+    border-radius: 20px;
+    width: 195px;
+    height:155px;
+   }
+/* problème étiquette texte*/
+
+.detailshotelmars { display:block;}
+.nomhotelmars { font-weight: bold; font-size: 10px;}
+.tarifmars { font-size: 12px;}
+.etoilesmars {font-size: 11px; }
+
+.afficherplus { font-weight: bold; font-size: 16px; margin-left: 15px;}
+
+/*mise en forme grille hotels marseille*/
+
+/* essai avec flexbox
+.marseille
+{ display: flex; /*flex-direction: column;*
+    flex-wrap:wrap;
+    background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2
+    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 620px;
+    margin-left: 10px;}
+
+   /* .hebergement {order:1 ; }
+.hotelcann { order: 2;}
+.hoteldup { order: 3;}
+.hotelmouett { order:4 ;}
+.hotelmer { order: 5;}
+.hotelpanier { order:6 ;}
+.hotelamina { order:7 ;}
+.afficherplus { order:8 ;}*/
+
+/*grille marseille avec grid
+.marseille
+{display:grid;
+    grid-template-columns:3 ;
+    grid-template-rows: 4;
+    background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2
+    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*} 
+    border-radius: 20px;
+    width: 600px;
+    height: 620px;}
+
+    .hebergement {grid-column:1 ;grid-row:1 ; }
+    .hotelcann {grid-column:1 ;grid-row:2 ; }
+    .hoteldup {grid-column:2 ;grid-row: 2; }
+    .hotelmouett {grid-column: 3;grid-row:2 ; }
+    .hotelmer {grid-column: 1;grid-row:3 ; }
+    .hotelpanier {grid-column:2 ;grid-row:3 ; }
+    .hotelamina {grid-column: 3;grid-row:3 ; }
+    .afficherplus {grid-column:1 ;grid-row: 4; }*/
+
+/* activité marseille*/
+/*titre*/
+
+.titreactivites { margin-left: 15px;}
+
+/*photos activités  à revoir problème avec hauteur en px ou en % le texte 
+disparait quand la height est en %*/
+
+.imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl
+{   display:block; width: 100%;
+   border-top-left-radius: 21px;
+    border-top-right-radius:21px ;
+    object-fit: cover;}
+
+/*.imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl {   height: 100%;}*/
+.imgvp, .imgpnc  {   height: 260px;}
+.imgfdp {   height: 110px;}
+.imgidf {   height: 70px;}
+.imgndlag   {   height: 85px;}
+.imgpl  {   height: 105px;}
+
+
+    
+/* mise en forme étiquettes activités*/
+
+
+.actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
+  { display: flex; flex-direction:column;
+    background-color: white;
+    width: 220px;
+     box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
+     border-radius: 20px;
+     margin-bottom: none;}
+.actvieup, .actcalanc   {  height: 320px;}
+.actpomg    {height: 165px;}
+.actfrioul {height: 125px;}
+.actnotred {height: 130px;}
+.actlongchamp {height: 150px;}
+
+    /* noms activités*/
+.nomvp, .nomfdp, .nomidf, .nompnc, .nomndlag, .nompl
+ { font-weight: bold; font-size: 14px; padding-left:10px;}
+ 
+
+
+
+
+/*FOOTER*/
+.foot { color: black; text-decoration: none; margin-bottom: 50px;}/* problème pour margin ou padding entre les .foot*/
+
+/*desktop*/
+.propos, .hebt, .aide  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
+   {   background-color: lightgray;
+       border: 1px solid lightgray;
+      padding-top: 10px;
+       padding-bottom: 30px;
+       padding-left: 25px;
+       text-align:justify;} 
+       .propos,  .hebt {   width: 375px; height: 100px;} 
+
+.aide {   width: 230px; height: 100px;} 
+
+.classfoot
+    {   display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid lightgrey;
+        width: 1200px;}
+
+.propos { grid-column: 1;}
+.hebt { grid-column: 2;}
+.aide { grid-column: 3;}
+
+
+
+}/*fin media queries desktop*/
