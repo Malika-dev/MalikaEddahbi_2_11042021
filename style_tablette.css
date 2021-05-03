@@ -1,290 +1,144 @@
 @media screen and (min-width: 601px) and (max-width: 1250px)
 {
 
-.starb  {   color: #0065FC;} /*etoile bleue*/
-.starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
-    
-.inscrip, .hebgt  {  color: #0065FC; font-weight: bold; text-decoration: none;}
-.hebgt  {  border-width:50px; border-bottom: 2px solid #0065FC; padding-bottom: 10px;}
-.activ  {   color: black; text-decoration: none; border-bottom: 2px solid grey ; padding-bottom: 10px;} /* border, c'est ce gris qu'il faut color: #F2F2F2; */
-    
-.activ:hover {   color: #0065FC}
-.hebgt:hover {   color: grey}
-    
-/*header*/
-.logo { display: block;
-        margin-left: auto;
-        margin-right: auto;width: 75px;height: auto;}
+    .entete 
+    {   display: flex; justify-content: space-around;
+         align-items: center;font-size: 12px;}
+.logo { width: 60px; height: auto; }
 
-/*.navigation */
- 
-.entete { display: flex;justify-content: space-between; align-items: center; margin-right: 200px; }  
+.titreprincipal { font-size: 15px;}
+    
+.precision {font-size:12px ; }
 
-./*hebgt 
-.activ
-.inscrip {padding-left: 20px;}  */
-     
-/*titre*/
-.titreprincipal {font-size: 13.5px; padding-top: 9px;}
-.precision {font-size: 12.5px;text-align: justify; }
+/*mise en forme recherche*/
+/*.recherche { display: flex; border: 0.0625rem solid grey;width: auto;
+    width:250px;height: 33px; /*border-radius: 10px;*border-left: none; 
+border-right: none;}*/
 
-/*recherche*/
-.recherche {display: flex; margin-top: 18px;justify-content: center;}
-    
-/*icone map*/
-.map 
-    {   display:flex;
-        background-color: grey; /*#F2F2F2 c'est ce gris qu'il faudra*/
-        font-size: 0.6rem;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius:0.5rem ;
-        width: 2.10rem;
-        height: 2.10rem;
-        justify-content: center;
-        align-items: center;}
-    
-/* champs recherche marseille, france*/
+.recherche { display: flex;align-content: center;}
 
-.input
-    {   width: 6rem;
-        height: 1.85rem;
-        border: 1.3px solid grey; /*#F2F2F2 c'est ce gris qu'il faudra*/
-        border-right: none;
-        border-left: none;}
-    
-.input::placeholder {
-        font-size:0.6rem; 
-        color:black; 
-        font-weight: bolder;
-        text-align: center; 
-        opacity: 1;} 
-    
+    .iconmap 
+{      
+        border-radius: 7px 0 0 7px;
+        width: 31px;
+        height: 31px;
+        margin-top: -2px;   
+}
+
+    .input { font-size: 8px; border-top: 1px solid gray;
+    border-bottom: 1px solid gray;height: 27px;margin-top: -2px;}
+
 .boutonrecherche 
-    {   background-color: #0065FC;
-        border: 1px solid #0065FC;
-        border-top-right-radius: 12px;
-        border-bottom-right-radius: 12px;
-        color: white;
-        height: 2.10rem ;
-        font-size:0.6rem ;
-        font-weight: bolder;}
+{   background-color: #0065FC;
+border: 0.0625rem solid #0065FC;
+border-radius: 0 7px 7px 0  ;
+color: white;
+width: 87px;
+height: 31px;
+font-size:0.6rem ;
+font-weight: bolder;
+margin-top: -2px;}
 
 .boutonloupe { display: none;}
 
 
-/*grille titre et recherche   à revoir*
-        .titretsearch {display: grid;grid-template-columns:3;
-        grid-template-rows:2}
+/* mise en forme icones+filtres   faire une grille*/
 
-        .titreprincipal { grid-column:1 ; grid-row:1 ;}
-        .recherche { grid-column-start: 2 ;grid-column-end: 3; grid-row:2 ;}
-        .precision { grid-column:1 ; grid-row:2 ;}/
-    
-/* mise en forme icones+filtres*/
 
-.titrefiltres {font-size: 15px;}
+/* mise en forme filtres*/
+.filtreco, .filtrefam, .filtrerom, .filtranimo { height:28px;}
+.filtreco, .filtrerom { width:150px;}
+.filtrefam { width:130px;}
+
+.filtranimo { width:190px;}
+
+/*.titrefiltres { margin: 10px 10px 20px 20px}*/
+.iconfiltre
+ { width: 28.5px;height: 28.5px;margin-top: 0.2px;}
+
+.nomfiltre {   margin: none; }  
+
+.categories { display: flex;align-items: center;
+     margin-top: 25px; font-size: 10px; 
+     flex-direction: row;margin-left:none; }
+
+
+
+    /*mise en forme icone info + texte à revoir*/
+.inform
+{   display: grid;grid-template-columns: 1fr auto; justify-content: space-between;
+    align-items: center;}
+ .dispo {font-size: 15px; margin-left:30px;} 
+
+
+/*.sectionpop*/
+
+.sectionpop {display:flex;flex-direction:row;
   
-.categories i
+    justify-content: space-around;
     
-    {   display:flex;
-        color: #0065FC ;
-        border: 1px solid #DEEBFF;
-        background-color: #DEEBFF;
-        font-size: 0.6rem; 
-        border-radius:100%;
-        width: 2rem;  
-        height: 2rem;
-        justify-content: center;
-        align-items: center;}
+    background-color: lightgray;
+    border: 1px solid lightgray ; width:570px ; height: 200px ;
+    border-radius: 20px;}
 
-.categories a   { font-size: 0.6rem; /* text-align: start;*/text-decoration: none; color: black; font-weight: bold;}
-    
-.filtreco, .filtrefam, .filtrerom, .filtreanimo
-    {   display: flex;
-        border: 1.5px solid grey; /* c'est ce gris qu'il faut #F2F2F2 */
-        border-top-right-radius: 5rem;
-        border-bottom-right-radius: 5rem;
-        border-left: none;
-        height: 2rem;
-        justify-content:start;
-        align-items:center;}
-    
-.filtreco   {  width: 7rem;} 
-.filtrefam  {   width: 6rem;} 
-.filtrerom  {    width: 7.5rem;} 
-.filtreanimo    {  width: 9rem;} 
 
-.categories {display: flex;justify-content: space-around;
-            margin-top: 18px;}
-    
-    
-/****icone info****/
-     
-.info
-    {   display: flex;
-        color: #0065FC ;
-        border: 1px solid grey;
-        font-size: 0.5rem;
-        border-radius:100%;
-        width: 1rem;
-        height: 1rem;
-       justify-content: center;
-        align-items: center;
-    margin-top: 12px; margin-right: 5px;}
-        
-.dispo {  font-size: 12.5px;} /* texte des disponiblités*/
-    
-/*.inform revoir le bloc icone info + texte disponibilités*/
-    
-.inform { display: flex;justify-content: center;}    
-    
-     
-/* grille titre les + pop + chart mobile*/
-.pop{   display:flex; justify-content: space-between;}
-            
-.titrepop { font-size: 15px;}
-        
-.chart {margin-right: 350px; margin-top: 15px; font-size: 15px;}
-    
-        
-/*photos populaires*/
-.imgmat, .imgcoeur,.imgbleu
-    {   width: 100%;
-        height: 58%;
-        border-top-left-radius: 20px;
-        border-top-right-radius:20px ;
-        object-fit: cover;}
-    
-/* mise forme hotels populaires*/
-    
-.hotelmat,.hotelcoeur,.hotelbleu
-    { display: flex; flex-direction: row;
-        background-color: white;
-        box-shadow: 6px 6px 5px gray;
-        border-radius: 20px;
-        width: 170px;
-        height:130px;
-       /* margin-top: 38px;
-        margin-left: 20px;
-        margin-bottom:20px;*/}
-    
-/* problème étiquette texte
-      
-    /*.detailshotelpop { display: flex; flex-direction: column;}
-    /*.nomhotelpop { font-weight: bold;}
-    .tarifpop { font-size: 14px;}
-    .etoilespop {font-size: 11px; }
-    
-    /* fond grille les plus pop à faire*/
-    
+/* grille titre les + pop + chart*/
+.pop {display: flex; flex-direction: row; 
+    justify-content: space-between;
+align-items: center; margin-left: 0.9375rem; margin-right: 0.9375rem;}
+
+.imgpop{
+        margin: 0;
+        position: relative;
+        min-height: 60%;
+        width: 98%;
+        min-width: 98%;
+        max-width: 98%;    
+    }
+
+    .imgpop img {
+        border-radius: 20px 20px 0 0;
+        position: absolute;
+        width: 96%;
+        height: 90%;
+        margin-right: 10px;
+        /*margin-top: 6px;*/
+        margin-right: 5px;
+        object-fit: cover;    
+    }
+  
+/*mise en forme étiquettes hotelspop*/
+.hotelmat, .hotelcoeur, .hotelbleu
+{ display: flex; flex-direction: column;
+    background-color: lightpink;
+    box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+    border-radius: 1.25rem;
+    width: 150px;
+    height: 150px;
+/*margin-bottom: 15px; margin-left:20px;*/}
+
+.detailshotelpop { margin-left:none; margin-right: 30px;}
+
+.nomhotelpop { font-size: 10px;text-align: left;}
+
+.tarifpop { font-size: 10px;margin-top:none; }
+
+.etoilespop { font-size: 10px; }
+
+
+
+
+
+
+
+
+
+
+ 
+
+
     
 
-/*photos marseille*/
-    
-/* titre hébergements à marseille*/
-.hebergement {font-size: 15px;}
-    
-    
-    
-/* mise en forme étiquettes hotels marseille */
-    
-.imghcann, .imghduport, .imghmouette, .imghmer, .imghpanier, .imghamina
-    {   width: 100%;
-        height: 58%;
-        border-top-left-radius: 20px;
-        border-top-right-radius:20px ;
-        object-fit: cover;}
-    
-    /*.imghcann, .imghduport, .imghmouette {  height: 50%;}
-    .imghmer    {   height: 37%;}
-    .imghpanier {   height: 60%;}
-    .imghamina  {   height: 23%;}*/
-    
-    
-.hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
-    { display: flex; flex-direction: row;
-        background-color: white;
-        box-shadow: 6px 6px 5px gray; /* ce n'est ce gris qu'il faut, à corriger*/
-        border-radius: 20px;
-        width: 170px;
-        height:130px;
-        /*margin-top: 38px;
-       /* margin-left: 20px;
-        margin-bottom:20px;*/}
-
-        
-/* problème étiquette texte*
-    /*.detailshotelmars { padding-left: 10px}
-    .nomhotelmars { font-weight: bold; font-size: 10px;}
-    .tarifmars { font-size: 12px;}
-    .etoilesmars {font-size: 11px; }*/
-    
-.afficherplus { font-weight: bold; font-size: 14px; margin-left: 15px;}
-    
-    
-/* activité marseille*/
-
- /*titre*/
-    
-.titreactivites { font-size: 15px;}
-    
-/*photos activités  à revoir problème avec hauteur en px ou en % le texte 
-    disparait quand la height est en %*/
-    
-.imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl
-    {   width: 100%;
-        height: 58%;
-        border-top-left-radius: 20px;
-        border-top-right-radius:20px ;
-        object-fit: cover;}
-    
-    /*.imgvp  {   height:60%;}
-    .imgfdp {   height:24%;}
-    .imgidf {   height:50%;}
-    .imgpnc {   height:50%;}
-    .imgndlag  {   height:55%;} 
-    .imgpl  {   height:50%;}*/
-        
-    
-.actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
-    { display: flex; flex-direction: row;
-        background-color: white;
-        box-shadow: 6px 6px 5px gray; /* ce n'est pas ce gris qu'il faut, à corriger*/
-        border-radius: 20px;
-        width: 170px;
-        height:130px;
-        /*margin-top: 38px;
-       /* margin-left: 20px;
-        margin-bottom:20px;*/}
-    
-.nomvp, .nomfdp, .nomidf, .nompnc, .nomndlag, .nompl
-     { font-weight: bold; font-size: 12px;}
-    
-    
-
- /*FOOTER*/
-
- .foot { color: black; text-decoration: none; margin-bottom: 50px;}/* problème pour margin ou padding entre les .foot*/
-
-/*desktop*/
-.propos, .hebt, .aide  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
-   {   
-      
-      /*padding-top: 10px;
-       padding-bottom: 30px;
-       padding-left: 25px;
-       text-align:justify;*/
-    font-size:12px ;} 
-     
-.classfoot
-    {   display:flex;
-        background-color: lightgray;
-        border: 1px solid lightgrey;
-        border-radius: 20px;
-        width: 580px;
-        height:130px;
-        justify-content: space-around;
-        align-items: center;}
 
 
 

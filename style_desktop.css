@@ -1,365 +1,266 @@
 @media screen and (min-width: 1051px){
 
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
-
-* { font-family: Raleway, sans-serif;}
-
-
-.starb  {   color: #0065FC;} /*etoile bleue*/
-.starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
-
-.inscrip {  color: #0065FC; font-weight: bold; text-decoration: none;}
-
-
-.activ:hover {   color: #0065FC}
-.hebgt:hover {   color: grey}
-
-/* header*/
+    .entete 
+    {   display: flex; justify-content: space-around;
+         align-items: center;}
+    
+    /*.logo {grid-area:logo ;}
+    .navigation  {grid-area:nav ; display: flex; align-items: center;
+        justify-content: space-around;}
+    .inscrip    {grid-area:inscrip ;}*/
 
 
-.logo { display: block;
-   width: 78px;height: auto;justify-content: center;}
-
-.hebgt  { color: #0065FC;
-     border-width:50px;  
-     text-decoration: none;
-      border-top: 2px solid #0065FC; 
-      padding-top:30px;
-       margin-left: 400px;}
-.activ  {   color: black;
-     text-decoration: none;
-     margin-left: 50px;  } /* border, c'est ce gris qu'il faut color: #F2F2F2; */
 
 
-/*.entete*/
+/*mise en forme recherche*/
+.recherche { display: flex; border: 0.0625rem solid grey;
+    width: 18.5rem;height: 2.6rem; border-radius: 0.8rem; }
 
-.entete {display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 120px; margin-top: 30px; margin-left: 15px;}
+    .iconmap { margin-top: 0.001rem;margin-left:-0.1rem;}
 
+    .input { margin-left: 0.1rem; }
 
-/*recherche*/
+.boutonrecherche 
+{   background-color: #0065FC;
+border: 0.0625rem solid #0065FC;
+border-top-right-radius: 0.8rem;
+border-bottom-right-radius: 0.8rem;
+color: white;
+height: 2.6rem;
+font-size:0.6rem ;
+font-weight: bolder;
+margin-top: 0.001rem;
+padding-right:1.6rem; }
+
 .boutonloupe { display: none;}
 
-.boutonrecherche
-{   background-color: #0065FC;
-    border: 1px solid #0065FC;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    color: white;
-    height: 2.6rem ;
-    font-weight: bolder;}
-
-.recherche {display: flex; margin-top: 30px;}
-
-/*icone map*/
-.map 
-{   display:flex;
-    background-color: grey; /*#F2F2F2 c'est ce gris qu'il faudra*/
-    font-size: 1rem;
-    border-top-left-radius: 0.8rem;
-    border-bottom-left-radius:0.8rem ;
-    width: 2.6rem;
-    height: 2.6rem;
-    justify-content: center;
-    align-items: center;}
-
-/* champs recherche marseille, france*/
-
-.input
-{   width: 11rem;
-    height: 2.3rem;
-    border: 1.5px solid grey; /*#F2F2F2 c'est ce gris qu'il faudra*/
-    border-right: none;
-    border-left: none;}
-
-.input::placeholder { color:black; font-weight: bolder;text-align: center; opacity: 1;} 
-
-
-/** mise en forme icones+filtres*/
-
-
-.categories i
-
-{   display:flex;
-    color: #0065FC ;
-    border: 1px solid #DEEBFF;
-    background-color: #DEEBFF;
-    font-size: 1rem;
-    border-radius:100%;
-    width: 2.3rem;
-    height: 2.3rem;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.04rem;}
-
-    
-    
-.categories a   { text-decoration: none; color: black; font-weight: bold; padding-left: 10px; font-size: 13px;}
 
 
 
 
-.filtreco, .filtrefam, .filtrerom, .filtreanimo
-{   display: flex;
-    border: 1.5px solid grey; /* c'est ce gris qu'il faut #F2F2F2 */
-    border-radius: 5rem;
-    height: 2.3rem;
-    justify-content:start;
-    align-items:center;
-    }
-
-    .filtreco   {  width: 10rem;}
-    .filtrefam  {   width: 8.4rem;}
-    .filtrerom  {    width: 8.5rem;}
-    .filtreanimo    {  width: 13rem;}
 
 
 
-/* grille filtres*/
-.categories { display: 
-    flex;margin-top:30px;justify-content:space-between;
-    align-items: center; margin-left: 15px;margin-right:300px;}
+/* mise en forme icones+filtres*/
+
+
+/* mise en forme filtres*/
+.filtreco, .filtrefam, .filtrerom, .filtranimo { height:36px;}
+.filtreco, .filtrerom { width:150px;}
+.filtrefam { width:130px;}
+
+.filtranimo { width:190px;}
+
+.titrefiltres { margin: 10px 10px 20px 20px}
+.iconfiltre
+ { width: 35px;height: 35px;margin-top: 0.2px;}
+
+.nomfiltre {   margin: none; /*text-align: center;*/}  
+
+.categories { display: flex;align-items: center;
+     margin-top: 30px; font-size: 14px;}
+
+
 
  /****icone info****/   
-.info
-{   display: flex;
-    color: #0065FC ;
-    border: 1px solid grey;
-    font-size: 0.5rem;
-    border-radius:100%;
-    width: 1.1rem;
-    height: 1.1rem;
-    justify-content: center;
-    align-items: center;}
 
-.inform
-{   display: flex;
-    align-items: center; margin-left: 15px}
-    .dispo { margin-left: 15px}
+
+ .inform
+ {   display:flex;
+     align-items: center; margin-left: 10px;}
+  .dispo { margin-left: 10px; font-size: 13px;}
 
  
-    /* grille titre les + pop + chart avec grid*/
+   /*.sectionpop*/
 
-    .pop
-    {   display: grid;
-        grid-template-columns:90% 10%;
-        margin-bottom: 20px;
-        padding-left: 15px;
-        padding-right: 25px;}
-        
-    .titrepop {grid-column: 1; padding-top: 1.4rem;}  
-    
-    .chart { grid-column: 2; padding-top: 2.5rem; font-size: 1.4rem;}
+.sectionpop {display: flex;flex-direction:column;background-color: lightgray;
+    border: 1px solid lightgray ; width: 370px; height: 550px; border-radius: 25px;}
 
-    
-/*photos populaires*/
-    
-.imgmat, .imgcoeur,.imgbleu
-    {   display: block; border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        width: 110px;
-        height: 92%;
-       margin-left: 4.5px;
-        margin-top: 4.5px;
-        object-fit: cover;}
+/* grille titre les + pop + chart*/
+.pop {display: flex; flex-direction: row; 
+    justify-content: space-between;
+align-items: center; margin-left: 0.9375rem; margin-right: 0.9375rem;}
 
-/* mise forme hotels populaires*/
+.imgpop{
+        margin: 0;
+        position: relative;
+        min-height: 100%;
+        width: 33%;
+        min-width: 33%;
+        max-width: 33%;    
+    }
 
-.hotelmat,.hotelcoeur,.hotelbleu
-{ display: flex; flex-direction: row;
-    background-color: white;
-    box-shadow: 6px 6px 5px gray;
-    border-radius: 20px;
-    width: 330px;
-    height: 130px;
-    margin-left: 20px;
-    margin-bottom:20px;}
-
-    /* problème étiquette texte*/
+    .imgpop img {
+        border-radius: 1.25rem 0 0 1.25rem;
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        margin-left: 5px;
+        margin-top: 6px;
+        object-fit: cover;    
+    }
   
-.detailshotelpop { display:block;width: 150px; margin-left: 30px;}
-.nomhotelpop { font-weight: bold;}
-.tarifpop { font-size: 14px;}
-.etoilespop {font-size: 11px;padding-top: 15px; }
+/*mise en forme étiquettes hotelspop*/
+.hotelmat, .hotelcoeur, .hotelbleu
+{ display: flex; flex-direction: row;
+    background-color: lightpink;
+    box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+    border-radius: 1.25rem;
+    width: 85%;
+    height: 42%;
+
+margin-bottom: 15px; margin-left:20px;}
+
+.detailshotelpop { margin-left: 50px;}
+
+.nomhotelpop { font-weight: bold;font-size: 15px;}
+
+.tarifpop { font-size: 14px;margin-top: -10px; }
+
+.etoilespop { font-size: 12px; }
 
 
 
-/* fond grille les plus pop*/
-/* color fond les plus populaires*/
 
-.sectionpop 
-{ display: flex; flex-direction: column;
-    background-color: gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    border-radius: 20px;
-    width: 380px;
-    height: 620px;
-    padding-right: 50px;}
+/* hotels marseille*/
 
-
-/*photos marseille*/
-
- /* titre hébergements à marseille*/
-.hebergement {margin-top: 50px; margin-left: 15px; margin-bottom: 25px;}
+.leshotelsmarseille {display: flex;flex-direction:row;background-color:lightgray;
+    border: 1px solid black ; width: 800px; height: 550px; border-radius: 20px;
+flex-wrap: wrap;}
 
 
 
-/* mise en forme étiquettes hotels marseille  */
 
 
 
-.imghcann, .imghduport, .imghmouette, .imghmer, .imghpanier, .imghamina
-{   display: block; border-top-left-radius: 20px;
-    width: 97%;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px ;
-    margin-top: 3px;
-    margin-left: 3px;
-    object-fit: cover;}
 
-    .imghcann {    height: 65%;}
-    .imghduport, .imghmouette {   height: 67%;}
-    .imghmer    {   height: 47%;}
-    .imghpanier {   height: 78%;}
-    .imghamina  {   height: 30%;}
+
+
+.imgmars{
+    margin: 0;
+    position: relative;
+    min-height: 55%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;    }
+
+.imgmars img {
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+  object-fit: cover;
+margin: 5px 0 0 5px; }
+
 
 
 .hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
-{ display: flex; flex-direction: row;
-    box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-    background-color: pink;
-    border-radius: 20px;
-    width: 195px;
-    height:155px;
-   }
-/* problème étiquette texte*/
+    { display: flex; flex-direction: column;
+        background-color: lightpink;
+        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+        border-radius: 1.25rem;
+        width: 25%;
+        height: 30%;
+        margin-bottom: 20px; 
+        margin-left:20px;}
 
-.detailshotelmars { display:block;}
-.nomhotelmars { font-weight: bold; font-size: 10px;}
-.tarifmars { font-size: 12px;}
-.etoilesmars {font-size: 11px; }
 
-.afficherplus { font-weight: bold; font-size: 16px; margin-left: 15px;}
 
-/*mise en forme grille hotels marseille*/
+.detailshotelmars { margin-left: 20px;}
 
-/* essai avec flexbox
-.marseille
-{ display: flex; /*flex-direction: column;*
-    flex-wrap:wrap;
-    background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2
-    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 550px;
-    height: 620px;
-    margin-left: 10px;}
+.nomhotelmars { font-weight: bold;font-size: 13px; }
 
-   /* .hebergement {order:1 ; }
-.hotelcann { order: 2;}
-.hoteldup { order: 3;}
-.hotelmouett { order:4 ;}
-.hotelmer { order: 5;}
-.hotelpanier { order:6 ;}
-.hotelamina { order:7 ;}
-.afficherplus { order:8 ;}*/
+.tarifmars { font-size: 12px; margin-top:-9px;}
 
-/*grille marseille avec grid
-.marseille
-{display:grid;
-    grid-template-columns:3 ;
-    grid-template-rows: 4;
-    background-color: lightgray; /*c'est ce gris qu'il faudra #F2F2F2
-    border: 1px solid lightgray; /*c'est ce gris qu'il faudra #F2F2F2*} 
-    border-radius: 20px;
-    width: 600px;
-    height: 620px;}
+.etoilesmars { font-size: 10px; margin-top:-9px;}
 
-    .hebergement {grid-column:1 ;grid-row:1 ; }
-    .hotelcann {grid-column:1 ;grid-row:2 ; }
-    .hoteldup {grid-column:2 ;grid-row: 2; }
-    .hotelmouett {grid-column: 3;grid-row:2 ; }
-    .hotelmer {grid-column: 1;grid-row:3 ; }
-    .hotelpanier {grid-column:2 ;grid-row:3 ; }
-    .hotelamina {grid-column: 3;grid-row:3 ; }
-    .afficherplus {grid-column:1 ;grid-row: 4; }*/
+
+
+
+
+
+/*.afficherplus { font-weight: bold; font-size: 1rem; margin-left: 0.9375rem;}*/
+
+
+
+
 
 /* activité marseille*/
-/*titre*/
 
-.titreactivites { margin-left: 15px;}
 
-/*photos activités  à revoir problème avec hauteur en px ou en % le texte 
-disparait quand la height est en %*/
+.lesactivites {display: flex;flex-direction:column;background-color:lightgray;
+    border: 1px solid black ; width: 1000px; height: 1410px; }
 
-.imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl
-{   display:block; width: 100%;
-   border-top-left-radius: 21px;
-    border-top-right-radius:21px ;
-    object-fit: cover;}
 
-/*.imgvp, .imgfdp, .imgidf, .imgpnc, .imgndlag, .imgpl {   height: 100%;}*/
-.imgvp, .imgpnc  {   height: 260px;}
-.imgfdp {   height: 110px;}
-.imgidf {   height: 70px;}
-.imgndlag   {   height: 85px;}
-.imgpl  {   height: 105px;}
 
+
+/*.titreactivites { margin-left: 0.9375rem;}*/
+
+
+
+.imgactiv{
+    margin: 0;
+    position: relative;
+    min-height: 90%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;}
 
     
-/* mise en forme étiquettes activités*/
+
+
+.imgactiv img {
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    width: 100%;
+    /*height: 100%;*/
+ object-fit: cover; }
+
+.imgvp, .imgpnc { height: 90%;}
+    
+
+.imgfdp { height: 75%;}
+.imgidf, .imgpl { height: 65%;}
+.imgndlag { height: 70%;}
+
 
 
 .actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
-  { display: flex; flex-direction:column;
-    background-color: white;
-    width: 220px;
-     box-shadow: 6px 6px 5px gray; /*c'est ce gris qu'il faudra #F2F2F2*/
-     border-radius: 20px;
-     margin-bottom: none;}
-.actvieup, .actcalanc   {  height: 320px;}
-.actpomg    {height: 165px;}
-.actfrioul {height: 125px;}
-.actnotred {height: 130px;}
-.actlongchamp {height: 150px;}
+    { display: flex; flex-direction: column;
+        background-color: lightpink;
+        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+        border-radius: 1.25rem;
+        width: 22%;
+      margin-bottom: 20px; 
+       }
 
-    /* noms activités*/
-.nomvp, .nomfdp, .nomidf, .nompnc, .nomndlag, .nompl
- { font-weight: bold; font-size: 14px; padding-left:10px;}
- 
+
+.actvieup,  .actcalanc { height: 70%;}
+.actpomg   { height: 40%;}
+.actfrioul { height: 30%;}
+.actnotred { height: 35%;}
+.actlongchamp{ height: 38%;}
+
+
+
+
+
 
 
 
 
 /*FOOTER*/
-.foot { color: black; text-decoration: none; margin-bottom: 50px;}/* problème pour margin ou padding entre les .foot*/
 
-/*desktop*/
-.propos, .hebt, .aide  /*#F2F2F2 c'est ce gris qu'il faudra mettre*/
-   {   background-color: lightgray;
-       border: 1px solid lightgray;
-      padding-top: 10px;
-       padding-bottom: 30px;
-       padding-left: 25px;
-       text-align:justify;} 
-       .propos,  .hebt {   width: 375px; height: 100px;} 
+.classfoot { display: flex;
+    background-color: grey;justify-content:space-around; height: 150px;
+    align-items:center;font-size: 13px; }
 
-.aide {   width: 230px; height: 100px;} 
+/*.classfoot a   à résoudre
+{ margin: 10px;}*/
 
-.classfoot
-    {   display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        border: 1px solid lightgrey;
-        width: 1200px;}
 
-.propos { grid-column: 1;}
-.hebt { grid-column: 2;}
-.aide { grid-column: 3;}
-
+.aide { margin-right: 200px;}
 
 
 }/*fin media queries desktop*/
