@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 * { font-family: Raleway, sans-serif;   }
-a { text-decoration: none;  }
+a { text-decoration: none;     }
 
 
 /*Header*/
 
+.inscrip, .hebgt  {  color: #0065FC; font-weight: bold;}
+.activ  {   color: black;}
+.activ:hover {   color: #0065FC}
+.hebgt:hover {   color: grey}
 
-.hebgt  
-{       border-width:3.125rem; 
-        border-bottom: 0.0625rem solid #0065FC; 
-        padding-bottom: 0.625rem;
+
+/*.hebgt    voir border navigation
+{       border-bottom: 2px solid #0065FC;
+        padding-bottom: 10px; 
 }
+
 .activ  
 {       border-bottom: 0.125rem solid grey ;
-        padding-bottom: 0.625rem;
 } /* border, c'est ce gris qu'il faut color: #F2F2F2; */
 
 
@@ -24,16 +28,40 @@ a { text-decoration: none;  }
         grid-template-areas: "logo . inscrip" "nav nav nav";
 }
 
-.logo   {   grid-area:logo ;    }
+.logo   
+{       grid-area:logo ;
+        margin-left: 30px;
+}
+
 .navigation  
 {       grid-area:nav ; display: flex;
-         align-items: center;
+        align-items: center;
         justify-content: space-around;
+        margin-top: 30px;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 15px; 
 }
+
+
+
+/*.navigation::before {
+        content: ' border-bottom: 2px solid';
+        color: blue;
+      }
+.navigation::after {
+        content: ' border-bottom: 2px solid';
+        color: red;
+      }*/
+
 .inscrip    
 {       grid-area:inscrip;
         font-weight: bold;
+        margin: 18px 20px 0 0;
 }
+
+.titreprincipal, .precision { margin-left: 30px;}
+
+.titreprincipal { padding-top: 10px;}
 
 
 /*recherche*/
@@ -43,6 +71,8 @@ a { text-decoration: none;  }
         background-color: grey; /*#F2F2F2 c'est ce gris qu'il faudra*/
         font-size: 1rem;
         border-radius: 0.8rem 0 0 0.8rem;
+        min-width: 2.6rem;
+        min-height: 2.6rem;
         width: 2.6rem;
         height: 2.6rem;
         justify-content: center;
@@ -55,6 +85,7 @@ a { text-decoration: none;  }
 ::placeholder   
 {       color:black; 
         font-weight: bolder;
+        font-size: 15px;
         text-align: center; 
         opacity: 1;
 } 
@@ -77,9 +108,11 @@ a { text-decoration: none;  }
 {       border: 0.0625rem solid #0065FC; 
         background-color: #0065FC; 
         border-radius: 0.7rem;
+        min-width:2.6rem;
+        min-height: 2.6rem;
         width: 2.6rem;
         height: 2.6rem;
-        margin-right: -0.2rem;
+        margin-left: 46px;
         margin-top: -0.01rem;
 }
 
@@ -90,20 +123,22 @@ a { text-decoration: none;  }
 .recherche 
 {       display: flex; 
         border: 0.0625rem solid grey;
-        width: 15.5rem;
-        height: 2.6rem; 
+        width: 295px;
+        height: 40px; 
         border-radius: 0.8rem;
+        margin-top: 30px;
+        margin-left: 30px;
 }
 
 
 /*Filtres*/
 
+.titrefiltres { margin-top: 40px;
+                margin-bottom: -15px;
+                margin-left: 30px;}
+
 .starb  {   color: #0065FC;} /*etoile bleue*/
 .starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
-.inscrip, .hebgt  {  color: #0065FC; font-weight: bold;}
-.activ  {   color: black;}
-.activ:hover {   color: #0065FC}
-.hebgt:hover {   color: grey}
 
 .nomfiltre   
 {       color: black;
@@ -119,12 +154,13 @@ a { text-decoration: none;  }
         background-color: #DEEBFF;
         font-size: 1rem;
         border-radius:100%;
+        min-width: 2.7rem;
+        min-height: 2.7rem;
         width: 2.7rem;
         height: 2.7rem;
         justify-content: center;
         align-items: center;
         margin-left: -1px;
-    /*margin-top: -0.2px;*/ 
 }
     
 .filtreco, .filtrefam, .filtrerom, .filtranimo
@@ -132,26 +168,23 @@ a { text-decoration: none;  }
         border: 0.0625rem solid grey;/* c'est ce gris qu'il faut #F2F2F2*/
         border-radius:  50px ; 
         align-items:center;
-        /*width: 300px; à voir avec john
-        height: 44px;*/
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
+        height: 2.7rem;
 }
 
-.nomfiltre  {   margin: 0 0.3rem;   }  
+.filtreco { width: 155px; }
+.filtrefam { width: 129px; margin-left: 10px;}
+.filtrerom { width: 147px;}
+.filtranimo { width: 195px;}
 
+.nomfiltre  {   font-size: 14px;   }
 
-/*.categories 
-{       display: flex; 
-        flex-direction: column;
-        margin-left: 15px;
-}*/
-
-
-/*.categories{
+.categories{
     display: flex;
     margin-top: 2rem;
-    flex-wrap: wrap;       
-}*/
+    flex-wrap: wrap; 
+    margin-left: 30px;       
+}
 
 
 /*Info*/
@@ -173,7 +206,7 @@ a { text-decoration: none;  }
 /*mise en forme icone info + texte à revoir*/
 .inform
 {       display: flex;
-        margin: 20px 0 20px 10px;
+        margin: 20px 0 20px 30px  /*10px*/;
 }
  
 .dispo 
@@ -275,6 +308,11 @@ a { text-decoration: none;  }
 
 /* hotels marseille*/
 
+/*titre*/
+
+.hebergement    {    margin: 30px 0 30px 15px; }
+                
+               
 /*images*/
 
 .imgmars
@@ -310,10 +348,15 @@ a { text-decoration: none;  }
         margin-left:20px;
 }
 
-/* texte et marges hotel marseille sauf spécificité marge étoiles hotel mer*/
+/* texte et marges hotel marseille sauf spécificité
+tarif et marge étoiles hotel mer*/
 
 .nomhotelmars, .tarifmars
 {       margin: 8px 0.75rem 0 20px;
+}
+
+.tarifmarsmer
+{       margin: -5.5px 0.75rem 0 20px;
 }
 
 .nomhotelmars
@@ -422,6 +465,7 @@ a { text-decoration: none;  }
         padding-left: 1.875rem; 
         row-gap: 1.875rem;
         margin-top: 10px;
+        margin-left: 15px;
 }
 
 
