@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
 /*Header*/
 
@@ -39,6 +39,8 @@
 {       
         margin: 45px 40px 0 0;
 }
+
+
 .titreprincipal { margin-top: -15px; font-size: 18px;}
 
 .precision { margin-top: -10px; font-size: 13px;}
@@ -203,8 +205,8 @@ padding-left: 10px;
         flex-direction: row; 
         justify-content: space-between;
         align-items: center;
-        margin-left: 0.9375rem;
-        margin-right: 0.9375rem;
+        margin-left: 15px;
+        margin-right: 15px;
 }
 
 
@@ -233,24 +235,8 @@ padding-left: 10px;
         object-fit: cover;    
 }*/
 
-.imgpop
-{       margin: 0;
-        position: relative;
-        min-height: 100%;
-        width: 38%;
-        min-width: 38%;
-        max-width: 38%;    
-}
 
-.imgpop img 
-{       border-radius: 1.25rem 0 0 1.25rem;
-        position: absolute;
-        width: 100%;
-        height: 90%;
-        margin-left: 5px;
-        margin-top: 6px;
-        object-fit: cover;    
-}
+
 
 /*étiquettes et grille hotelspop*/
 
@@ -269,15 +255,10 @@ padding-left: 10px;
 }*/
 
 .hotelmat, .hotelcoeur, .hotelbleu
-{       display: flex;
-        flex-direction: row;
-        background-color: lightpink;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
-        border-radius: 1.25rem;
-        width: 85%;
-        height: 42%;
-        margin-bottom: 15px;
-        margin-left:20px;
+{      
+        width: 250px;
+        height: 100px;
+       
 }
 
 /* mobile
@@ -289,10 +270,10 @@ padding-left: 10px;
 }*/
 
 .detailshotelpop 
-{       display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        margin-left: 20px;
+{       
+        margin-top: 10px;
+        margin-left: 15px;
+      
 }
 
 /*mobile
@@ -302,8 +283,9 @@ padding-left: 10px;
 }*/
 
 .nomhotelpop 
-{       margin: 0.25rem 0.75rem 0 0.75rem;
-        font-weight:bold;
+{       
+        
+        font-size: 11px;
 }
 
 /*mobile
@@ -313,15 +295,15 @@ padding-left: 10px;
 }*/
 
 .tarifpop 
-{       margin: 0.25rem 0.75rem 0.25rem 0.75rem;
-        font-size:14px;
+{       
+        font-size:10px;
 }
 
 
 /*mobile
 .espace     {   flex:0.8; }*/
 
-.espace     {   flex:0.8; }
+.espace     {   margin-top: 10px; }
 
 /* mobile
 .etoilespop 
@@ -330,8 +312,8 @@ padding-left: 10px;
 }*/
 
 .etoilespop 
-{       font-size: 12px; 
-        margin: 0 0.75rem 0.25rem 0.75rem;
+{       font-size: 10px; 
+        
 }
 
 /*mobile
@@ -349,9 +331,9 @@ padding-left: 10px;
         flex-direction:column;
         background-color: lightgray;
         border: 1px solid lightgray ; 
-        width: 370px;
-        height: 550px;
-        border-radius:0 0 15px 15px; 
+        width: 300px;
+        height: 470px;
+        border-radius: 15px; 
 }
 
 
@@ -474,8 +456,9 @@ margin-left: 10px;}
         border: 1px solid gray ;
         justify-content: space-around;
         padding:10px 20px 10px 20px;
-        border-radius:0 0 15px 15px; 
-        width: 640px; 
+        margin-right: 30px;
+        border-radius:15px; 
+        width: 600px; 
         height: 450px;
 }
 
@@ -485,7 +468,7 @@ margin-left: 10px;}
 .hebergement    {    margin: 30px 0 30px 15px; }*/
 /*titre*/
 
-.hebergement    { grid-column:1 ;grid-row: 1; margin:0}
+.hebergement    { grid-column-start:1 ; grid-column-end: 3; grid-row: 1; margin:0}
 
 .hotelcann { grid-column:1 ;grid-row:2 ;}
 .hoteldup { grid-column: 2;grid-row:2 ;}
@@ -506,14 +489,31 @@ margin-left: 10px;}
         margin:0;
 }
 
+/*mise ne forme sectionpop et leshotelsmarseille*/
+/*#conteneur
+{       display: grid; 
+        grid-template-columns: auto auto;
+        grid-template-areas: "inform" "leshotelsmarseille" "sectionpop";
+       
+}
+
+.inform { grid-area: inform}
+.leshotelsmarseille { grid-area: leshotelsmarseille}
+.sectionpop { grid-area: sectionpop}*/
+
+
+#conteneur
+{ display: flex;flex-direction: row-reverse;
+margin-right: 30px;}
+
 
 /* activité marseille*/
 
 .titreactivites {   margin-left: 25px; }
 
-/*images*/
+/*images mobile*/
 
-.imgactiv
+/*.imgactiv mobile
 {   margin: 0;
     position: relative;
     min-height: 70%;
@@ -522,59 +522,138 @@ margin-left: 10px;}
     max-width: 100%;    
 }
 
+
+
 .imgactiv img 
 {   border-radius: 20px 20px 0 0;
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover; 
+}*/
+
+.imgactiv 
+{   
+    min-height: 95%;
+    
 }
+
+
+
+.actvieup img {  height: 90%;}
+
+.actcalanc img { height: 90%;}
+
+.actpomg img { height: 78%;}
+
+.actfrioul img { height: 60%;}
+
+.actnotred img { height: 78%;}
+
+.actlongchamp img { height: 65%;}
+
+
 
 /*étiquettes et grille activités*/
 
+/* mobile
+.nomact 
+{       margin: 20px 0 0 30px;
+        font-weight: bold;
+} */
 
 
-.lesactivites
+.nomact1, .nomact2, .nomact3, .nomact4, .nomact5, .nomact6
+{
+        font-size: 12px;
+        margin-left: 15px ;
+}
+
+
+.nomact1 {margin-top: -15px;} /*vieux port*/
+
+.nomact2 {margin-top: -20px; } /*Pomègues*/
+
+.nomact3 {margin-top: -25px;} /*frioul*/
+
+.nomact4 {margin-top: -15px;} /*Calanques*/
+
+.nomact5 {margin-top: -15px ;} /*Notre-Dame*/
+
+.nomact6 {margin-top: -20px;} /*Longchamp*/
+
+
+
+
+
+.actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
+    { 
+        width: 200px;
+      margin-bottom: none;
+      margin-left:none;
+       }
+
+
+.actvieup, .actcalanc { height: 320px;}
+
+.actpomg   { height: 165px;}
+.actfrioul { height: 120px;}
+.actnotred { height: 130px;}
+.actlongchamp{ height: 145px;}
+
+
+/*les activités version mobile
+.lesactivites version mobiles
 {       display: flex;
         flex-direction:column;
         background-color: white;
         border: 1px solid white ;
         width: 370px;
         height: 1410px;
-}
+}*/
 
-.nomact 
-{       margin: 20px 0 0 30px;
-        font-weight: bold;
-} 
+.lesactivites
+{ 
+flex-wrap: wrap;
+justify-content: stretch;
+width: inherit;
+height: 450px;
+margin: 20px 0 0 30px}
 
-.actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
-{       display: flex; 
-        flex-direction: column;
-        background-color: lightpink;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
-        border-radius: 1.25rem;
-        width: 88%;
-        height: 45%;
-        margin-bottom: 20px; 
-        margin-left:20px;
-}
 
+/*marges par étiquettes*/
+
+/*.titreactivites {margin:}*/
+
+
+
+.actpomg, .actcalanc, .actnotred {margin:60px 0 0 0;}
+.actfrioul {margin:35px 0 0 0}
+.actlongchamp {margin:50px 0 0 0;}
+
+/*.actvieup {margin:-80px 0 0 40px}*/
 
 /*Footer*/
-.foot   {   color: black;   }
+
+/*.foot voir marges entre les lignes*/
+
+
+
 
 .classfoot 
 {       display: flex;
-        flex-direction: column;
-        background-color: grey;
-        padding-top: 1.25rem;
-        padding-bottom: 3.125rem;
-        padding-left: 1.875rem; 
-        row-gap: 1.875rem;
-        margin-top: 10px;
-        margin-left: 15px;
+        flex-direction: row;
+     justify-content: space-around;
+        padding-left: inherit; 
+        row-gap: inherit;
+        margin-top:-30px;
+        margin-left: inherit;
 }
 
+/*.propos*/
+
+/*.hebt {margin-left:50px ;}*/
+
+/*.aide*/
 
 }/*fin media queries desktop*/
