@@ -6,19 +6,27 @@ a { text-decoration: none;     }
 
 /*Header*/
 
-.inscrip, .hebgt  {  color: #0065FC; font-weight: bold;}
+.inscrip  {  color: #0065FC; font-weight: bold;}
+.hebgt { color: #0065FC;}
 .activ  {   color: black;}
-.activ:hover {   color: #0065FC}
-.hebgt:hover {   color: grey}
+
+.activ:hover {   color: red}
+.hebgt:hover {   color:red}
 
 
-/*.hebgt    voir border navigation
+.hebgt   
 {       border-bottom: 2px solid #0065FC;
-        padding-bottom: 10px; 
+        padding-right: 30px;
+        padding-left: 70px;
+        padding-bottom: 15px; 
+        margin-left: -20px;
 }
 
 .activ  
-{       border-bottom: 0.125rem solid grey ;
+{       border-bottom: 2px solid orangered ;
+        padding-right: 70px;
+        padding-left: 50px;
+        padding-bottom: 15px;
 } /* border, c'est ce gris qu'il faut color: #F2F2F2; */
 
 
@@ -37,21 +45,12 @@ a { text-decoration: none;     }
 {       grid-area:nav ; display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-top: 30px;
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 15px; 
+        margin-top: 25px;
 }
 
 
 
-/*.navigation::before {
-        content: ' border-bottom: 2px solid';
-        color: blue;
-      }
-.navigation::after {
-        content: ' border-bottom: 2px solid';
-        color: red;
-      }*/
+
 
 .inscrip    
 {       grid-area:inscrip;
@@ -97,11 +96,12 @@ a { text-decoration: none;     }
         border-top-right-radius: 0.8rem;
         border-bottom-right-radius: 0.8rem;
         color: white;
-        height: 2.6rem;
+        height: 42px;
         font-size:0.6rem ;
+        font-size: 14px;
         font-weight: bolder;
-        margin-top: 0.001rem;
-        padding-right:1.6rem; 
+        margin-top: -1px;
+        padding-top: 10px; 
 }
 
 .boutonloupe 
@@ -137,14 +137,17 @@ a { text-decoration: none;     }
                 margin-bottom: -15px;
                 margin-left: 30px;}
 
-.starb  {   color: #0065FC;} /*etoile bleue*/
-.starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
+
 
 .nomfiltre   
-{       color: black;
+{       font-size: 14px;  
+        color: black;
         font-weight: bold;
-        padding-left: 0.625rem;
+        padding-left: 10px;
 }
+
+
+
 
 
 .iconfiltre
@@ -154,10 +157,10 @@ a { text-decoration: none;     }
         background-color: #DEEBFF;
         font-size: 1rem;
         border-radius:100%;
-        min-width: 2.7rem;
-        min-height: 2.7rem;
-        width: 2.7rem;
-        height: 2.7rem;
+        min-width: 43px;
+        min-height: 43px;
+        width: 43px;
+        height: 43px;
         justify-content: center;
         align-items: center;
         margin-left: -1px;
@@ -177,7 +180,7 @@ a { text-decoration: none;     }
 .filtrerom { width: 147px;}
 .filtranimo { width: 195px;}
 
-.nomfiltre  {   font-size: 14px;   }
+
 
 .categories{
     display: flex;
@@ -203,10 +206,10 @@ a { text-decoration: none;     }
         align-items: center;
 }
 
-/*mise en forme icone info + texte à revoir*/
+/*icone info + texte disponibilités*/
 .inform
 {       display: flex;
-        margin: 20px 0 20px 30px  /*10px*/;
+        margin: 20px 0 20px 38px  /*10px*/;
 }
  
 .dispo 
@@ -218,6 +221,11 @@ a { text-decoration: none;     }
  .iconinfo  { margin-right:-30px;}
 
 /*Hotels populaires*/
+
+/*étoiles*/
+
+.starb  {   color: #0065FC;} /*etoile bleue*/
+.starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
 
 /*titre les + pop + chart*/
 
@@ -465,7 +473,6 @@ tarif et marge étoiles hotel mer*/
         padding-left: 1.875rem; 
         row-gap: 1.875rem;
         margin-top: 10px;
-        margin-left: 15px;
 }
 
 
@@ -526,7 +533,6 @@ tarif et marge étoiles hotel mer*/
 
 
    
-
 
 
 
