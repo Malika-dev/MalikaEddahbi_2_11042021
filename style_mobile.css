@@ -8,9 +8,8 @@ a { text-decoration: none; color: inherit;    }
 
 .inscrip  {  color: #0065FC; font-weight: bold;}
 .hebgt { color: #0065FC;}
-.activ  {   color: black;}
 
-.activ:hover {   color: red}
+.activ:hover {   color:red}
 .hebgt:hover {   color:red}
 
 
@@ -207,7 +206,7 @@ a { text-decoration: none; color: inherit;    }
 /*icone info + texte disponibilités*/
 .inform
 {       display: flex;
-        margin: 20px 0 20px 38px  /*10px*/;
+        margin: 20px 0 20px 38px;
 }
  
 .dispo 
@@ -296,7 +295,7 @@ a { text-decoration: none; color: inherit;    }
         font-size:14px;
 }
 
-/*.espace     {   margin-top: 40px; }*/
+
 
 .etoilespop 
 {       font-size: 12px; 
@@ -386,7 +385,6 @@ tarif et marge étoiles hotel mer*/
 .etoilesmarsmer
 {      
         margin: -6px 0.75rem 0 20px;
-    
 }
 
 /*étiquettes et grille hotels marseille*/
@@ -394,8 +392,7 @@ tarif et marge étoiles hotel mer*/
 .leshotelsmarseille
 {       display: flex;
         flex-direction:column;
-        background-color: white;
-        border: 1px solid white ; 
+        
         width: 370px; 
         height: 1410px;
 }
@@ -451,7 +448,7 @@ tarif et marge étoiles hotel mer*/
 .actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
 {       display: flex; 
         flex-direction: column;
-        background-color: white;
+       
         box-shadow: 0.375rem 0.375rem 0.3125rem gray;
         border-radius: 1.25rem;
         width: 88%;
@@ -533,7 +530,6 @@ tarif et marge étoiles hotel mer*/
 
 
    
-
 
 
 
