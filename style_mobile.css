@@ -14,20 +14,20 @@ a { text-decoration: none; color: inherit;    }
 
 
 .hebgt   
-{       border-bottom: 2px solid #0065FC;
+{       border-bottom: 3px solid #0065FC;
         padding:0 30px 13px 70px ;
         margin-left: -20px;
 }
 
 .activ  
-{       border-bottom: 2px solid grey ;
-        padding-right: 70px;
+{       border-bottom: 3px solid grey ;
+        padding-right: 60px;
         padding-left: 50px;
         padding-bottom: 13px;
 } /* border, c'est ce gris qu'il faut color: #F2F2F2; */
 
 
-.entete 
+header 
 {       display: grid;
         grid-template-columns: auto 1fr auto;
         grid-template-areas: "logo . inscrip" "nav nav nav";
@@ -155,21 +155,22 @@ a { text-decoration: none; color: inherit;    }
         border: 0.0625rem solid grey;/* c'est ce gris qu'il faut #F2F2F2*/
         border-radius:  50px ; 
         align-items:center;
-        margin-bottom: 10px;
+      /*  margin-bottom: 10px;*/
+        margin: 0 auto 10px 0;
         height: 2.7rem;
 }
 
-.filtreco { width: 155px; margin-left: -5px; }
-.filtrefam { width: 129px; margin-left: 10px;}
-.filtrerom { width: 147px; margin-left: -5px;}
-.filtranimo { width: 195px; margin-left: -6px;}
+.filtreco { width: 155px; /*margin-left: -5px;*/ }
+.filtrefam { width: 129px; /*margin-left: 10px;*/}
+.filtrerom { width: 147px; /*margin-left: -5px;*/}
+.filtranimo { width: 195px; /*margin-left: -6px;*/}
 
 
 
 .categories
 {       display: flex;
         flex-wrap: wrap; 
-        margin: 32px 0 0 30px;      
+        margin: 32px 0 0 25px;      
 }
 
 
@@ -192,7 +193,7 @@ a { text-decoration: none; color: inherit;    }
 /*icone info + texte disponibilités*/
 .inform
 {       display: flex;
-        margin: 20px 0 20px 20px;
+        margin: 20px 0 20px 25px;
 }
  
 .dispo 
@@ -254,10 +255,11 @@ a { text-decoration: none; color: inherit;    }
         background-color: white;
         box-shadow: 0.375rem 0.375rem 0.3125rem gray;
         border-radius: 18px;
-        width: 85%;
-        height: 42%;
-        margin-bottom: 15px;
-        margin-left:20px;
+       min-width: 320px;
+      
+        height: 140px;
+       
+        margin:auto;
 }
 
 .detailshotelpop 
@@ -288,10 +290,12 @@ a { text-decoration: none; color: inherit;    }
 .sectionpop
 {       display: flex;
         flex-direction:column;
+       
         background-color: lightgray;
-        border: 1px solid lightgray ; 
-        width: 370px;
         height: 550px;
+       /* border: 1px solid lightgray ; */
+       /* width: 370px;
+        height: 550px;*/
 }
 
 
@@ -326,9 +330,11 @@ a { text-decoration: none; color: inherit;    }
         flex-direction: column;
         box-shadow: 0.375rem 0.375rem 0.3125rem gray;
         border-radius: 18px;
-        width: 320px;
+        min-width: 320px;
+        max-width: auto;
         height: 180px;
-        margin:0 0 20px 20px;
+       /* margin:0 0 20px 20px;*/
+       margin:0 auto 20px auto;
         background-color: white;
 }
 
@@ -366,8 +372,13 @@ a { text-decoration: none; color: inherit;    }
 {       font-weight: bold; 
         font-size: 1rem; 
         margin:15px 0 35px 25px;
+       
 }
 
+.leshotelsmarseille
+{display: flex;
+flex-direction: column;
+}
 
 /* activité marseille*/
 
@@ -404,21 +415,30 @@ a { text-decoration: none; color: inherit;    }
         flex-direction: column;
         box-shadow: 0.375rem 0.375rem 0.3125rem gray;
         border-radius: 18px;
-        width: 320px;
+        min-width: 320px;
+        max-width: auto;
         height: 180px;
-        margin: 0 0 20px 20px;
+        margin:0 auto 20px auto;
 }
 
 
+.lesactivites
+{display: flex;
+flex-direction: column;
+}
+
+      
 /*Footer*/
+
 
 .classfoot 
 {       display: flex;
         flex-direction: column;
         background-color: lightgrey;
-        padding: 1.25rem 0 3.125rem 1.875rem;
-        row-gap: 1.875rem;
-        margin-top: 10px;}
+        padding: 20px 0 50px 30px;
+        row-gap: 30px;
+        margin-top: 10px;
+}
 
 
 
@@ -478,8 +498,6 @@ a { text-decoration: none; color: inherit;    }
 
 
    
-
-
 
 
 

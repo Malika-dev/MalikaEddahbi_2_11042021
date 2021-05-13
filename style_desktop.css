@@ -1,17 +1,21 @@
-@media all and (min-width: 992px) and (max-width: 1920px) {
+@media all and (min-width: 992px) {
 
-/*Header*/
-        
-        
-        .hebgt    
+        body
+        { width: 1000px;
+                margin-left: auto;
+                margin-right: auto;}
+
+        /*Header*/
                 
-        {          
-                border-bottom:none;
+                
+        .hebgt    
+        {       border-bottom:none;
                 border-top: 2px solid #0065FC;
                 padding-bottom:none;
-                margin-left: 550px;
+               /* margin-left: 550px;*/
                 padding-top: 35px;
                 padding-left: 30px;
+                margin:auto;
         }
         
         .activ  
@@ -19,31 +23,34 @@
                 padding-top: 35px;
         } 
         
-        .entete 
+        header
         {       display:flex;
                 justify-content: space-between;
-               align-items: center;
-               margin-top: -25px;
+                align-items: center;
+                
+              /*  margin: -25px 0 30px 0;*/
                 font-size: 12px;
-                margin-bottom: 30px;
+                margin:auto;
         }
         
         .logo   
         {       
-               margin-top: 60px;
+               /* margin-top: 60px;*/
                 width: 75px;
                 height: auto;
+                margin:auto;
         }
         
         .inscrip    
         {       
-                margin: 45px 40px 0 0;
+              /*  margin: 45px 40px 0 0;*/
+              margin:auto;
         }
         
         
-        .titreprincipal { margin-top: -15px; font-size: 18px;}
+        .titreprincipal { /*margin-top: -15px;*/ font-size: 18px; margin:auto;}
         
-        .precision { margin-top: -10px; font-size: 13px;}
+        .precision { /*margin-top: -10px;*/ font-size: 13px; margin:auto;}
         
         /*recherche*/
         
@@ -54,31 +61,31 @@
         
         /*Filtres*/
         
-        .sectionfiltres { display: flex; margin-top:-8px  }
+        .sectionfiltres { display: flex;/* margin-top:-8px*/ margin:auto;  }
         
         /*mobile
         .titrefiltres { margin-top: 40px;
-            margin-bottom: -15px;
-            margin-left: 30px;}*/
+        margin-bottom: -15px;
+        margin-left: 30px;}*/
         
         
         
         
         /* mobile
         .titrefiltres { margin-top: 40px;
-                        margin-bottom: -15px;
-                        margin-left: 30px;}*/
+                margin-bottom: -15px;
+                margin-left: 30px;}*/
         
-        .titrefiltres { font-size: 13.5px;}
-        
-        
+        .titrefiltres { font-size: 13.5px; margin:auto;}
         
         
         
         
         
         
-        .nomfiltre { font-size: 13px;}
+        
+        
+        .nomfiltre { font-size: 13px; }
         
         
         
@@ -93,13 +100,13 @@
         }
         
         
-       
+        
         
         .filtreco, .filtrefam, .filtrerom, .filtranimo
         {      
-               
-               margin-left: 10px;
-               
+        
+                margin-left: 10px;
+        
                 height: 35px;
         }
         
@@ -115,7 +122,7 @@
         .filtrerom { width: 135px;}
         .filtranimo { width: 180px;}
         
-      
+        
         
         
         
@@ -124,19 +131,19 @@
         
         .inform
         {      
-               margin-left:30px ;
+               /* margin-left:30px ;*/
         }
         
         .dispo 
         {       font-size: 12px;
                 padding-top: 3px;
-               margin-left: -4px;
+                margin-left: -4px;
         } 
         
         
         /*Hotels populaires*/
         
-       
+        
         
         .chartpop   
         {       font-size: 20px;
@@ -163,33 +170,34 @@
         /*étiquettes hotelspop*/
         
         
-      
+        
         
         .hotelmat, .hotelcoeur, .hotelbleu
         {      
-                width: 250px;
+                min-width: 250px;
+                
                 height: 100px;
-               
+        
         }
         
-      
+        
         
         .detailshotelpop 
         {       
                 margin-top: 10px;
                 margin-left: 15px;
-              
+        
         }
         
-       
+        
         
         .nomhotelpop 
         {       
-                
+        
                 font-size: 11px;
         }
         
-      
+        
         
         .tarifpop 
         {       
@@ -197,21 +205,22 @@
         }
         
         
-      
+        
         
         .etoilespop 
         {       font-size: 8.5px; 
                 margin: 20px 0 0 12px;
         }
         
-    
+        
         
         .sectionpop
         {       display: flex;
                 flex-direction:column;
                 background-color: lightgray;
                 border: 1px solid lightgray ; 
-                width: 300px;
+                min-width: 300px;
+                max-width: auto;
                 height: 470px;
                 border-radius: 15px; 
         }
@@ -220,35 +229,33 @@
         /* hotels marseille*/
         
         
-    
+        
         
         .imgmars        {       min-height: 55%;}
         
-    
-            
-            .imgmars img {
-               
+        
+        
+        .imgmars img 
+        {
                 width: 95%;
                 height: 95%;
-                margin: 5px 0 0 4.5px; }
+                margin: 5px 0 0 4.5px; 
+        }
         
-     
         
-        .hotelcann, .hotelmouett, .hotelmer, .hotelamina
-            { width: 165px;
+        
+        .hotelcann, .hotelmouett, .hotelmer, .hotelamina, .hoteldup, .hotelpanier
+        {       min-width: 165px;
+               
                 height: 145px;
                 margin: 0; 
-                }
-        .hoteldup, .hotelpanier
-            { width: 165px;
-                height: 145px;
-                margin:0; 
-                }
+        }
+        
         
         
         /* texte et marges hotels marseille avec spécificité hotel mer*/
-
-       
+        
+        
         
         .nomhotelmars 
         {      
@@ -256,7 +263,7 @@
                 margin:13px 0 0 0;
         }
         
- 
+        
         
         .tarifmars, .tarifmarsmer  
         {       font-size: 10px;    
@@ -266,16 +273,16 @@
         .tarifmarsmer
         {      margin:-7px 0 0 0;
         }
-
         
         
-       
         
-.etoilesmars { font-size: 8.5px;
-                margin: 5px 0 0 0;} 
-
-.etoilesmarsmer { font-size: 8.5px;
-                        margin: -5px 0 0 0;}        
+        
+        
+        .etoilesmars { font-size: 8.5px;
+        margin: 5px 0 0 0;} 
+        
+        .etoilesmarsmer { font-size: 8.5px;
+                margin: -5px 0 0 0;}        
         
         
         .detailshotelmars { display: flex;
@@ -285,24 +292,25 @@
         
         
         
-       
+        
         
         .leshotelsmarseille
         {       display:grid;
-                grid-template-columns: 3;
-                grid-template-rows: 4;
-                background-color: lightgray;
-                border: 1px solid lightgray;
-                justify-content: space-around;
-                padding:10px 20px 10px 20px;
-                margin-right: 30px;
-                border-radius:15px; 
-                width: 600px; 
-                height: 450px;
+        grid-template-columns: 3;
+        grid-template-rows: 4;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        justify-content: space-around;
+        padding:10px 20px 10px 20px;
+        margin-right: 30px;
+        border-radius:15px; 
+        min-width: 600px; 
+        max-width: auto;
+        height: 450px;
         }
         
         
-      
+        
         
         .hebergement    { grid-column-start:1 ; grid-column-end: 3; grid-row: 1; margin:0}
         
@@ -313,12 +321,12 @@
         .hotelpanier { grid-column:2 ;grid-row:3 ;}
         .hotelamina { grid-column:3 ;grid-row:3 ;}
         
-     
+        
         
         .afficherplus
         {       grid-column: 1;grid-row:4 ;
-               
-                margin:0;
+        
+        margin:0;
         }
         
         /*mise en forme sectionpop et leshotelsmarseille*/
@@ -327,7 +335,7 @@
         
         #conteneurlogements
         { display: flex;flex-direction: row-reverse;
-        margin-right: 30px;}
+        margin:auto;}
         
         
         /* activité marseille*/
@@ -338,8 +346,8 @@
         
         .imgactiv 
         {   
-            min-height: 95%;
-            
+        min-height: 95%;
+        
         }
         
         
@@ -360,13 +368,13 @@
         
         /*étiquettes activités*/
         
-    
+        
         
         
         .nomact1, .nomact2, .nomact3, .nomact4, .nomact5, .nomact6
         {
-                font-size: 12px;
-                margin-left: 15px ;
+        font-size: 12px;
+        margin-left: 15px ;
         }
         
         
@@ -382,16 +390,27 @@
         
         .nomact6 {margin-top: -20px;} /*Longchamp*/
         
-        
+    /* mobile
+    .actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
+{       display: flex; 
+        flex-direction: column;
+        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+        border-radius: 18px;
+        min-width: 320px;
+        max-width: auto;
+        height: 180px;
+        margin:0 auto 20px auto;
+}*/    
         
         
         
         .actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
-            { 
-                width: 200px;
-              margin-bottom: none;
-              margin-left:none;
-               }
+        { 
+        min-width: 200px;
+      
+      
+      
+        }
         
         
         .actvieup, .actcalanc { height: 320px;}
@@ -402,42 +421,51 @@
         .actlongchamp{ height: 145px;}
         
         
-    
-        
-.lesactivites
-        { display: flex;
-        flex-direction:column;
-        flex-wrap: wrap;
-        justify-content: stretch;
-        width: inherit;
-        height: 450px;
-        margin: 20px 0 0 30px}
         
         
+        .lesactivites
+        { display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 3;
+  
+     
+      }
+        
+.titreactivites {grid-column:1 ; grid-row:1 ;}
+/*.actvieup { grid-column:1 ; grid-row-start:2 ; grid-row-end:3 }*/
+.actvieup { grid-column:1 ; grid-row:2 ; }
+.actpomg{grid-column: 2; grid-row: 2;}
+.actfrioul{grid-column:2 ; grid-row:3 ;}
+/*.actcalanc { grid-column:3 ; grid-row-start:2 ; grid-row-end:3 }*/
+.actcalanc { grid-column:3 ; grid-row:2 ;}
+.actnotred{grid-column:4 ; grid-row: 2;}
+.actlongchamp{grid-column:4 ; grid-row:3 ;}
+
+
         /*marges par étiquettes*/
         
         /*.titreactivites {margin:}*/
         
         
         
-        .actpomg, .actcalanc, .actnotred {margin:60px 0 0 0;}
+      /*  .actpomg, .actcalanc, .actnotred {margin:60px 0 0 0;}
         .actfrioul {margin:35px 0 0 0}
-        .actlongchamp {margin:50px 0 0 0;}
+        .actlongchamp {margin:50px 0 0 0;}*/
         
         /*.actvieup {margin:-80px 0 0 40px}*/
         
- /*Footer*/
+        /*Footer*/
         
-/*.foot voir marges entre les lignes*/
+        /*.foot voir marges entre les lignes*/
         
-.classfoot 
-{       display: flex;
+        .classfoot 
+        {       display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 20px 0 50px 0;
+        padding:0;
         row-gap: 0;
-        margin: -30px 0 0 0;
-}
+        margin: 0;
+        }
         
         
         
