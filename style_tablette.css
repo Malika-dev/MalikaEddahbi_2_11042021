@@ -2,10 +2,10 @@
 
 
 
-        body
-        { width: 601px;
-                margin-left: auto;
-                margin-right: auto;}
+    body
+    { width: 601px;
+            margin-left: auto;
+            margin-right: auto;}
 /*Header*/
 
 
@@ -13,69 +13,69 @@
 /*mobile
 .hebgt   
 {       border-bottom: 3px solid #0065FC;
-        padding:0 30px 13px 70px ;
-        margin-left: -20px;
+    padding:0 30px 13px 70px ;
+    margin-left: -20px;
 }*/
 
 .hebgt  
 {       border-bottom: 1px solid #0065FC;
-        padding:0 15px 8px 15px; 
-        margin: 0 50px 0 -30px;  
+    padding:0 15px 8px 15px; 
+    margin: 0 50px 0 -30px;  
 }
 /*mobile
 .activ  
 {       border-bottom: 3px solid grey ;
-        padding-right: 60px;
-        padding-left: 50px;
-        padding-bottom: 13px;
+    padding-right: 60px;
+    padding-left: 50px;
+    padding-bottom: 13px;
 } /* border, c'est ce gris qu'il faut color: #F2F2F2; */
 
 .activ 
 {       border-bottom: inherit;
-        padding:0 15px 15px 15px; 
-        margin: 6px -30px 0 0;  
+    padding:0 15px 15px 15px; 
+    margin: 6px -30px 0 0;  
 } 
 
 /*mobile
-header
+.entete 
 {       display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: "logo . inscrip" "nav nav nav";
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . inscrip" "nav nav nav";
 }*/
 
-header
+.entete
 {       display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 10px;
-        margin-top: -20px;  
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin-top: -20px;  
 }
 
 /* mobile
 .logo   
 {       grid-area:logo ;
-        margin-left: 30px;
+    margin-left: 30px;
 }*/
 
 .logo 
 {       margin:10px 0 0 10px;
-        width: 55px;
-        height: auto;  
+    width: 55px;
+    height: auto;  
 }
 
 /*mobile
 .navigation  
 {       grid-area:nav ; display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 25px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
 }*/
 
 /*mobile
 .inscrip    
 {       grid-area:inscrip;
-        font-weight: bold;
-        margin: 18px 20px 0 0;
+    font-weight: bold;
+    margin: 18px 20px 0 0;
 }*/
 .inscrip    {       margin: 20px 40px 0 0;  }
 
@@ -86,7 +86,7 @@ header
 .titreprincipal { padding-top: 10px;}*/
 
 .titreprincipal  {      font-size:12px ;  margin: 0 0 0 10px;  }
-    
+
 .precision {    font-size:10px ; margin-left: 10px; }
 
 
@@ -94,26 +94,26 @@ header
 /*mobile
 .iconmap 
 {       display:flex;
-        background-color: grey; /*#F2F2F2 c'est ce gris qu'il faut*
-        font-size: 1rem;
-        border-radius: 0.8rem 0 0 0.8rem;
-        min-width: 2.6rem;
-        min-height: 2.6rem;
-        width: 2.6rem;
-        height: 2.6rem;
-        justify-content: center;
-        align-items: center;
-        margin-top: -0.5px;   
+    background-color: grey; /*#F2F2F2 c'est ce gris qu'il faut*
+    font-size: 1rem;
+    border-radius: 0.8rem 0 0 0.8rem;
+    min-width: 2.6rem;
+    min-height: 2.6rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: -0.5px;   
 }*/
 
 .iconmap 
 {       font-size: 10px;
-        border-radius: 5px 0 0 5px;
-        min-width: 23px;
-        min-height: 23px;
-        width: 23px;
-        height: 23px;
-        margin-right: 10px;  
+    border-radius: 5px 0 0 5px;
+    min-width: 23px;
+    min-height: 23px;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;  
 }
 
 
@@ -122,35 +122,35 @@ header
 
 ::placeholder   
 {       color:black; 
-        font-weight: bolder;
-        font-size: 15px;
-        text-align: center; 
-        opacity: 1;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center; 
+    opacity: 1;
 } 
 
 
 .boutonrecherche 
 {       background-color: #0065FC;
-        border: 0.0625rem solid #0065FC;
-        border-top-right-radius: 0.8rem;
-        border-bottom-right-radius: 0.8rem;
-        color: white;
-        height: 42px;
-        font-size: 14px;
-        font-weight: bolder;
-        margin-top: -1px;
-        padding-top: 10px; 
+    border: 0.0625rem solid #0065FC;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    color: white;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: -1px;
+    padding-top: 10px; 
 }
 
 .boutonloupe 
 {       border: 0.0625rem solid #0065FC; 
-        background-color: #0065FC; 
-        border-radius: 0.7rem;
-        min-width:2.6rem;
-        min-height: 2.6rem;
-        width: 2.6rem;
-        height: 2.6rem;
-        margin:-0.5px 0 0 46px;
+    background-color: #0065FC; 
+    border-radius: 0.7rem;
+    min-width:2.6rem;
+    min-height: 2.6rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin:-0.5px 0 0 46px;
 }
 
 .loupe  {   color: white; font-size: 16px;  }
@@ -159,39 +159,39 @@ header
 
 .recherche 
 {       display: flex; 
-        border: 1px solid grey;
-        width: 295px;
-        height: 40px; 
-        border-radius: 13px;
-        margin:30px 0 0 30px;
+    border: 1px solid grey;
+    width: 295px;
+    height: 40px; 
+    border-radius: 13px;
+    margin:30px 0 0 30px;
 }*/
 
 ::placeholder   
 {       font-size: 10px;
-        text-align:start;  
+    text-align:start;  
 } 
-        
+    
 
 .boutonrecherche 
 {       border-radius: 0 5px 5px 0;
-        color: white;
-        height: 23px;
-        font-size: 9px;
-        padding-top: 5px; 
-        margin: -0.7px 0 0 -70px;  
+    color: white;
+    height: 23px;
+    font-size: 9px;
+    padding-top: 5px; 
+    margin: -0.7px 0 0 -70px;  
 }
-        
+    
 .recherche 
 {       display: flex; 
-        border: 0.5px solid grey;
-        width: 195px;
-        height: 22px; 
-        border-radius: 5px;
-        margin: 10px 0 0 10px;
+    border: 0.5px solid grey;
+    width: 195px;
+    height: 22px; 
+    border-radius: 5px;
+    margin: 10px 0 0 10px;
 }
-        
-.boutonloupe {   display: none;  }
     
+.boutonloupe {   display: none;  }
+
 .boutonrecherche { display: inherit;  }
 
 
@@ -203,8 +203,8 @@ header
 
 .nomfiltre   
 {       font-size: 14px;  
-        font-weight: bold;
-        padding-left: 10px;
+    font-weight: bold;
+    padding-left: 10px;
 }*/
 
 .titrefiltres, .nomfiltre {     font-size: 8px;  }
@@ -213,37 +213,37 @@ header
 /*mobile
 .iconfiltre
 {       display:flex;
-        color: #0065FC ;
-        border: 0.0625rem solid #DEEBFF;
-        background-color: #DEEBFF;
-        font-size: 1rem;
-        border-radius:100%;
-        min-width: 43px;
-        min-height: 43px;
-        width: 43px;
-        height: 43px;
-        justify-content: center;
-        align-items: center;
-        margin-left: -1px;
+    color: #0065FC ;
+    border: 0.0625rem solid #DEEBFF;
+    background-color: #DEEBFF;
+    font-size: 1rem;
+    border-radius:100%;
+    min-width: 43px;
+    min-height: 43px;
+    width: 43px;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1px;
 }*/
 
 .iconfiltre
 {       font-size: 8px;
-        min-width: 18px;
-        min-height: 18px;
-        width: 18px;
-        height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    width: 18px;
+    height: 18px;
 }
 
-  /*mobile  
+/*mobile  
 .filtreco, .filtrefam, .filtrerom, .filtranimo
 {       display: flex; 
-        border: 0.0625rem solid grey;/* c'est ce gris qu'il faut #F2F2F2*
-        border-radius:  50px ; 
-        align-items:center;
-      /*  margin-bottom: 10px;*
-        margin: 0 auto 10px 0;
-        height: 2.7rem;
+    border: 0.0625rem solid grey;/* c'est ce gris qu'il faut #F2F2F2*
+    border-radius:  50px ; 
+    align-items:center;
+  /*  margin-bottom: 10px;*
+    margin: 0 auto 10px 0;
+    height: 2.7rem;
 }
 
 .filtreco { width: 155px; /*margin-left: -5px;* }
@@ -253,9 +253,9 @@ header
 
 .filtreco, .filtrefam, .filtrerom, .filtranimo
 {       margin:0 auto 0 20px ;
-        height: 18px;
+    height: 18px;
 }
-    
+
 .filtreco, .filtrerom   {  width: 90px;  }
 .filtrefam              {  width: 75px;  }
 .filtranimo             {  width: 120px; }
@@ -263,64 +263,64 @@ header
 /*mobile
 .categories
 {       display: flex;
-        flex-wrap: wrap; 
-        margin: 32px 0 0 25px;      
+    flex-wrap: wrap; 
+    margin: 32px 0 0 25px;      
 }*/
 
 .sectionfiltres 
 {       display: flex; 
-        margin:-12px 0 0 -15px;
+    margin:-12px 0 0 -15px;
 }
 
 
 /*Info mobile
-  
+
 .iconinfo
 {       display: flex;
-        color: #0065FC ;
-        border: 0.0625rem solid grey;
-        font-size: 0.5rem;
-        border-radius:100%;
-        width: 1rem;
-        height: 1rem;
-        min-height: 1rem;
-        min-width: 1rem;
-        justify-content: center;
-        align-items: center;
+    color: #0065FC ;
+    border: 0.0625rem solid grey;
+    font-size: 0.5rem;
+    border-radius:100%;
+    width: 1rem;
+    height: 1rem;
+    min-height: 1rem;
+    min-width: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /*icone info + texte disponibilités*
 .inform
 {       display: flex;
-        margin: 20px 0 20px 25px;
+    margin: 20px 0 20px 25px;
 }
- 
+
 .dispo 
 {       font-size: 14px;
-        padding-left:40px;
-        margin-right: 30px;
+    padding-left:40px;
+    margin-right: 30px;
 } 
- 
- .iconinfo  { margin-right:-30px;}*/
 
- /*Info*/
+.iconinfo  { margin-right:-30px;}*/
+
+/*Info*/
 
 .iconinfo
 {       font-size: 6px;
-        width: 12px;
-        height: 12px;
-        min-height: 12px;
-        min-width: 12px;
-        margin:-1px 0 0 0;
+    width: 12px;
+    height: 12px;
+    min-height: 12px;
+    min-width: 12px;
+    margin:-1px 0 0 0;
 }
-        
+    
 .dispo 
 {       font-size: 10px;
-        padding:0;
-        margin:0 0 0 6px;
+    padding:0;
+    margin:0 0 0 6px;
 } 
 
- 
+
 
 /*Hotels populaires*/
 
@@ -330,156 +330,156 @@ header
 /* mobile
 .chartpop   
 {       font-size: 20px;
-        margin-right: 10px;
+    margin-right: 10px;
 }
 
 .pop 
 {       display: flex; 
-        flex-direction: row; 
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 15px 0 15px;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px 0 15px;
 }*/
 
 .chartpop   
 {       font-size: 13px;
-        margin:0 0 0 10px;
-}
-        
-.titrepop       
-{       font-size: 13px;
-        margin:0; 
+    margin:0 0 0 10px;
 }
     
+.titrepop       
+{       font-size: 13px;
+    margin:0; 
+}
+
 .pop    {  margin:12px 0 0 20px;  }
 
 /* mobile
 .imgpop
 {       margin: 0;
-        position: relative;
-        min-height: 100%;
-        width: 38%;
-        min-width: 38%;
-        max-width: 38%;    
+    position: relative;
+    min-height: 100%;
+    width: 38%;
+    min-width: 38%;
+    max-width: 38%;    
 }
 
 .imgpop img 
 {       border-radius: 18px 0 0 18px;
-        position: absolute;
-        width: 94%;
-        height: 93%;
-        margin:5px 0 0 5px;
-        object-fit: cover;    
+    position: absolute;
+    width: 94%;
+    height: 93%;
+    margin:5px 0 0 5px;
+    object-fit: cover;    
 }*/
 
 .imgpop        
 {       min-height: 50%;
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
 }
-        
+    
 .imgpop img 
 {       border-radius: 18px 18px 0 0;
-        width: 97%;
-        height: 64%;
-        margin: 2px 0 0 1.6px; 
+    width: 97%;
+    height: 64%;
+    margin: 2px 0 0 1.6px; 
 }
 
 /*étiquettes hotels populaires*/
 /* mobile
 .hotelmat, .hotelcoeur, .hotelbleu
 {       display: flex;
-        flex-direction: row;
-        background-color: white;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
-        border-radius: 18px;
-       min-width: 320px;
-      
-        height: 140px;
-       
-        margin:auto;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+    border-radius: 18px;
+   min-width: 320px;
+  
+    height: 140px;
+   
+    margin:auto;
 }
 
 .detailshotelpop 
 {       display: flex;
-        flex-direction: column;
-        margin: 20px 0 0 8px;
+    flex-direction: column;
+    margin: 20px 0 0 8px;
 }
 
 .nomhotelpop 
 {       margin: 4px 12px 0 12px;
-        font-weight:bold;
+    font-weight:bold;
 }
 
 .tarifpop 
 {       margin: 4px 12px 4px 12px;
-        font-size:14px;
+    font-size:14px;
 }
 
 
 
 .etoilespop 
 {        
-        margin: 40px 12px 4px 12px;
-        font-size: 12px;
+    margin: 40px 12px 4px 12px;
+    font-size: 12px;
 }
 
 
 .sectionpop
 {       display: flex;
-        flex-direction:column;
-       
-        background-color: lightgray;
-        height: 550px;
-       /* border: 1px solid lightgray ; *
-       /* width: 370px;
-        height: 550px;*
+    flex-direction:column;
+   
+    background-color: lightgray;
+    height: 550px;
+   /* border: 1px solid lightgray ; *
+   /* width: 370px;
+    height: 550px;*
 }*/
 
 /*étiquettes hotels pop*/
-    
+
 .hotelmat, .hotelcoeur, .hotelbleu
 {       display: grid;
-        grid-template-rows:80% auto;
-       
-        min-width: 150px;
-        max-width: auto;
-        height: 100px;
-        
-}
+    grid-template-rows:80% auto;
+   
+    min-width: 150px;
+    max-width: auto;
+    height: 100px;
     
+}
+
 .imgpop         {grid-row:1; }
 .detailshotelpop        { grid-row:2; text-align: center;}
-       
+   
 .nomhotelpop
 {       font-size: 8px;
-      /*  margin:-45px 0 0 -10px;*/
-      margin-top: -40px;
+  /*  margin:-45px 0 0 -10px;*/
+  margin-top: -40px;
 }
-    
+
 .tarifpop
 {       font-size: 8px;
-       /* margin:2px 10px -36px 0;  */
-       margin-bottom: -36px;
+   /* margin:2px 10px -36px 0;  */
+   margin-bottom: -36px;
 } 
-    
+
 .etoilespop     {  font-size: 6px;  }
-    
-    
+
+
 .sectionpop
 {       display:grid;
-        grid-template-columns: 3;
-        grid-template-rows: 1fr auto;
-        background-color: lightgray;
-        justify-content: space-around;
-        padding:0 20px 20px 0;
-        margin: -5px auto auto 15px;
-        border-radius:15px; 
-       /* width: 530px; */
-        height: 160px;
+    grid-template-columns: 3;
+    grid-template-rows: 1fr auto;
+    background-color: lightgray;
+    justify-content: space-around;
+    padding:0 20px 20px 0;
+    margin: -5px auto auto 15px;
+    border-radius:15px; 
+   /* width: 530px; */
+    height: 160px;
 }
-    
+
 .pop    { grid-column-start:1 ; grid-column-end: 2;grid-row:1 ;}
 
 .hotelmat       { grid-column: 1;grid-row:2 ;}
@@ -494,33 +494,33 @@ header
 /* hotels marseille*/
 /* mobile
 .hebergement    {    margin: 30px 0 30px 15px; } /*titre*/
-                
-  /* mobile             
+            
+/* mobile             
 .imgmars
 {       /*margin: 0;*
-        position: relative;
-        min-height: 60%;
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;    
+    position: relative;
+    min-height: 60%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;    
 }
 
 .imgmars img
 {       border-radius: 18px 18px 0 0;
-        position: absolute;
-        width: 98%;
-        height: 97%;
-        margin: 4.5px 3px 0 3.5px;
-        object-fit: cover; 
+    position: absolute;
+    width: 98%;
+    height: 97%;
+    margin: 4.5px 3px 0 3.5px;
+    object-fit: cover; 
 }*/
 
 .imgmars  {  min-height: 55%;}
-    
+
 .imgmars img 
 {       border-radius: 18px 18px 0 0;
-        width: 96%;
-        height: 95%;
-        margin: 2px 0 0 3px; 
+    width: 96%;
+    height: 95%;
+    margin: 2px 0 0 3px; 
 }
 
 /*étiquettes hotels marseille*/
@@ -528,79 +528,79 @@ header
 /* mobile
 .hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
 {       display: flex;
-        flex-direction: column;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
-        border-radius: 18px;
-        min-width: 320px;
-        max-width: auto;
-        height: 180px;
-       /* margin:0 0 20px 20px;*
-       margin:0 auto 20px auto;
-        background-color: white;
+    flex-direction: column;
+    box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+    border-radius: 18px;
+    min-width: 320px;
+    max-width: auto;
+    height: 180px;
+   /* margin:0 0 20px 20px;*
+   margin:0 auto 20px auto;
+    background-color: white;
 }*/ 
 
 .hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
 {       min-width: 150px;
-        max-width: auto;
-        height: 100px;
-        margin:0; 
+    max-width: auto;
+    height: 100px;
+    margin:0; 
 }
 /* texte et marges hotel marseille avec spécificité
- marge tarif et étoiles hotel mer*/
+marge tarif et étoiles hotel mer*/
 /* mobile
 .nomhotelmars
 {       font-weight: bold;
-        font-size: 15px; 
-        margin: 8px 12px 0 20px;
+    font-size: 15px; 
+    margin: 8px 12px 0 20px;
 }*/
 
 .nomhotelmars 
 {       font-size: 8px;
-      margin:6px 0 0 0;
+  margin:6px 0 0 0;
 }
 
 /*mobile
 
 .tarifmars
 {       font-size: 14px; 
-        margin: 5px 12px 0 20px;
+    margin: 5px 12px 0 20px;
 }
 
 .tarifmarsmer
 {       font-size: 14px; 
-        margin: -9px 12px 0 20px;
+    margin: -9px 12px 0 20px;
 }*/
 
 .tarifmars
 {       font-size: 8px;
-     /*   margin:2px -2px 1px 2px;*/
+ /*   margin:2px -2px 1px 2px;*/
 }
 
 .tarifmarsmer 
 {       font-size: 8px;
-     /*   margin:-5px -2px 1px 2px;*/
+ /*   margin:-5px -2px 1px 2px;*/
 }
 
 /*mobile
 .etoilesmars
 {       font-size: 10.5px;
-       margin: 6px 12px 0 20px;
+   margin: 6px 12px 0 20px;
 }
 
 
 .etoilesmarsmer
 {       font-size: 10.5px;
-        margin: -7px 12px 0 20px;
+    margin: -7px 12px 0 20px;
 }*/
 
 .etoilesmars 
 {       font-size: 6px;
-      /*  margin:2px -2px 1px 2px;*/
+  /*  margin:2px -2px 1px 2px;*/
 }
-        
+    
 .etoilesmarsmer 
 {       font-size: 6px;
-     /*   margin:-5px -2px 1px 2px;*/
+ /*   margin:-5px -2px 1px 2px;*/
 } 
 
 
@@ -608,16 +608,16 @@ header
 /* mobile
 .afficherplus
 {       font-weight: bold; 
-        font-size: 1rem; 
-        margin:15px 0 35px 25px;
-       
+    font-size: 1rem; 
+    margin:15px 0 35px 25px;
+   
 }*/
 
 .detailshotelmars
 {       display: flex;
-        flex-direction: column;
-       /* margin-left: 20px;*/
-        text-align: center;
+    flex-direction: column;
+   /* margin-left: 20px;*/
+    text-align: center;
 }
 
 /* mobile
@@ -628,27 +628,27 @@ flex-direction: column;
 
 .leshotelsmarseille
 {       display:grid;
-        grid-template-columns: 3;
-        grid-template-rows: 4;
-        background-color: lightgray;
-        
-        justify-content: space-around;
-        padding:20px 20px 20px 0;
-        margin: 15px 0 15px 15px;
-        border-radius:15px; 
-       /* width: 530px; */
-        height: 270px;
+    grid-template-columns: 3;
+    grid-template-rows: 4;
+    background-color: lightgray;
+    
+    justify-content: space-around;
+    padding:20px 20px 20px 0;
+    margin: 15px 0 15px 15px;
+    border-radius:15px; 
+   /* width: 530px; */
+    height: 270px;
 }
-    
-    
+
+
 .hebergement    
 {       grid-column-start:1 ; 
-        grid-column-end: 3; 
-        grid-row: 1; 
-        font-size: 13px;
-        margin:0;
+    grid-column-end: 3; 
+    grid-row: 1; 
+    font-size: 13px;
+    margin:0;
 }
-    
+
 .hotelcann { grid-column:1 ;grid-row:2 ;}
 
 .hoteldup { grid-column: 2;grid-row:2 ;}
@@ -660,12 +660,12 @@ flex-direction: column;
 .hotelpanier { grid-column:2 ;grid-row:3 ;}
 
 .hotelamina { grid-column:3 ;grid-row:3 ;}
-    
+
 .afficherplus
 {       grid-column: 1;
-        grid-row:4 ;
-        font-size: 13px; 
-        margin:20px 0 -10px 0;
+    grid-row:4 ;
+    font-size: 13px; 
+    margin:20px 0 -10px 0;
 }
 
 /* activité marseille*/
@@ -675,24 +675,24 @@ flex-direction: column;
 /* mobile
 .imgactiv
 {   margin: 0;
-    position: relative;
-    min-height: 65%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;    
+position: relative;
+min-height: 65%;
+width: 100%;
+min-width: 100%;
+max-width: 100%;    
 }
 
 .imgactiv img 
 {   border-radius: 18px 18px 0 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover; 
 }*/
 
 .imgactiv 
 {       border-radius: 15px 15px 0 0; 
-        min-height: 95%;
+    min-height: 95%;
 }
 .actvieup img {  height: 90%;}
 .actcalanc img { height: 90%;}
@@ -706,14 +706,14 @@ flex-direction: column;
 /* mobile
 .nomact1, .nomact2, .nomact3, .nomact4, .nomact5, .nomact6
 {       margin: 20px 0 0 30px;
-        font-weight: bold;
+    font-weight: bold;
 } */
 
 .nomact1, .nomact2, .nomact3, .nomact4, .nomact5, .nomact6
 {       font-size: 8px;
-        margin-left: 10px ;
+    margin-left: 10px ;
 }
-    
+
 
 .nomact1 {margin-top: -15px;} /*vieux port*/
 .nomact2 {margin-top: -20px; } /*Pomègues*/
@@ -726,23 +726,23 @@ flex-direction: column;
 /* mobile
 .actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
 {       display: flex; 
-        flex-direction: column;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
-        border-radius: 18px;
-        min-width: 320px;
-        max-width: auto;
-        height: 180px;
-        margin:0 auto 20px auto;
+    flex-direction: column;
+    box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+    border-radius: 18px;
+    min-width: 320px;
+    max-width: auto;
+    height: 180px;
+    margin:0 auto 20px auto;
 }*/
 
 .actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
 
 {    
-          min-width: 117px;
-          max-width: auto;
+      min-width: 117px;
+      max-width: auto;
 }
-    
-    
+
+
 .actvieup, .actcalanc { height: 210px;}
 .actpomg   { height: 110px;}
 .actfrioul { height: 85px;}
@@ -757,50 +757,50 @@ flex-direction: column;
 
 .lesactivites
 {       display:grid;
-        grid-template-columns: 4;
-        grid-template-rows: 1fr repeat(2, auto);
-        margin:-4px 0 0 0;
-     /*   width: 600px;*/
-        height: 275px;
+    grid-template-columns: 4;
+    grid-template-rows: 1fr repeat(2, auto);
+    margin:-4px 0 0 0;
+ /*   width: 600px;*/
+    height: 275px;
 }
-    
+
 .titreactivites {grid-column:1 ; grid-row:1;font-size: 13px;}
-    
+
 .actvieup {grid-column:1; grid-row-start:2 ; grid-row-end:3 ;}
-    
+
 .actpomg {grid-column: 2; grid-row:2;}
-    
+
 .actfrioul {grid-column:2 ; grid-row:3; margin-top: -110px;}
-    
+
 .actcalanc {grid-column:3; grid-row-start: 2; grid-row-end: 3;}
-    
+
 .actnotred {grid-column: 4; grid-row:2;}
-    
+
 .actlongchamp {grid-column: 4; grid-row:3; margin-top: -110px;}
 
-      
+  
 /*Footer*/
 /* mobile
 .classfoot 
 {       display: flex;
-        flex-direction: column;
-        background-color: lightgrey;
-        padding: 20px 0 50px 30px;
-        row-gap: 30px;
-        margin-top: 10px;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 20px 0 50px 30px;
+    row-gap: 30px;
+    margin-top: 10px;
 }*/
 
 .propos, .hebt, .aide { font-size:11px;}
-    
+
 .hebt { margin:0}
-    
+
 .classfoot 
 {       flex-direction: row;
-        justify-content: space-around;
-            padding:0; 
-            row-gap:0;
-            margin:0;
-         
+    justify-content: space-around;
+        padding:0; 
+        row-gap:0;
+        margin:0;
+     
 }
 
 
@@ -838,19 +838,6 @@ flex-direction: column;
 
 
 
- 
-
- 
- 
- 
-
-
-
-
-
-
-
-    
 
 
 
@@ -860,7 +847,19 @@ flex-direction: column;
 
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

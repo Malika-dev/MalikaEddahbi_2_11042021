@@ -27,7 +27,7 @@ a { text-decoration: none; color: inherit;    }
 } /* border, c'est ce gris qu'il faut color: #F2F2F2; */
 
 
-header 
+.entete 
 {       display: grid;
         grid-template-columns: auto 1fr auto;
         grid-template-areas: "logo . inscrip" "nav nav nav";
@@ -429,7 +429,6 @@ flex-direction: column;
 
       
 /*Footer*/
-
 
 .classfoot 
 {       display: flex;
