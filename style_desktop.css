@@ -1,4 +1,4 @@
-@media all and (min-width: 992px) {
+@media all and (min-width: 1200px) {
 
 
 
@@ -16,7 +16,27 @@ nav
         width: 45%;
 } 
 
-/* spécificité recherche version desktop*/
+.inscrip-mobile {
+        
+        display: none;
+}
+.inscrip-desktop
+{
+        
+        display: block !important;
+
+}
+
+/*mise en forme underline*/
+.liensnav > div   /* appliqué aux enfants direct*/
+{ 
+        display: flex;
+        flex-direction: column-reverse;
+        width:50%;
+}
+
+
+/*recherche*/
 
 .boutonloupe {   display: none;  }
 
@@ -26,16 +46,12 @@ nav
 /*Filtres*/
 /* revoir les marges*/
 
-.filtres
-{       display: flex;
-        flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-}
 
 /*Info*/
 
-/* titres h2 des section*/
+/* revoir les marges et display flex*/
+
+/*h2 des sections*/
 
 h2
 { font-size: 18px;}
@@ -245,7 +261,7 @@ nom-activite
 @media all and (min-width: 1400px) {
 .conteneursite 
 {
-        max-width: 1200px;
+        max-width: 1440px;
         margin: 0 auto;
 }
 
