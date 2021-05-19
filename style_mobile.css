@@ -3,143 +3,112 @@
 * { font-family: Raleway, sans-serif;   }
 a { text-decoration: none; color: inherit;    }
 
+.fw-bold { font-weight: bold;}
+
 
 /*Header*/
 
-.inscrip  {  color: #0065FC; font-weight: bold;}
+.inscrip  {  color: #0065FC;}
 .hebgt { color: #0065FC;}
 
 .activ:hover {   color:#0065FC}
 .hebgt:hover {   color:grey}
 
 
-.hebgt   
-{       border-bottom: 3px solid #0065FC;
-        padding:0 30px 13px 70px ;
-        margin-left: -20px;
-}
-
-.activ  
-{       border-bottom: 3px solid grey ;
-        padding-right: 60px;
-        padding-left: 50px;
-        padding-bottom: 13px;
-} /* border, c'est ce gris qu'il faut color: #F2F2F2; */
+/* faire mise en forme navigation*/
 
 
-.entete 
-{       display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: "logo . inscrip" "nav nav nav";
-}
-
-.logo   
-{       grid-area:logo ;
-        margin-left: 30px;
-}
-
-.navigation  
-{       grid-area:nav ; display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 25px;
-}
-
-
-.inscrip    
-{       grid-area:inscrip;
-        font-weight: bold;
-        margin: 18px 20px 0 0;
-}
-
-.titreprincipal, .precision { margin-left: 30px;}
-
-.titreprincipal { padding-top: 10px;}
+/*************************************/
 
 
 /*recherche*/
 
+/*mise en forme icone map pour toute version, mobile, desktop et tablette*/
 .iconmap 
 {       display:flex;
         background-color: grey; /*#F2F2F2 c'est ce gris qu'il faut*/
-        font-size: 1rem;
-        border-radius: 0.8rem 0 0 0.8rem;
-        min-width: 2.6rem;
-        min-height: 2.6rem;
-        width: 2.6rem;
-        height: 2.6rem;
+        font-size: 16px;
+        border-radius: 13px 0 0 13px;
+        min-width: 42px;
+        min-height: 42px;
+        width: 42px;
+        height: 40px;
         justify-content: center;
         align-items: center;
-        margin-top: -0.5px;   
+          
 }
+
+/* input champs "Marseille, France" toute version*/
 
 .input  {   border: none;}
 
 ::placeholder   
 {       color:black; 
-        font-weight: bolder;
         font-size: 15px;
         text-align: center; 
         opacity: 1;
 } 
 
+/* bouton recherche version desktop et tablette*/
 
 .boutonrecherche 
 {       background-color: #0065FC;
-        border: 0.0625rem solid #0065FC;
-        border-top-right-radius: 0.8rem;
-        border-bottom-right-radius: 0.8rem;
+        border: none;
+        border-radius: 0 13px 13px 0;
         color: white;
-        height: 42px;
-        font-size: 14px;
-        font-weight: bolder;
-        margin-top: -1px;
-        padding-top: 10px; 
+        padding: 12px;
+        cursor: pointer;
 }
+.boutonrecherche:hover 
+{       color: lightgray;
+        transition: ease 0.3s;
+}
+
+/* bouton loupe version mobile*/
+
+.iconloupe  {   color: white; font-size: 16px;  }
 
 .boutonloupe 
 {       border: 0.0625rem solid #0065FC; 
         background-color: #0065FC; 
-        border-radius: 0.7rem;
-        min-width:2.6rem;
-        min-height: 2.6rem;
-        width: 2.6rem;
-        height: 2.6rem;
-        margin:-0.5px 0 0 46px;
+        border-radius: 13px;
+        min-width:42px;
+        min-height: 42px;
+        width: 42px;
+        height: 42px;
+        margin: -1px 0 0 20px;
+        cursor: pointer;
+}
+.boutonloupe:hover 
+{       background-color:gray;
+        transition: ease 0.3s;
 }
 
-.loupe  {   color: white; font-size: 16px;  }
+/* box-recherche toute version*/
 
+.box-recherche 
+{       display: flex; 
+        border-top: solid 1px grey;
+        border-bottom: solid 1px grey;
+        border-radius: 13px;
+        width: 260px;
+        height: 40px; 
+}
+
+/*spécificité mobile*/
 .boutonrecherche    {   display: none;  }
 
-.recherche 
-{       display: flex; 
-        border: 1px solid grey;
-        width: 295px;
-        height: 40px; 
-        border-radius: 13px;
-        margin:30px 0 0 30px;
-}
+
 
 
 /*Filtres*/
 
-.titrefiltres   {  margin: 40px 0 -15px 30px; }
-
-
-.nomfiltre   
-{       font-size: 14px;  
-        font-weight: bold;
-        padding-left: 10px;
-}
-
-
-.iconfiltre
+.bouton-filtre .icon-filtre
 {       display:flex;
         color: #0065FC ;
         border: 0.0625rem solid #DEEBFF;
         background-color: #DEEBFF;
-        font-size: 1rem;
+        font-size: 16px;
         border-radius:100%;
         min-width: 43px;
         min-height: 43px;
@@ -147,36 +116,42 @@ a { text-decoration: none; color: inherit;    }
         height: 43px;
         justify-content: center;
         align-items: center;
-        margin-left: -1px;
 }
     
-.filtreco, .filtrefam, .filtrerom, .filtranimo
+.bouton-filtre
 {       display: flex; 
-        border: 0.0625rem solid grey;/* c'est ce gris qu'il faut #F2F2F2*/
+        border: 1px solid lightgray;/* c'est ce gris qu'il faut #F2F2F2*/
         border-radius:  50px ; 
-        align-items:center;
-      /*  margin-bottom: 10px;*/
-        margin: 0 auto 10px 0;
-        height: 2.7rem;
+        margin: 10px 5px 0 0;
+        padding: 0 20px 0 0;
+        justify-content: center;
+        align-items: center;
 }
 
-.filtreco { width: 155px; /*margin-left: -5px;*/ }
-.filtrefam { width: 129px; /*margin-left: 10px;*/}
-.filtrerom { width: 147px; /*margin-left: -5px;*/}
-.filtranimo { width: 195px; /*margin-left: -6px;*/}
+.bouton-filtre:hover {
+        cursor: pointer;
+        color:#0065FC;
+        transition-duration: 0.25s;
+}
+
+.bouton-filtre:hover .icon-filtre 
+{
+        cursor: pointer;
+        background: white;
+        transition-duration: 0.25s;
+}
 
 
-
-.categories
+.categories-filtres
 {       display: flex;
+        flex-direction: row;
         flex-wrap: wrap; 
-        margin: 32px 0 0 25px;      
 }
 
 
 /*Info*/
   
-.iconinfo
+.inform i
 {       display: flex;
         color: #0065FC ;
         border: 0.0625rem solid grey;
@@ -193,18 +168,18 @@ a { text-decoration: none; color: inherit;    }
 /*icone info + texte disponibilités*/
 .inform
 {       display: flex;
-        margin: 20px 0 20px 25px;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
 }
- 
+
+
 .dispo 
 {       font-size: 14px;
-        padding-left:40px;
-        margin-right: 30px;
+        margin-left: 10px;
 } 
  
- .iconinfo  { margin-right:-30px;}
-
- /*étoiles*/
+/*étoiles*/
 
 .starb  {   color: #0065FC;} /*etoile bleue*/
 .starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
@@ -212,23 +187,21 @@ a { text-decoration: none; color: inherit;    }
 /*Hotels populaires*/
 
 
+/*titre les + pop + chart à revoir*/
 
-/*titre les + pop + chart*/
-
-.chartpop   
+.h3-et-icon i 
 {       font-size: 20px;
-        margin-right: 10px;
+       
 }
 
-.pop 
+.h2-et-icon
 {       display: flex; 
         flex-direction: row; 
         justify-content: space-between;
         align-items: center;
-        margin: 0 15px 0 15px;
 }
 
-
+/* hotels populaires*/
 .imgpop
 {       margin: 0;
         position: relative;
@@ -249,61 +222,59 @@ a { text-decoration: none; color: inherit;    }
 
 /*étiquettes hotels populaires*/
 
-.hotelmat, .hotelcoeur, .hotelbleu
+.hotelpop
 {       display: flex;
         flex-direction: row;
         background-color: white;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+        box-shadow: 0px 0px 8px 0px #0065FC;
         border-radius: 18px;
-       min-width: 320px;
-      
-        height: 140px;
-       
+        min-width: 320px;
+        max-width: auto;
+        height: 130px;
         margin:auto;
+       
 }
 
-.detailshotelpop 
-{       display: flex;
-        flex-direction: column;
-        margin: 20px 0 0 8px;
+.hotelpop:hover 
+{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: ease 0.4s;
 }
 
-.nomhotelpop 
-{       margin: 4px 12px 0 12px;
-        font-weight:bold;
-}
-
+/*texte étiquettes*/
 .tarifpop 
-{       margin: 4px 12px 4px 12px;
+{       
         font-size:14px;
+        margin: -11px 0 0 0;
 }
 
-
+.espace
+{      height: 20%;
+        
+}
 
 .etoilespop 
-{        
-        margin: 40px 12px 4px 12px;
-        font-size: 12px;
+{        font-size: 12px; 
 }
 
+.detailspop
+{       margin:0 12px 0 14px ;
+}
 
-.sectionpop
+/* grille hotels populaires*/
+.leshotelspop
 {       display: flex;
         flex-direction:column;
-       
         background-color: lightgray;
+        width: auto;
         height: 550px;
-       /* border: 1px solid lightgray ; */
-       /* width: 370px;
-        height: 550px;*/
 }
 
 
 /* hotels marseille*/
 
-.hebergement    {    margin: 30px 0 30px 15px; } /*titre*/
-                
-               
+
 .imgmars
 {       /*margin: 0;*/
         position: relative;
@@ -325,64 +296,57 @@ a { text-decoration: none; color: inherit;    }
 
 /*étiquettes hotels marseille*/
 
-.hotelcann, .hoteldup, .hotelmouett, .hotelmer, .hotelpanier, .hotelamina
+.hotelmars
 {       display: flex;
         flex-direction: column;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+        box-shadow: 0px 0px 8px 0px #0065FC;
         border-radius: 18px;
-        min-width: 320px;
-        max-width: auto;
-        height: 180px;
+        min-width: 300px;
+        height: 200px;
        /* margin:0 0 20px 20px;*/
-       margin:0 auto 20px auto;
+        margin:0 auto 20px auto;
         background-color: white;
 }
 
-/* texte et marges hotel marseille avec spécificité
- marge tarif et étoiles hotel mer*/
+.hotelmars:hover 
+{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: ease 0.4s;
+}
+
+/* texte et marges hotel marseille*/ 
+
+ .detailsmars 
+{       margin: 10px 0 0 10px;
+} 
 
 .nomhotelmars
-{       font-weight: bold;
+{       
         font-size: 15px; 
-        margin: 8px 12px 0 20px;
+     
 }
 
 .tarifmars
 {       font-size: 14px; 
-        margin: 5px 12px 0 20px;
+        margin-top: 3px;
 }
 
-.tarifmarsmer
-{       font-size: 14px; 
-        margin: -9px 12px 0 20px;
-}
 
 .etoilesmars
-{       font-size: 10.5px;
-        margin: 6px 12px 0 20px;
+{       font-size: 11px;
+        margin-top: 5px;
 }
 
 
-.etoilesmarsmer
-{       font-size: 10.5px;
-        margin: -7px 12px 0 20px;
-}
 
 .afficherplus
-{       font-weight: bold; 
-        font-size: 1rem; 
-        margin:15px 0 35px 25px;
-       
+{       
+        font-size: 16px; 
 }
 
-.leshotelsmarseille
-{display: flex;
-flex-direction: column;
-}
 
 /* activité marseille*/
-
-.titreactivites {   margin-left: 25px; }
 
 
 .imgactiv
@@ -405,43 +369,44 @@ flex-direction: column;
 /*étiquettes et grille activités*/
 
 
-.nomact1, .nomact2, .nomact3, .nomact4, .nomact5, .nomact6
+.nom-activite
 {       margin: 20px 0 0 30px;
-        font-weight: bold;
+        
 } 
 
-.actvieup, .actpomg, .actfrioul, .actcalanc, .actnotred, .actlongchamp
+.type-activite
 {       display: flex; 
         flex-direction: column;
-        box-shadow: 0.375rem 0.375rem 0.3125rem gray;
+        box-shadow: 0px 0px 8px 0px #0065FC;
         border-radius: 18px;
-        min-width: 320px;
-        max-width: auto;
-        height: 180px;
-        margin:0 auto 20px auto;
+        min-width: 300px;
+        height: 200px;
+        margin:0 0 20px 0;
+}
+.type-activite:hover 
+{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: ease 0.4s;
 }
 
 
-.lesactivites
-{display: flex;
-flex-direction: column;
-}
-
-      
 /*Footer*/
 
-.classfoot 
+.classfooter 
 {       display: flex;
         flex-direction: column;
         background-color: lightgrey;
         padding: 20px 0 50px 30px;
-        row-gap: 30px;
-        margin-top: 10px;
 }
 
+.lien-footer:hover
+{
+        cursor: pointer;
+        text-decoration-line: underline;
+}
 
-
-
+/* corrections du 19 mai*/
 
 
 
@@ -497,9 +462,6 @@ flex-direction: column;
 
 
    
-
-
-
 
 
 
