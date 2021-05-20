@@ -1,6 +1,4 @@
-@media all and (min-width: 1200px) {
-
-
+@media all and (min-width: 992px) {
 
 /*Header*/
 
@@ -16,21 +14,18 @@ nav
         width: 45%;
 } 
 
-.inscrip-mobile {
-        
-        display: none;
+.inscrip-mobile 
+{       display: none;
 }
+
 .inscrip-desktop
-{
-        
-        display: block !important;
+{       display: block !important;
 
 }
 
 /*mise en forme underline*/
 .liensnav > div   /* appliqué aux enfants direct*/
-{ 
-        display: flex;
+{       display: flex;
         flex-direction: column-reverse;
         width:50%;
 }
@@ -57,10 +52,12 @@ h2
 { font-size: 18px;}
 
 /*Hotels populaires*/
-.leshotelspop
-{       min-width: 300px;
-        max-width: auto;
-        height: 470px;
+
+/* conteneur les hotels populaires*/
+
+.leshotels-populaires
+{       width: 30%;
+        height: 450px;
         border-radius: 15px; 
 }
 
@@ -71,9 +68,10 @@ h2
 
 .hotelpop
 {       
-        min-width: 250px;
+        width: 85%;
         height: 100px;
 }
+
 
 /* texte*/
 .nompop 
@@ -95,15 +93,11 @@ h2
 {        font-size: 10px; 
 }
 
-/* grille les hotels populaires*/
-.leshotelspop
-{       
-        height: 450px;
-}
+
 
 /* hotels marseille*/
 
-.imgmars {       min-height: 55%;}
+.imgmars {      height: 55%;}
 
 .imgmars img 
 {       width: 95%;
@@ -111,12 +105,10 @@ h2
         margin: 5px 0 0 4.5px; 
 }
 
+/*étiquettes hotels marseille*/
 .hotelmars
-
-{       min-width: 180px;
-        max-width: 180px;
+{       width:85%;
         height: 145px;
-        margin: 0; 
 }
 
 
@@ -124,22 +116,18 @@ h2
 
 .nomhotelmars 
 {      font-size: 11px; 
-       
 }
 
 .tarifmars
 {       font-size: 10px;
-         
 }
 
 .etoilesmars
 {       font-size: 8.5px;
-       
 } 
 
+/* conteneur hotels marseille*/
 
-
-/* grille hotels marseille*/
 .leshotelsmarseille
 {       display:grid;
         grid-template-columns: 3;
@@ -147,12 +135,11 @@ h2
         background-color: lightgray;
         border: 1px solid lightgray;
         justify-content: space-around;
-        padding:auto;
+        padding-right:5% ;
         border-radius:15px; 
-        min-width: 650px; 
+        width: 60%; 
         height: 450px;
 }
-
 
 .hebergement    
 {       grid-column-start:1 ;
@@ -167,52 +154,52 @@ h2
 .h-lepanier { grid-column:2 ;grid-row:3 ;}
 .h-amina { grid-column:3 ;grid-row:3 ;}
 
-
-
 .afficherplus
 {       grid-column: 1;
         grid-row:4 ;
 }
 
-/*mise en forme leshotelspop et leshotelsmarseille*/
+/*mise en forme leshotels-populaires et leshotelsmarseille*/
 
-#conteneurlogements
+/*#conteneurlogements
 {       display: flex;
         flex-direction: row-reverse;
-        justify-content:space-around;
-}
+       /* justify-content:space-around;
+        width: 100%;
+}*/
 
 /* activité marseille*/
 
 
 
-.imgactiv {   min-height: 85%;}
+.imgactiv {   height: 85%;}
 
-.vieup-port img {  height: 90%;}
 
-.calanques img { height: 90%;}
+.vieup-port img {  height: 100%;}
+.calanques img { height: 100%;}
 
-.pomegues img { height: 78%;}
+.pomegues img { height: 85%;}
 
-.frioul img { height: 60%;}
+.frioul img { height: 70%;}
 
-.notre-dame img { height: 78%;}
+.notre-dame img { height: 75%;}
 
-.longchamp img { height: 65%;}
+.longchamp img { height: 75%;}
 
 
 /*étiquettes activités*/
 
-nom-activite
-{       font-size: 12px;
-        margin:0;
+legende-activite
+{       font-size: 10px;
+        height: 15%;
+       /* mobile  padding: 5% ;*/
 }
 
 
 
 .type-activite
-{       min-width: 230px;
-        max-width: 230px;
+{       width: 230px;
+       
 }
 
 
@@ -223,21 +210,23 @@ nom-activite
 .longchamp{ height: 145px;}
 
 
-/*.lesactivites  A REVOIR
+/*.lesactivites  
 {       display: grid;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: 3;
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;
+        width:90% ;
         
 }
+
 
 .titreactivites {grid-column:1 ; grid-row:1 ;}
 .vieup-port { grid-column:1 ; grid-row:2 ; }
 .pomegues{grid-column: 2; grid-row: 2;}
-.frioul{grid-column:2 ; grid-row:3 ; margin-top:}
+.frioul{grid-column:2 ; grid-row:3 ;}
 .calanques { grid-column:3 ; grid-row:2 ;}
 .notre-dame{grid-column:4 ; grid-row: 2;}
-.longchamp{grid-column:4 ; grid-row:3 ; margin-top:}*/
+.longchamp{grid-column:4 ; grid-row:3 ;}
 
 
 
@@ -257,7 +246,7 @@ nom-activite
 
 }/*fin media queries desktop*/
 
-
+/*
 @media all and (min-width: 1400px) {
 .conteneursite 
 {
