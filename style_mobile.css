@@ -207,7 +207,7 @@ a { text-decoration: none; color: inherit;    }
 /*étoiles hotels*/
 
 .starb  {   color: #0065FC;} /*etoile bleue*/
-.starg  {   color: grey;} /*etoiles grises, c'est ce grisqu'il faudra mettre color: #F2F2F2; */
+.starg  {   color: grey;} /*c'est ce gris qu'il faudra mettre color: #F2F2F2; */
 
 /*Hotels populaires*/
 
