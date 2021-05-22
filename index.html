@@ -63,12 +63,14 @@
                 <input class="input fw-bold" type="text" placeholder="Marseille, France">
 
                 <!--version desktop et tablette-->
-                <button class="boutonrecherche fw-bold">Rechercher
+                <button class="boutonrecherche fw-bold">
+                    Rechercher
                 </button>
-
-                <!--version mobile--> 
-                <button class="boutonloupe" type="submit"> <i class="fa fa-search iconloupe"></i>
-                </button>
+                
+                <!--version mobile -->
+                <button class="boutonloupe" type="submit">
+                   <i class="fa fa-search"></i>
+                </button> 
 
             </div>
 
@@ -82,24 +84,40 @@
 
                 <div class="categories-filtres">
                     
-                    <div class="bouton-filtre fw-bold">   
-                        <i class="fas fa-money-bill-wave icon-filtre"></i>
-                        <a class="nomfiltre" href="#">Économique</a>
-                    </div>
-
                     <div class="bouton-filtre fw-bold"> 
-                        <i class="fas fa-child icon-filtre"></i>
-                        <a class="nomfiltre" href="#">Familiale</a>
+                        <div class="icon-filtre">   
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="texte-filtre"> 
+                            <a href="#">Économique</a>
+                        </div>
                     </div>
 
-                    <div class="bouton-filtre fw-bold">  
-                        <i class="fas fa-heart icon-filtre"></i>
-                        <a class="nomfiltre" href="#">Romantique</a>
+                    <div class="bouton-filtre fw-bold">
+                        <div class="icon-filtre">  
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="texte-filtre"> 
+                            <a href="#">Familiale</a>
+                        </div>
                     </div>
 
-                    <div class="bouton-filtre fw-bold"> 
-                        <i class="fas fa-dog icon-filtre"></i>
-                        <a class="nomfiltre" href="#">Animaux autorisés</a> 
+                    <div class="bouton-filtre fw-bold">
+                        <div class="icon-filtre">   
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="texte-filtre"> 
+                            <a href="#">Romantique</a>
+                        </div>
+                    </div>
+
+                    <div class="bouton-filtre fw-bold">
+                        <div class="icon-filtre">  
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <div class="texte-filtre"> 
+                            <a href="#">Animaux autorisés</a>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -107,10 +125,12 @@
         </section>
 
             <div class="disponibilites">
-                <i class="fas fa-info icon-info"></i>
-                <p class="texte-info">
+            <div class="icon-info"> 
+                <i class="fas fa-info"></i>
+            </div>
+                <div class="texte-info">
                     Plus de 500 logements sont disponibles dans cette ville 
-                </p>
+                </div>
             </div>
             
 
@@ -120,7 +140,9 @@
 
             <div class="h2-et-chart"> 
                 <h2> Les plus populaires</h2>
-                <i class="fas fa-chart-line chart "></i>
+                <div class="chart"> 
+                    <i class="fas fa-chart-line"></i>
+                </div>
             </div>
 
             <figure class="hotelpop">
@@ -451,23 +473,32 @@
     <footer>
 
         <div class="classfooter">
-            <div class="propos">
-                <h3 class="titrefoot">A propos</h3>
-                    <p> <a class="lien-footer" href="#">Fonctionnement du site</a> </p>
-                    <p> <a class="lien-footer" href="#">Conditions générales de vente</a> </p>
-                    <p> <a class="lien-footer" href="#">Données et confidentialité </a> </p>
-            </div> 
 
-            <div class="hebt">
-                <h3 class="titrefoot">Nos hébergements</h3>
-                    <p> <a class="lien-footer" href="#">Charte qualité</a> </p>
-                    <p> <a class="lien-footer" href="#">Soumettre votre hôtel</a> </p>
+            <div class="section-footer"> 
+                <h3>A propos</h3>
+                <ul>
+                <li> <a class="lien-footer" href="#">Fonctionnement du site</a> </li>
+                <li> <a class="lien-footer" href="#">Conditions générales de vente</a> </li>
+                <li> <a class="lien-footer" href="#">Données et confidentialité </a> </li>
+                </ul> 
             </div>
-            <div class="aide">
-                <h3 class="titrefoot">Assistance</h3>
-                    <p> <a class="lien-footer" href="#">Centre d’aide</a> </p>
-                    <p> <a class="lien-footer" href="#">Nous contacter</a> </p>
+
+                <div class="section-footer"> 
+                <h3>Nos hébergements</h3>
+                <ul> 
+                <li> <a class="lien-footer" href="#">Charte qualité</a> </li>
+                <li> <a class="lien-footer" href="#">Soumettre votre hôtel</a> </li>
+                </ul>
             </div>
+
+                <div class="section-footer"> 
+                <h3>Assistance</h3>
+                <ul> 
+                <li> <a class="lien-footer" href="#">Centre d’aide</a> </li>
+                <li> <a class="lien-footer" href="#">Nous contacter</a> </li>
+                </ul>
+            </div>
+
         </div>
 
     </footer>
