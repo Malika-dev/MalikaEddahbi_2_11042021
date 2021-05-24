@@ -98,6 +98,7 @@ a { text-decoration: none; color: inherit;    }
         padding: 12px;
         cursor: pointer;
 }
+
 .boutonrecherche:hover 
 {       color: lightgray;
         transition: ease 0.3s;
@@ -120,7 +121,6 @@ a { text-decoration: none; color: inherit;    }
 {       background-color:gray;
         transition: ease 0.3s;
 }
-
 
 
 /* box-recherche toute version*/
@@ -236,15 +236,12 @@ a { text-decoration: none; color: inherit;    }
 
 .chart  
 {       font-size: 20px;
-       
-       
 }
 
 .h2-et-chart
 {       display: flex; 
        /*justify-content: space-between;*/
         align-items: center;
-       
 }
 
 /* hotels populaires*/
@@ -264,13 +261,11 @@ a { text-decoration: none; color: inherit;    }
 
 /* conteneur hotels populaires revoir les marges*/
 .leshotels-populaires 
-{      
-        display: flex;
+{       display: flex;
         flex-direction: column;
         background-color: lightgray;
         width: 100%;
         height: 550px;
-      
 }
 
 /*étiquettes hotels populaires*/
@@ -283,7 +278,6 @@ a { text-decoration: none; color: inherit;    }
         border-radius: 18px;
         width: 90%;
         height: 130px;
-       
 }
 
 .hotelpop:hover 
@@ -303,19 +297,16 @@ a { text-decoration: none; color: inherit;    }
 .etoilespop 
 {        font-size: 12px;
         margin-top: 15%;
-       
 }
 
 .detailspop
-{     
-        padding:0 5% 0 5%;
+{       padding:0 5% 0 5%;
         width:62% ;
         max-height:80% ;
 }
 
 
 /* hotels marseille*/
-
 
 .imgmars
 {       height: 60%;
@@ -341,13 +332,11 @@ a { text-decoration: none; color: inherit;    }
         border-radius: 18px;
         width: 90%;
         height: 200px;
-        
-       /* margin-right: 30px; revoir la marge*/
+        /* margin-right: 30px; revoir la marge*/
 }
 
 .hotelmars:hover 
-{
-        cursor: pointer;
+{       cursor: pointer;
         transform: scale(1.03);
         transition: ease 0.4s;
 }
@@ -355,14 +344,12 @@ a { text-decoration: none; color: inherit;    }
 /* texte et marges hotel marseille*/ 
 
  .detailsmars 
-{      
-        margin:3% 0 0 5% ;
+{       margin:3% 0 0 5% ;
         max-height: 40%;
 } 
 
 .nomhotelmars
-{       
-        font-size: 15px;
+{       font-size: 15px;
         margin-bottom: 2%;
 }
 
@@ -373,13 +360,10 @@ a { text-decoration: none; color: inherit;    }
 
 .etoilesmars
 {       font-size: 11px;
-      
-        
 }
 
 .afficherplus
-{       
-        font-size: 16px; 
+{       font-size: 16px; 
 }
 
 
@@ -409,8 +393,7 @@ a { text-decoration: none; color: inherit;    }
 }
 
 .type-activite:hover 
-{
-        cursor: pointer;
+{       cursor: pointer;
         transform: scale(1.03);
         transition: ease 0.4s;
 }
@@ -447,302 +430,248 @@ li
 
 @media all and (min-width: 400px) { 
 
-
-
-        .tarifpop 
-        {       
-                margin:0 0 -5% 0;
-        }
-        
-        
-        .detailsmars 
-        {      
-               margin-top:2%;
-               height: 50%;
-        }
-        
-        .tarifmars
-        {
-                margin-top: -1.5%;
-        }
-        .etoilesmars
-        {
-                margin-top: -1%;
-        } 
-        
-        } /*fin media queries (min-width: 450px)*/
-        
-        @media  all and (min-width: 576px) {
-        
-        .tarifpop 
-                {       
-                        margin: 5% 0 0 0;
-                }
-                
-                
-                
-                .detailsmars 
-                {      
-                        margin-top:2%;
-                } 
-                
-                
-                } /* fin media queries (min-width 576px)*/
-        
-        @media  all and (min-width: 768px) { 
-        
-        
-                .imgpop 
-         {      height: 60%;
-                width: 100%;
-               
-        }
-        
-        .imgpop img 
-        {       border-radius: 18px 18px 0 0;
-                width: 98%;
-                height: 97%;
-                margin:5px 0 0 5px;
-                object-fit: cover;    
-        }
-        
-        
-                .leshotels-populaires
-                {
-                        height: 250px;
-                        border-radius: 15px;
-                }
-        
-        
-                .figure-hotelspop
-        
-                {      
-                        display: flex;
-                        flex-direction: row;
-                        width: 100%;
-                        align-items: center; 
-                      
-                }
-                
-                /*titre et chart revoir marges*/
-               
-                .h2 
-                {
-                        font-size: 15px;
-                }
-                .chart
-                { 
-                        font-size: 15px;
-                }
-                
-                
-                
-                
-                /*étiquettes hotelspop */
-                
-                .hotelpop
-                {       flex-direction: column;
-                        width: 50%;
-                        height: 150px;
-                }
-        
-              
-                
-                
-                /* texte*/
-                
-                .nompop
-                {
-                        font-size: 11px;
-                }
-               
-                .tarifpop 
-                {       
-                        font-size:10px;
-                        margin:0;
-                }
-                
-                .etoilespop 
-                {        font-size: 8.5px; 
-                        margin: 0;
-                }
-        
-                .detailspop
-                {
-                        width: 100%;
-                        height: 45%;
-                        margin: 0 5% 0 0;
-                        text-align: center;
-                       
-                }
-        
-        
-                /*hotels marseille*/
-        
-               .figure-hotelsmars
-                {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                }
-        
-                .hotelmars
-        {       width:35%;
-                height: 150px;
-        }
-        
-        
-        /* texte et marges*/
-        
-        .nomhotelmars 
-        {      font-size: 11px; 
-        }
-        
-        .tarifmars
-        {       font-size: 10px;
-        }
-        
-        .etoilesmars
-        {       font-size: 8.5px;
-        } 
-                
-        
-        /*activités*/
-        
-        figure-activites
-        {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 100%;
-        }
-        
-        
-        
-        
-        .type-activite
-        {       width:35%;
-                height: 150px;
-        }
-        
-        .imgactiv 
-        {      height: 75%;
-               width: 100%;
-              
-        }
-        .legende-activite
-        {
-                font-size: 10px;
-        }
-        
-        /*footer*/
-        
-        .classfooter 
-        {       display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                padding: 2% 15% 0 0;
-               
-        }
-        
-        
-         } /*fin media queries min-width 768px*/
-        
-        
-        
-        @media all and (min-width: 992px) {
-        /*Header*/
-        
-        nav 
-        {       display: flex;
-                justify-content: space-between;
-        }
-        
-        .liensnav 
-        {       display: flex;
-                justify-content: space-around;
-                align-items: center; 
-                width: 45%;
-        } 
-        
-        .inscrip-mobile 
-        {       display: none;
-        }
-        
-        .inscrip-desktop
-        {       display: block !important;
-        
-        }
-        
-        /*mise en forme underline*/
-        .liensnav > div   /* appliqué aux enfants direct*/
-        {       display: flex;
-                flex-direction: column-reverse;
-                width:50%;
-        }
-        
-        
-        /*recherche*/
-        
-        .boutonloupe {   display: none;  }
-        
-        .boutonrecherche { display: inherit;}
-        
-        
-        /*Filtres*/
-        
-        
-        /*.texte-filtre mobile
-        {
-                margin-left: 10px;
-        }
-        
-        .categories-filtres
-        {       display: flex;
-                flex-direction: row;
-                flex-wrap: wrap; 
-        }*/
-        
-        
-        
-        
-        
-        
-        /*Info mobile
-        .icon-info
-{       display: flex;
-        color: #0065FC ;
-        border: 1px solid grey;
-        font-size: 8px;
-        border-radius:100%;
-        min-width: 16px;
-        min-height: 16px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 5%;
-}*/
-
-        
-        .icon-info
-{      
-        font-size: 10px;
-     
-        min-width: 20px;
-        min-height: 20px;
-       
-        margin-bottom: 0;
+.tarifpop 
+{       margin:0 0 -5% 0;
 }
 
 
+.detailsmars 
+{       margin-top:2%;
+        height: 50%;
+}
 
+.tarifmars
+{       margin-top: -1.5%;
+}
+
+.etoilesmars
+{       margin-top: -1%;
+} 
+
+} /*fin media queries (min-width: 450px)*/
+
+
+@media  all and (min-width: 576px) {
+
+.tarifpop 
+{       margin: 5% 0 0 0;
+}
+
+.detailsmars 
+{      margin-top:2%;
+} 
+
+} /* fin media queries (min-width 576px)*/
+
+
+@media  all and (min-width: 768px) { 
+
+
+.imgpop 
+{       height: 60%;
+        width: 100%;
+}
+
+.imgpop img 
+{       border-radius: 18px 18px 0 0;
+        width: 98%;
+        height: 97%;
+        margin:5px 0 0 5px;
+        object-fit: cover;    
+}
+
+.leshotels-populaires
+{       height: 250px;
+        border-radius: 15px;
+}
+
+
+.figure-hotelspop
+{       display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center; 
+}
+
+/*titre et chart revoir marges*/
+
+.h2 
+{       font-size: 15px;
+}
+
+.chart
+{       font-size: 15px;
+}
+
+/*étiquettes hotelspop */
+
+.hotelpop
+{       flex-direction: column;
+        width: 50%;
+        height: 150px;
+}
+
+
+/* texte*/
+
+.nompop
+{       font-size: 11px;
+}
+
+.tarifpop 
+{       font-size:10px;
+        margin:0;
+}
+
+.etoilespop 
+{       font-size: 8.5px; 
+        margin: 0;
+}
+
+.detailspop
+{       width: 100%;
+        height: 45%;
+        margin: 0 5% 0 0;
+        text-align: center;
+}
+
+
+/*hotels marseille*/
+
+.figure-hotelsmars
+{       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.hotelmars
+{       width:35%;
+        height: 150px;
+}
+
+
+/* texte et marges*/
+
+.nomhotelmars 
+{      font-size: 11px; 
+}
+
+.tarifmars
+{       font-size: 10px;
+}
+
+.etoilesmars
+{       font-size: 8.5px;
+} 
+
+
+/*activités*/
+
+figure-activites
+{       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+}
+
+.type-activite
+{       width:35%;
+        height: 150px;
+}
+
+.imgactiv 
+{       height: 75%;
+        width: 100%;
+}
+
+.legende-activite
+{       font-size: 10px;
+}
+
+/*footer*/
+
+.classfooter 
+{       display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2% 15% 0 0;
+}
+
+
+} /*fin media queries min-width 768px*/
+
+
+
+@media all and (min-width: 992px) {
+/*Header*/
+
+nav 
+{       display: flex;
+        justify-content: space-between;
+}
+
+.liensnav 
+{       display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        width: 45%;
+} 
+
+.inscrip-mobile 
+{       display: none;
+}
+
+.inscrip-desktop
+{       display: block !important;
+}
+
+/*mise en forme underline*/
+.liensnav > div   /* appliqué aux enfants direct*/
+{       display: flex;
+        flex-direction: column-reverse;
+        width:50%;
+}
+
+
+/*recherche*/
+
+.boutonloupe {   display: none;  }
+
+.boutonrecherche { display: inherit;}
+
+
+/*Filtres*/
+
+
+/*Info mobile
+.icon-info
+{       display: flex;
+color: #0065FC ;
+border: 1px solid grey;
+font-size: 8px;
+border-radius:100%;
+min-width: 16px;
+min-height: 16px;
+justify-content: center;
+align-items: center;
+margin-bottom: 5%;
+}*/
+
+
+.icon-info
+{       font-size: 10px;
+        min-width: 20px;
+        min-height: 20px;
+        margin-bottom: 0;
+}
 
 /*icone info + texte disponibilités*/
 .disponibilites
 {     /*  display: flex;
-        flex-direction: row;
-        align-items: center;*/
-       /* margin:5% 20% 5% 0;*/
-       margin: 1% 0 0 0;
+flex-direction: row;
+align-items: center;*/
+/* margin:5% 20% 5% 0;*/
+        margin: 1% 0 0 0;
 }
 
 
@@ -750,239 +679,264 @@ li
 {       font-size: 18px;
         margin-left: 20px;
 } 
-        /* revoir les marges et display flex*/
-        
-        /*h2 des sections*/
-        
-        h2
-        { font-size: 18px;}
-        
-        /*Hotels populaires*/
-        
-        /* hotels populaires*/
-        .imgpop 
-         {      height: 100%;
-                width: 38%;
-                width: 38%;
-        }
-        
-        .imgpop img 
-        {       border-radius: 18px 0 0 18px;
-                width: 94%;
-                height: 93%;
-                margin:5px 0 0 5px;
-                object-fit: cover;    
-        }
-        
-        /* conteneur hotels populaires revoir les marges*/
+/* revoir les marges et display flex*/
 
-        .leshotels-populaires 
-{      
-        
-        border-radius: 15px;
-      width: 50%;
-        height: 450px;
-      
+/*h2 des sections*/
+
+h2
+{ font-size: 18px;
 }
-        .figure-hotelspop 
-        {       display: flex;
-                flex-direction: column;
-                width: 100%;
-        }
-        
-        /*étiquettes hotels populaires*/
-        
-      /*  .hotelpop mobile
-        {       display: flex;
-                flex-direction: row;
-                background-color: white;
-                box-shadow: 0px 0px 8px 0px #0065FC;
-                border-radius: 18px;
-                width: 90%;
-                height: 130px;
-               
-        }*/
-        
-        
-        
-        /*texte étiquettes hotels populaires*/
-        
-        
-        .tarifpop 
-        {       font-size:14px;
-                margin-top: -6%;
-        }
-        
-        .etoilespop 
-        {        font-size: 12px;
-                margin-top: 15%;
-               
-        }
-        
-        .detailspop
-        {     
-                padding:0 5% 0 5%;
-                width:62% ;
-                max-height:80% ;
-        }
-        
-        
-        
-        /* hotels marseille*/
-        
-        .imgmars {      height: 55%;}
-        
-        .imgmars img 
-        {       width: 95%;
-                height: 95%;
-                margin: 5px 0 0 4.5px; 
-        }
-        
-        /*étiquettes hotels marseille*/
-        .hotelmars
-        {       width:20%;
-                height: 145px;
-        }
-        
-        
-        /* texte et marges*/
-        
-        .nomhotelmars 
-        {      font-size: 11px; 
-        }
-        
-        .tarifmars
-        {       font-size: 10px;
-        }
-        
-        .etoilesmars
-        {       font-size: 8.5px;
-        } 
-        
-        /* conteneur hotels marseille*/
-        
-       .leshotelsmarseille
-       {
-               background-color: lightgray;
-               border-radius: 15px;
-               width: 85%;
-               height: 455px;
-       }
 
-       .figure-hotelsmars
-        {       display:flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 100%;
-              
-        }
-        
-        
-        
-       
-        
-        /*affichage conteneur leshotels-populaires et leshotelsmarseille*/
-        
-        #conteneurlogements
-        {       display: flex;
-                flex-direction: row-reverse;
-                justify-content:space-around;
-                width: 100%;
-        }
-        
-        /* activité marseille*/
-        
-        
-        .imgactiv {   height: 85%;}
-        
-        
-        .vieup-port img {  height: 100%;}
-        .calanques img { height: 100%;}
-        
-        .pomegues img { height: 85%;}
-        
-        .frioul img { height: 70%;}
-        
-        .notre-dame img { height: 75%;}
-        
-        .longchamp img { height: 75%;}
-        
-        
-        /*étiquettes activités*/
-        
-        legende-activite
-        {       font-size: 10px;
-                height: 15%;
-               /* mobile  padding: 5% ;*/
-        }
-        
-        
-        .type-activite
-        {       width: 200px;
-        }
-        
-        
-        .vieux-port, .calanques { height: 320px;}
-        .pomegues   { height: 165px;}
-        .frioul { height: 120px;}
-        .notre-dame { height: 130px;}
-        .longchamp{ height: 145px;}
-        
-        
-.lesactivites
-{ 
+/*Hotels populaires*/
+
+/* hotels populaires*/
+.imgpop 
+{       height: 100%;
+        width: 38%;
+        width: 38%;
+}
+
+.imgpop img 
+{       border-radius: 18px 0 0 18px;
+        width: 94%;
+        height: 93%;
+        margin:5px 0 0 5px;
+        object-fit: cover;    
+}
+
+/* conteneur hotels populaires revoir les marges*/
+
+.leshotels-populaires 
+{       border-radius: 15px;
         width: 50%;
+        height: 450px;
 }
 
-       .figure-activites
-       {
-               display: grid;
-               grid-template-columns:4fr ;
-               grid-template-rows:2fr ;
-               
-       }
-        
-       .vieux-port {grid-column: 1 grid-row-start: 1 ;grid-row-end: 2; }
-       .calanques {grid-column: 3 grid-row-start:1  ;grid-row-end: 2; }
+.figure-hotelspop 
+{       display: flex;
+        flex-direction: column;
+        width: 100%;
+}
 
-       .pomegues { grid-column:2; grid-row:1 ;}
-       .frioul  { grid-column:2 ; grid-row:2 ;}
-       .notre-dame { grid-column: 4; grid-row:1 ;}
-       .longchamp   { grid-column:4 ; grid-row:2 ;} 
-        
-        
-        /*Footer*/
-        
-        
-        .classfooter 
-        {       display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                padding: 2% 15% 0 0;
-               
-        }
-        
-        
-        }/*fin media queries (min-width: 992px)*/
-        
-        
-        @media  all and (min-width: 1200px) {  }
-        
-        
-        
-        
-        @media  all and (min-width: 1400px) {  }
-        
-        /*
-        @media all and (min-width: 1400px) {
-        .conteneursite 
-        {
-                max-width: 1440px;
-                margin: 0 auto;
-        }
-        
-        
-        }fin media queries 1400px*/
+/*étiquettes hotels populaires*/
+
+/*  .hotelpop mobile
+{       display: flex;
+        flex-direction: row;
+        background-color: white;
+        box-shadow: 0px 0px 8px 0px #0065FC;
+        border-radius: 18px;
+        width: 90%;
+        height: 130px;
+}*/
+
+
+
+/*texte étiquettes hotels populaires*/
+
+
+.tarifpop 
+{       font-size:14px;
+        margin-top: -6%;
+}
+
+.etoilespop 
+{        font-size: 12px;
+        margin-top: 15%;
+}
+
+.detailspop
+{       padding:0 5% 0 5%;
+        width:62% ;
+        max-height:80% ;
+}
+
+
+/* hotels marseille*/
+
+.imgmars
+{       height: 55%;
+}
+
+.imgmars img 
+{       width: 95%;
+        height: 95%;
+        margin: 5px 0 0 4.5px; 
+}
+
+/*étiquettes hotels marseille*/
+.hotelmars
+{       width:20%;
+        height: 145px;
+}
+
+/* texte et marges*/
+
+.nomhotelmars 
+{       font-size: 11px; 
+}
+
+.tarifmars
+{       font-size: 10px;
+}
+
+.etoilesmars
+{       font-size: 8.5px;
+} 
+
+/* conteneur hotels marseille*/
+
+.leshotelsmarseille
+{       background-color: lightgray;
+        border-radius: 15px;
+        width: 85%;
+        height: 455px;
+}
+
+.figure-hotelsmars
+{       display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+}
+
+/*affichage conteneur leshotels-populaires et leshotelsmarseille*/
+
+#conteneurlogements
+{       display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-around;
+        width: 100%;
+}
+
+/* activité marseille*/
+
+.imgactiv
+{       height: 85%;
+}
+
+.vieup-port img {       height: 100%;   }
+
+.calanques img {        height: 100%;   }
+
+.pomegues img   {       height: 85%;    }
+
+.frioul img     {       height: 70%;    }
+
+.notre-dame img {       height: 75%;    }
+
+.longchamp img  {       height: 75%;    }
+
+
+/*étiquettes activités*/
+
+legende-activite
+{       font-size: 10px;
+        height: 15%;
+        /* mobile  padding: 5% ;*/
+}
+
+
+.type-activite
+{       width: 200px;
+}
+
+
+.vieux-port, .calanques 
+{       height: 320px;  
+}
+
+.pomegues       
+{       height: 165px;  
+}
+
+.frioul {       
+        height: 120px;  
+}
+
+.notre-dame     
+{       height: 130px;
+}
+
+.longchamp
+{       height: 145px;  
+}
+
+
+.lesactivites
+{       width: 50%;
+}
+
+.figure-activites
+{       display: grid;
+        grid-template-columns:4fr ;
+        grid-template-rows:2fr ;
+}
+
+.vieux-port 
+{       grid-column: 1;
+        grid-row-start: 1 ;
+        grid-row-end: 2;      
+}
+
+.calanques 
+{       grid-column: 3;
+        grid-row-start:1;
+        grid-row-end: 2;      
+}
+
+.pomegues 
+{       grid-column:2; 
+        grid-row:1 ;     
+}
+
+.frioul  
+{       grid-column:2 ; 
+        grid-row:2 ;    
+}
+
+.notre-dame 
+{       grid-column: 4;
+        grid-row:1 ;    
+}
+
+.longchamp   
+{       grid-column:4 ;
+        grid-row:2 ;    
+} 
+
+
+/*Footer*/
+
+
+.classfooter 
+{       display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2% 15% 0 0;
+}
+
+
+}/*fin media queries (min-width: 992px)*/
+
+
+@media  all and (min-width: 1200px) {  }
+
+
+
+
+@media  all and (min-width: 1400px) {  }
+
+/*
+@media all and (min-width: 1400px) {
+.conteneursite 
+{
+max-width: 1440px;
+margin: 0 auto;
+}
+
+
+}fin media queries 1400px*/
         
         
         
