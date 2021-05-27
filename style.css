@@ -71,7 +71,6 @@ navigation*/
 }
 
 
-
 /* titre et sous-titre*/
 
 h1
@@ -102,7 +101,7 @@ h1
 .input  
 {       border: none;
         padding: 0;
-        margin-left:30px;
+        margin:auto;
 }
 
 ::placeholder   
@@ -144,7 +143,7 @@ h1
         cursor: pointer;
         color: white; 
         font-size: 17px;
-        margin-left: 60px;
+        margin-left: auto;
 }
 
 .boutonloupe:hover 
@@ -159,12 +158,18 @@ h1
         border: 1px solid  grey;
         border-radius: 13px;
         margin-top: 40px;
-        width: 340px;
+        width: 95%;
+        margin: auto;
 }
 
 
 
 /*Filtres*/
+
+.titrefiltres
+{       font-weight: bold;
+        margin-top: 30px;
+}
 
 .icon-filtre
 {       display:flex;
@@ -239,7 +244,7 @@ h1
         flex-direction: row;
         align-items: center;
         margin-top: 30px;
-        margin-bottom:45px ;
+        margin-bottom:42px ;
 }
 
 
@@ -311,21 +316,25 @@ h2 { margin-left: 15px;}
 
 /*texte étiquettes*/ 
 .detailspop
-{      margin:10px 0 0 20px ; 
+{      margin-left:20px ; 
         width:62% ;
 }
 
 .nomhotelpop
-{       margin-right:20px;
+{       font-size:15px ;
+        margin-right:20px;
 }
 
 .tarifpop 
 {       font-size:14px;
-        margin:4px 0 40px 0;
+       /* margin:0 0 40px 0;*/
 }
 
+.texte-pop
+{       margin-bottom: 20px;}
 .etoilespop 
 {       font-size: 12px;
+      
 }
 
 /* conteneur hotels populaires*/
@@ -451,12 +460,15 @@ h2 { margin-left: 15px;}
 }
 
 li 
-{       padding-bottom: 20px;
+{       padding-bottom: 23px;
         list-style: none;
+        font-size: 17px;
 }
 
-.section-footer h3 
-{       margin-left: 40px;
+
+.sous-titre-footer
+{       font-weight: bold;
+        font-size: 20px;
 }
 
 
@@ -508,7 +520,7 @@ h1
 
 /*Filtres*/
 
-.titrefiltres { font-size: 16px;;}
+
 
 .icon-filtre
 {       font-size: 14px;
@@ -732,7 +744,7 @@ entre tarif et étoiles*/
         text-align: center;
 } 
 
-.figure-activites
+.activites-marseille
 {       display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -781,8 +793,24 @@ nav
         flex-direction: column-reverse;
         width:50%;
 }
+/******************************/
 
+/*recherche*/
 
+.boutonloupe 
+{       display: none;  
+}
+
+.boutonrecherche 
+{       display: inherit;
+}
+
+.box-recherche 
+{       width: 35%;
+        margin:0;
+}
+
+/*******************/
 
 .icon-info
 {       font-size: 10px;
@@ -892,9 +920,6 @@ h2
 
 /* activité marseille*/
 
-.type-activite
-{       width: 40%;
-}
 
 .vieux-port, .calanques 
 {       height: 320px;  
@@ -925,38 +950,42 @@ h2
 
 
 
-.figure-activites
+.activites-marseille
 {       display: grid;
-        grid-template-columns:1fr 1fr 1fr 1fr ;
-        grid-template-rows:1fr 1fr;
+        
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+       /* width:90% ;*/
         grid-template-areas: 
-        "vieux-port . pomegues . calanques . notre-dame "
-        "vieux-port . frioul . calanques . longchamp " 
+        "carte-activite-1 carte-activite-2 carte-activite-4 carte-activite-5 "
+        "carte-activite-1 carte-activite-3 carte-activite-4 carte-activite-6 " 
+        ;
 }
 
-.vieux-port 
-{       grid-area:vieux-port ;      
+.carte-activite-1 /*vieux-port*/ 
+{       grid-area:carte-activite-1 ;      
 }
 
-.calanques 
-{       grid-area:calanques ;      
+.carte-activite-4  /*calanques*/ 
+{       grid-area:carte-activite-4 ;      
 }
 
-.pomegues 
-{       grid-area:pomegues ;     
+.carte-activite-2  /*pomegues*/ 
+{       grid-area:carte-activite-2 ;     
 }
 
-.frioul  
-{       grid-area:frioul ;    
+.carte-activite-3 /*frioul*/  
+{       grid-area:carte-activite-3 ;    
 }
 
-.notre-dame 
-{       grid-area:notre-dame ;    
+.carte-activite-5 /*notre-dame*/ 
+{       grid-area:carte-activite-5 ;    
 }
 
-.longchamp   
-{       grid-area:longchamp ;    
+.carte-activite-6 /*longchamp*/   
+{       grid-area:carte-activite-6 ;    
 } 
+
 
 
 /*Footer*/
