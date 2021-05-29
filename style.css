@@ -9,16 +9,20 @@ a { text-decoration: none; color: inherit;    }
 /*.conteneursite 
 {       margin:0 10px;
 }*/
-/*body
+body
 {       margin:0
 }
 
-.margin-left    {margin-left: 10px;}
-.margin-right   { margin-right: 10px;}*/
+/*class  div-logo, h1, sous-titre, titre filtre, 
+div-info, h2 et texte "afficher plus" */
+
+.margin-left
+{       margin-left: 20px;
+}
 
 .lien-hebergt, .lien-inscrip { color: #0065FC;}
-.lien-activite:hover {   color:#0065FC}
-.lien-hebergt:hover {   color:grey}
+.lien-activite:hover {   color:#0065FC; font-weight: bold;}
+.lien-hebergt:hover {   color:black; font-weight: bold;}
 
 
 /* VERSION MOBILE IPHONE*/
@@ -31,15 +35,18 @@ navigation*/
 
 .inscrip-mobile 
 {       display: block;
-        margin-right: 8px;
+        margin-right: 20px;
 }
 
 .logo-inscrip
 {       display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 12px;
+        margin-top: 35px;
+        margin-bottom: 25px;
+       
 }
+
 
 
 .liensnav
@@ -79,6 +86,8 @@ h1
 
 .sous-titre
 {       font-size: 17.5px;
+        margin-bottom: 40px;
+      
 }
 
 
@@ -123,7 +132,7 @@ h1
 }
 
 .boutonrecherche:hover 
-{       color: lightgray;
+{       color: black;
         transition: ease 0.3s;
 }
 
@@ -157,9 +166,8 @@ h1
 {       display:flex; 
         border: 1px solid  grey;
         border-radius: 13px;
-        margin-top: 40px;
-        width: 95%;
-        margin: auto;
+        width: 90%;
+        margin:0 auto 30px auto;
 }
 
 
@@ -168,7 +176,8 @@ h1
 
 .titrefiltres
 {       font-weight: bold;
-        margin-top: 30px;
+        margin-right: auto;
+        margin-bottom:23px ;
 }
 
 .icon-filtre
@@ -207,7 +216,7 @@ h1
         transition-duration: 0.25s;
 }
 
-.texte-filtre
+.texte-filtre 
 {       margin-left: 10px;
 }
 
@@ -243,13 +252,13 @@ h1
 {       display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 30px;
-        margin-bottom:42px ;
+        margin-top:35px;
+        margin-bottom:35px ;
 }
 
 
 
-/*marges h2 , étiquettes hotels et activités*/
+/*marges h2 , cartes hotels et activités*/
 
 figure 
 {       margin-right:auto;
@@ -257,7 +266,6 @@ figure
 }
 
 
-h2 { margin-left: 15px;}
 
 
 /*LES HOTELS*/
@@ -297,7 +305,7 @@ h2 { margin-left: 15px;}
         object-fit: cover;
 }
 
-/*étiquettes*/
+/*cartes*/
 
 .hotelpop
 {       display: flex;
@@ -314,7 +322,7 @@ h2 { margin-left: 15px;}
         transition: ease 0.4s;
 }
 
-/*texte étiquettes*/ 
+/*texte cartes*/ 
 .detailspop
 {      margin-left:20px ; 
         width:62% ;
@@ -327,7 +335,7 @@ h2 { margin-left: 15px;}
 
 .tarifpop 
 {       font-size:14px;
-       /* margin:0 0 40px 0;*/
+       
 }
 
 .texte-pop
@@ -366,7 +374,7 @@ h2 { margin-left: 15px;}
 }
 
 
-/*étiquettes hotels marseille*/
+/*cartes hotels marseille*/
 
 .hotelmars
 {     /* display: flex;
@@ -386,7 +394,7 @@ h2 { margin-left: 15px;}
 /* texte et marges hotel marseille*/ 
 
 .detailsmars
-{       padding: 0 0 5px 10px;
+{       padding: 0 0 8px 10px;
 }
 
 .nomhotelmars
@@ -406,7 +414,8 @@ h2 { margin-left: 15px;}
 
 .afficherplus
 {       font-size: 16px;
-        margin:35px 0 50px 15px; 
+        margin-top: 35px;
+        margin-bottom: 50px ;
 }
 
 
@@ -424,7 +433,7 @@ h2 { margin-left: 15px;}
         object-fit: cover; 
 }
 
-/*étiquettes*/
+/*cartes*/
 
 .type-activite
 {      /* display: flex; 
@@ -442,7 +451,7 @@ h2 { margin-left: 15px;}
 
 
 .legende-activite
-{       padding: 15px ;
+{       padding:23px 0 21px 15px ;
 } 
 
 
@@ -465,6 +474,11 @@ li
         font-size: 17px;
 }
 
+ul 
+{       padding-left: 30px;
+}
+
+
 
 .sous-titre-footer
 {       font-weight: bold;
@@ -474,115 +488,23 @@ li
 
 /*MEDIA QUERIES*/
 
+@media  all and (min-width: 400px) /*and (max-width: 992px)*/ {
+
+
+
+.icon-info
+{       margin-bottom: 0;
+}
+
+} /* fin media queries (min-width 400px)*/
 
 @media  all and (min-width: 576px) and (max-width: 767px) {
 
 
-/* titre et sous-titre*/
-h1
-{       margin-top: 30px;
-        font-size: 21px;
-}
-
-.sous-titre
-{       font-size: 16px;
-}
-
-/*box-recherche*/
-
-.iconmap 
-{       font-size: 15px;
-        min-width: 45px;
-        min-height: 45px;
-}
-
-
-.input  
-{      margin-left:20px;
-}
-
-::placeholder   
-{      font-size: 15px;
-} 
-
-.boutonloupe 
-{       min-width: 45px;
-        min-height: 45px;
-        font-size: 15px;
-        margin-left: 20px;
-}
-
 .box-recherche 
-{       margin-top: 26px;
-        width: 280px;
+{       width: 300px;
+        margin:0 0 30px 20px;
 }
-
-
-/*Filtres*/
-
-
-
-.icon-filtre
-{       font-size: 14px;
-        min-width: 41px;
-        min-height: 41px;
-}
-
-.texte-filtre
-{       font-size: 15px;
-}
-
-/*icone info + texte info*/
-  
-.icon-info
-{       font-size: 10px;
-        min-width: 18px;
-        min-height: 18px;
-        margin-bottom: 0;
-}
-
-.texte-info 
-{       font-size: 16px;
-        margin: 0 20px 0 10px;
-} 
-
-.disponibilites
-{       margin-top: 25px;
-        margin-bottom:38px ;
-}
-
-
-/*marges h2 hotels et activités*/
-
-h2 { margin-left: 20px;}
-
-
-/*titre + icone chart Hotels populaires*/
-
-.h2-et-chart
-{       margin-top: 0;
-}
-
-/*marge texte étiquettes hotels populaires*/ 
-.detailspop
-{      margin-top: 25px;
-}
-
-/* marge texte hotels marseille*/ 
-
-.detailsmars
-{       padding-left:40px;
-}
-
-.afficherplus
-{     margin-left:20px; 
-}
-
-/* étiquettes activités*/
-
-.legende-activite
-{       padding: 15px 15px 15px 40px;
-} 
 
 /*FOOTER*/
 
@@ -593,9 +515,18 @@ h2 { margin-left: 20px;}
 } /* fin media queries (min-width 576px)*/
 
 
-@media  all and (min-width: 768px) and (max-width: 991.98px) { 
+@media  all and (min-width: 768px) and (max-width: 991px) { 
 
 /*texte info disponibilités*/
+
+h1
+{       margin-top:0;
+}
+
+.sous-titre
+{     margin-bottom: 20px;
+      
+}
 
 .disponibilites
 {       margin-top: 25px;
@@ -603,8 +534,13 @@ h2 { margin-left: 20px;}
 }        
 /* hotels populaires*/
 
-.imgpop 
-{       height: 100px;
+.imgpop2 
+{       height: 130px;
+        width: 100%;
+}
+
+.imgpop1, .imgpop3
+{       height: 145px;
         width: 100%;
 }
 
@@ -614,35 +550,30 @@ h2 { margin-left: 20px;}
         /*margin:4.5px 0 0 5px; mobile*/
 }
 
-/*conteneur étiquettes hotels pop*/
+/*conteneur cartes hotels pop*/
 .figure-hotelspop
 {       display: flex;
         align-items:center ;
 }
 
-/* conteneur hotels populaires mobile
-/*.leshotels-populaires 
-{       display: flex;
-        flex-direction: row;
-        background-color: lightgray;
-        width: 100%;
-        padding-bottom:20px;
-}*/
 
 .leshotels-populaires
 {       padding-bottom:10px;
         border-radius: 15px;
 }
 
-/*étiquettes hotels populaires*/
+/*cartes hotels populaires*/
 
 .hotelpop
 {       flex-direction: column;
         width: 25%;
 }
 
-/*texte étiquettes hotels populaires revoir les marges
+/*texte cartes hotels populaires revoir les marges
 entre tarif et étoiles*/
+
+.texte-pop
+{       margin-bottom:0;} 
 
 .nomhotelpop
 {       font-size: 13px;}
@@ -668,7 +599,7 @@ entre tarif et étoiles*/
 /* hotels marseille*/
 
 .imgmars
-{       height:130px;
+{       height:140px;
 }
 
 .imgmars img 
@@ -677,9 +608,9 @@ entre tarif et étoiles*/
         margin: 5px 0 0 4.5px; 
 }
 
-/*étiquettes hotels marseille*/
+/*cartes hotels marseille*/
 .hotelmars
-{     width: 30%;
+{     width: 28%;
 }
 
 /* texte et marges*/
@@ -705,7 +636,7 @@ entre tarif et étoiles*/
 .leshotelsmarseille
 {       background-color: lightgray;
         border-radius: 15px;
-       /* width:70%;*/
+      
        
 }
 
@@ -719,23 +650,17 @@ entre tarif et étoiles*/
 /* activité marseille*/
 
 .imgactiv
-{   height: 130px;
+{   height: 140px;
     width: 100%;
 }
 
-/*.imgactiv img mobile
-{       border-radius: 18px 18px 0 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-}*/
 
 
 
-/*étiquettes activités*/
+/*cartes activités*/
 
 .type-activite
-{       width: 30%;
+{       width: 28%;
 }
 
 .legende-activite 
@@ -760,14 +685,12 @@ entre tarif et étoiles*/
         padding:30px 30px 0 0;
 }
 
+} /*fin media queries min-width 768px*/ 
 
-} /*fin media queries min-width 768px*/        
-        
-        
-        
-@media all and (min-width: 992px) {        
-        
-nav 
+@media  all and (min-width: 768px) and (max-width: 1440px) { 
+
+/* spécificité navigation et bouton-recherche de 768px à 1440px*/
+        nav 
 {       display: flex;
         justify-content: space-between;
 }
@@ -793,7 +716,7 @@ nav
         flex-direction: column-reverse;
         width:50%;
 }
-/******************************/
+
 
 /*recherche*/
 
@@ -805,10 +728,19 @@ nav
 {       display: inherit;
 }
 
+
 .box-recherche 
-{       width: 35%;
-        margin:0;
+{       width:330px;
+        margin:0 0 20px 20px;
 }
+
+
+} /* fin media queries navigation et bouton recherche*/     
+        
+@media all and (min-width: 992px) {        
+        
+
+
 
 /*******************/
 
@@ -858,10 +790,10 @@ h2
 
 
 
-/*étiquettes hotels populaires*/
+/*cartes hotels populaires*/
 
 
-/*texte étiquettes hotels populaires*/
+/*texte cartes hotels populaires*/
 
 /* hotels marseille*/
 
@@ -875,7 +807,7 @@ h2
         margin: 5px 0 0 4.5px; 
 }
 
-/*étiquettes hotels marseille*/
+/*cartes hotels marseille*/
 .hotelmars
 {       width:30%;
 }
@@ -943,19 +875,13 @@ h2
 
 
 
-/*étiquettes activités*/
-
-
-
-
-
+/*grille activités*/
 
 .activites-marseille
 {       display: grid;
         
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-       /* width:90% ;*/
         grid-template-areas: 
         "carte-activite-1 carte-activite-2 carte-activite-4 carte-activite-5 "
         "carte-activite-1 carte-activite-3 carte-activite-4 carte-activite-6 " 
