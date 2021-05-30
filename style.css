@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-/*règles all screen*/
+/*règles tout écran*/
 
 * { font-family: Raleway, sans-serif;   }
 a { text-decoration: none; color: inherit;    }
 .fw-bold { font-weight: bold;}
 
-/*.conteneursite 
-{       margin:0 10px;
-}*/
 body
 {       margin:0
 }
@@ -98,9 +95,9 @@ h1
 {       display:flex;
         background-color: grey; /*#F2F2F2 c'est ce gris qu'il faut*/
         font-size: 18px;
-        border-radius: 13px 0 0 13px;
-        min-width: 49px;
-        min-height: 49px;
+        border-radius: 16px 0 0 16px;
+        min-width: 50px;
+        min-height: 50px;
         justify-content: center;
         align-items: center;
 }
@@ -109,7 +106,7 @@ h1
 
 .input  
 {       border: none;
-        padding: 0;
+       /* padding: 0; voir si pb avec safari*/
         margin:auto;
 }
 
@@ -146,13 +143,14 @@ h1
 {       
         background-color: #0065FC;
         border: none; 
-        border-radius: 13px;
+        border-radius: 16px;
         min-width: 50px;
         min-height: 50px;
         cursor: pointer;
         color: white; 
         font-size: 17px;
-        margin-left: auto;
+        margin-left:30px;
+        padding: 0;/* voir si dû au décalage sur safari*/
 }
 
 .boutonloupe:hover 
@@ -165,8 +163,8 @@ h1
 .box-recherche 
 {       display:flex; 
         border: 1px solid  grey;
-        border-radius: 13px;
-        width: 90%;
+        border-radius: 16px;
+        max-width:340px;
         margin:0 auto 30px auto;
 }
 
@@ -239,7 +237,9 @@ h1
         min-height: 16.5px;
         justify-content: center;
         align-items: center;
-        margin-bottom: 17px;
+       /* margin-bottom: 17px;*/
+        vertical-align: top;
+        
 }
 
 .texte-info 
@@ -251,22 +251,19 @@ h1
 .disponibilites
 {       display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items:center;
         margin-top:35px;
         margin-bottom:35px ;
 }
 
 
 
-/*marges h2 , cartes hotels et activités*/
+/*marges cartes hotels et cartes activités*/
 
 figure 
 {       margin-right:auto;
         margin-left:auto ;
 }
-
-
-
 
 /*LES HOTELS*/
  
@@ -301,7 +298,7 @@ figure
 {       border-radius: 18px 0 0 18px;
         width: 94%;
         height: 93%;
-        margin:4.5px 0 0 5px;
+        margin:4px 0 0 4px;
         object-fit: cover;
 }
 
@@ -310,7 +307,7 @@ figure
 .hotelpop
 {       display: flex;
         flex-direction: row;
-        background-color: white;
+        background-color:white;
         box-shadow: 0px 0px 8px 0px #0065FC;
         border-radius: 18px;
         width: 88%;
@@ -324,22 +321,26 @@ figure
 
 /*texte cartes*/ 
 .detailspop
-{      margin-left:20px ; 
+{       margin-left:20px ; 
         width:62% ;
 }
 
 .nomhotelpop
 {       font-size:15px ;
-        margin-right:20px;
+        margin-right:30px;
+        margin-block-end: 0;
+        margin-bottom: 5px;
 }
 
 .tarifpop 
 {       font-size:14px;
-       
+        margin-block-start:0;
+        margin-block-end: 0;
+        margin-bottom: 35px;
 }
 
-.texte-pop
-{       margin-bottom: 20px;}
+
+
 .etoilespop 
 {       font-size: 12px;
       
@@ -361,14 +362,14 @@ figure
 /*images*/
 .imgmars
 {       width: 100%;
-        height: 140px;
+        height: 220px;
 }
 
 .imgmars img
 {       border-radius: 18px 18px 0 0;
         width: 98%;
         height: 95%;
-        margin: 4.5px 3px 0 3.5px;
+        margin: 4px 0 0 3.7px;
         object-fit: cover; 
     
 }
@@ -379,7 +380,7 @@ figure
 .hotelmars
 {     /* display: flex;
         flex-direction: column;*/
-        background-color: white;
+        background-color:white;
         box-shadow: 0px 0px 8px 0px #0065FC;
         border-radius: 18px;
         width: 88%;
@@ -422,7 +423,7 @@ figure
 /* ACTIVITÉS*/
 
 .imgactiv
-{   height: 140px;
+{   height: 230px;
     width: 100%;
 }
 
@@ -457,7 +458,7 @@ figure
 
 /*FOOTER*/
 
-.classfooter 
+.classfooter
 {       background-color: lightgrey;
         padding: 30px 0;
         margin-top: 50px;
@@ -492,9 +493,9 @@ ul
 
 
 
-.icon-info
+/*.icon-info
 {       margin-bottom: 0;
-}
+}*/
 
 } /* fin media queries (min-width 400px)*/
 
@@ -502,22 +503,76 @@ ul
 
 
 .box-recherche 
-{       width: 300px;
-        margin:0 0 30px 20px;
+{      margin:0 0 30px 20px;
+}
+
+/*hotels populaires*/
+.leshotels-populaires
+{border-radius:15px ;}
+
+/*cartes hotels marseille*/
+.hotelmars
+{       max-width:510px;
+}
+
+.leshotelsmarseille
+{       display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+}
+/*titre*/
+.hebergement
+{       margin:40px auto 10px auto;
+}
+.afficherplus
+{       margin: 10px auto 30px auto;}
+
+
+/* cartes activités*/
+.titreactivites
+{       margin:40px auto 10px auto;
+}
+
+
+
+.type-activite
+{      max-width:510px;
+}
+
+.lesactivites
+{       display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 /*FOOTER*/
-
 .classfooter 
-{       padding-left: 130px;
+{       display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:30px 30px 0 0;
 }
+
+li 
+{       padding-bottom: 18px;
+        font-size: 15px;
+}
+
+ul 
+{       padding-left: 10px;
+}
+
+.sous-titre-footer
+{      font-size: 18px;
+}
+
 
 } /* fin media queries (min-width 576px)*/
 
 
 @media  all and (min-width: 768px) and (max-width: 991px) { 
 
-/*texte info disponibilités*/
 
 h1
 {       margin-top:0;
@@ -525,81 +580,115 @@ h1
 
 .sous-titre
 {     margin-bottom: 20px;
-      
 }
 
+/*filtres*/
+
+.bouton-filtre
+{       margin:10px 24px 0 20px;}
+
+
+
+/*texte info disponibilités*/
 .disponibilites
 {       margin-top: 25px;
         margin-bottom:30px ;
 }        
-/* hotels populaires*/
 
-.imgpop2 
-{       height: 130px;
-        width: 100%;
+/*Hotels populaires*/
+
+/*titre + icone chart*/
+
+/*.chart  mobile
+{       font-size: 20px;
+        margin: 4px 25px 0 0;
+}*/
+
+.titre-lespluspop
+{       font-size: 25px; 
+}
+.chart  
+{       margin: 4px 0 0 20px;
+        font-size: 25px;
 }
 
-.imgpop1, .imgpop3
-{       height: 145px;
-        width: 100%;
+.h2-et-chart /*tablette*/
+{       /*display: flex; mobile*/
+       justify-content: inherit;
+       /* align-items: center;
+       /* margin-top: 30px; mobile*/
+        margin-top: 15px;
+        min-width:600px ;
+}
+
+/* images*/
+.imgpop 
+{       height: 180px; /*tablette*/
+        width: 60%;
 }
 
 .imgpop img 
-{       border-radius: 18px 18px 0 0;
-        width: 94%;
-        /*margin:4.5px 0 0 5px; mobile*/
+{      /* border-radius: 18px 0 0 18px;
+        width: 94%; /*mobile*/
+       /* height: 93%;*/ /*mobile*/
+        margin:6px 0 0 6px;
+     /*   object-fit: cover;*/ /*mobile*/
 }
 
-/*conteneur cartes hotels pop*/
-.figure-hotelspop
-{       display: flex;
-        align-items:center ;
+/*cartes*/
+
+.hotelpop
+{      /* display: flex;
+        flex-direction: row;
+        background-color:white;
+        box-shadow: 0px 0px 8px 0px #0065FC;
+        border-radius: 18px;  mobile*/
+        min-width:600px ;
+        max-width: 600px;
+        
 }
 
 
-.leshotels-populaires
-{       padding-bottom:10px;
+
+/*texte cartes*/ 
+.detailspop
+{      
+        width:40%;
+}
+
+.nomhotelpop
+{       font-size:17px ;
+       /* margin-right:30px;
+        margin-block-end: 0;
+        margin-bottom: 5px; mobile*/
+}
+
+/*.tarifpop mobile
+{       font-size:14px;
+        margin-block-start:0;
+        margin-block-end: 0;
+        margin-bottom: 35px;
+}*/
+
+/*.etoilespop mobile
+{       font-size: 12px;
+      
+}*/
+.leshotels-populaires 
+{      /* display: flex;
+        flex-direction: column;
+        background-color: lightgray;*/
+        align-items: center;
+       width: 100%;
+      /*  padding-bottom:20px; mobile*/
         border-radius: 15px;
 }
 
-/*cartes hotels populaires*/
-
-.hotelpop
-{       flex-direction: column;
-        width: 25%;
-}
-
-/*texte cartes hotels populaires revoir les marges
-entre tarif et étoiles*/
-
-.texte-pop
-{       margin-bottom:0;} 
-
-.nomhotelpop
-{       font-size: 13px;}
-
-.tarifpop 
-{       font-size:12px;
-        margin-bottom: 0;
-}
-
-.etoilespop 
-{       font-size: 9.5px;
-        margin-bottom: 10px;
-       
-}
-
-.detailspop
-{       margin:0; 
-        width:100%;
-        padding: 0;
-        text-align: center;
-}
 
 /* hotels marseille*/
 
 .imgmars
-{       height:140px;
+{       height:190px;
 }
 
 .imgmars img 
@@ -610,7 +699,7 @@ entre tarif et étoiles*/
 
 /*cartes hotels marseille*/
 .hotelmars
-{     width: 28%;
+{     width: 29%;
 }
 
 /* texte et marges*/
@@ -636,6 +725,7 @@ entre tarif et étoiles*/
 .leshotelsmarseille
 {       background-color: lightgray;
         border-radius: 15px;
+        
       
        
 }
@@ -650,7 +740,7 @@ entre tarif et étoiles*/
 /* activité marseille*/
 
 .imgactiv
-{   height: 140px;
+{   height: 190px;
     width: 100%;
 }
 
@@ -689,7 +779,7 @@ entre tarif et étoiles*/
 
 @media  all and (min-width: 768px) and (max-width: 1440px) { 
 
-/* spécificité navigation et bouton-recherche de 768px à 1440px*/
+
         nav 
 {       display: flex;
         justify-content: space-between;
@@ -716,6 +806,9 @@ entre tarif et étoiles*/
         flex-direction: column-reverse;
         width:50%;
 }
+.liensnav > div a
+{       padding: 40px 0;
+}
 
 
 /*recherche*/
@@ -730,19 +823,37 @@ entre tarif et étoiles*/
 
 
 .box-recherche 
-{       width:330px;
-        margin:0 0 20px 20px;
+{       max-width:385px;
+        margin:20px 0 0 20px;
+}
+/*.box-recherche mobile
+{       display:flex; 
+        border: 1px solid  grey;
+        border-radius: 16px;
+        max-width:340px;
+        margin:0 auto 30px auto;
+}*/
+
+
+/*filtres*/
+
+
+
+.titrefiltres 
+{       margin-right:24px;
+        margin-bottom: 0;
+        margin: 10px 24px 0 20px }
+
+.filtres
+{       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*justify-content: space-around;*/
+        align-items: center;
+        margin-top: 25px;
 }
 
 
-} /* fin media queries navigation et bouton recherche*/     
-        
-@media all and (min-width: 992px) {        
-        
-
-
-
-/*******************/
 
 .icon-info
 {       font-size: 10px;
@@ -759,20 +870,28 @@ entre tarif et étoiles*/
         margin-left: 20px;
 } 
 
-/* filtres*/
 
-.filtres
-{       display: flex;
-        flex-direction: row;
-        /*justify-content: space-around;*/
-        align-items: center;
-}
 
 /*h2 des sections*/
 
 h2
 { font-size: 20px;
 }
+
+
+
+} /* fin media queries de 768px à 1440px*/   
+        
+@media all and (min-width: 992px) {        
+        
+
+.bouton-filtre
+{       margin:10px 24px 0 0;
+}
+
+/*******************/
+
+
 
 /*Hotels populaires*/
 
@@ -921,7 +1040,7 @@ h2
 {       display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 2% 15% 0 0;
+        padding:30px;
 }      
         
         
