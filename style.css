@@ -833,10 +833,8 @@ h2
 /*cartes hotels marseille*/
 .hotelmars
 {       width:90%;
-      /*  width: 200px;*/
+      
 }
-
-
 
 /* conteneur hotels marseille*/
 
@@ -887,31 +885,14 @@ carte-6-hotelmars
 
 /* activité marseille*/
 
-
 .vieux-port, .calanques 
 {       
-        height: 400px;  
+        height: 440px;  
 }
 
-.pomegues       
-{       height: 200px;  
+.pomegues, .frioul, .notre-dame, .longchamp         
+{       height: 180px;  
 }
-
-.frioul {       
-        height: 150px;  
-}
-
-.notre-dame     
-{       height: 170px;
-}
-
-.longchamp
-{       height: 190px;  
-}
-
-
-
-
 
 /*grille activités*/
 
