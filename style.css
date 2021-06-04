@@ -1,81 +1,85 @@
 /*CSS tout écran*/
-
-* { font-family: Raleway, sans-serif;   }
-a { text-decoration: none; color: inherit;    }
-.fw-bold { font-weight: bold;}
-
-body
-{       margin:0
+*
+{  font-family: Raleway, sans-serif; 
 }
 
-/* Mobile first, jusqu'à 767px*/
+body
+{       margin:0;
+}
 
-/*class  div-logo, h1, sous-titre, titre filtre, 
-div-info, h2 et texte "afficher plus" */
+a 
+{       text-decoration: none; 
+        color: initial;    
+}
+
+.fw-bold 
+{       font-weight: bold;
+}
 
 .margin-left
 {       margin-left: 20px;
 }
 
-/* couleurs charte et hover*/
-
-.lien-hebergt, .lien-inscrip 
+.star-blue, .lien-hebergt, .lien-inscription, .icon-filtre, .icon-info
 {       color: #0065FC;
-}
+} 
+.star-grey
+{       color: #F2F2F2;
+} 
+
+.boutonloupe, .boutonrecherche 
+{       color: white;}
+
+/* couleurs hover*/
+
 .lien-activite:hover 
-{       color:#0065FC;
+{       color:#0065FC; 
         font-weight: bold;
 }
 .lien-hebergt:hover 
-{       color:black; 
+{       color:lightgray; 
         font-weight: bold;
 }
 
-/* VERSION MOBILE IPHONE*/
-/*Header navigation*/
+/* Mobile jusqu'à 767px*/
 
-.inscrip-desktop        
-{       display: none !important;
+/*Header navigation*/  /* revoir mobile et desktop!!!*/
+
+nav
+{       display: grid;
+        grid-template-columns: auto 1fr 1fr auto;
+        grid-template-rows: 2fr;
+        grid-template-areas:    
+        "logo . .lien-inscription" 
+        "lien-hebergt lien-hebergt lien-activite lien-activite";
 }
 
-.inscrip-mobile 
-{       display: block;
-        margin-right: 20px;
-}
 
-.logo-inscrip
-{       display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+.logo 
+{       grid-area:logo ;
         margin-top: 35px;
         margin-bottom: 25px;
 }
 
-.liensnav
-{       display: flex;
-        justify-content: space-between;
-        align-items: center;
-}
-        
-.liensnav > div   
-{       display: flex;
-        flex-direction: column;
-        width:50%;
+.lien-inscription
+{       grid-area: lien-inscription ; 
+        margin: 50px 20px 0 0;
 }
 
-.liensnav > div a
-{       padding: 20px 0;
-        text-align: center;
+.lien-hebergt
+{       grid-area: lien-hebergt ;
+        margin-left: 40px; 
+        border-bottom: 2px solid #0065FC;
+        width: 50%;
+        padding-bottom: 20px;
 }
 
-.underline
-{       width: 100%;
-        height:2.5px ;
-        background-color: grey ;
-}
-
-.activ-link
-{       background-color: blue;
+.lien-activite
+{       grid-area: lien-activite ; 
+        border-bottom: 2px solid grey;/* c'est ce gris qu'il faut #F2F2F2*/
+        width: 50%;
+        padding-bottom: 20px;
 }
 
 /* titre et sous-titre*/
@@ -91,10 +95,9 @@ h1
 
 /*box-recherche*/
 /*icone map pour toute version, mobile, desktop et tablette*/
-
 .iconmap 
 {       display:flex;
-        background-color: grey; /*#F2F2F2 c'est ce gris qu'il faut*/
+        background-color:#F2F2F2; 
         font-size: 18px;
         border-radius: 16px 0 0 16px;
         min-width: 50px;
@@ -122,13 +125,12 @@ h1
 {       background-color: #0065FC;
         border: none;
         border-radius: 0 13px 13px 0;
-        color: white;
         padding: 15px;
         cursor: pointer;
 }
 
 .boutonrecherche:hover 
-{       color: black;
+{       color: #DEEBFF ;
         transition: ease 0.3s;
 }
 
@@ -146,14 +148,13 @@ h1
         min-width: 50px;
         min-height: 50px;
         cursor: pointer;
-        color: white; 
         font-size: 17px;
         margin-left:30px;
-        padding: 0;
+        padding: 0;/* voir si dû au décalage sur safari*/
 }
 
 .boutonloupe:hover 
-{       background-color:gray;
+{       background-color:#DEEBFF ;
         transition: ease 0.3s;
 }
 
@@ -161,7 +162,7 @@ h1
 
 .box-recherche 
 {       display:flex; 
-        border: 1px solid  grey;
+        border: 1px solid #F2F2F2;
         border-radius: 16px;
         max-width:340px;
         margin:0 auto 30px auto;
@@ -176,7 +177,6 @@ h1
 
 .icon-filtre
 {       display:flex;
-        color: #0065FC ;
         border: 1px solid #DEEBFF;
         background-color: #DEEBFF;
         font-size: 16px;
@@ -189,7 +189,7 @@ h1
 
 .bouton-filtre
 {       display:flex; 
-        border: 1px solid lightgray;/* c'est ce gris qu'il faut #F2F2F2*/
+        border: 1px solid #F2F2F2;
         border-radius:  50px ; 
         margin: 10px 0 0 10px;
         padding: 0 20px 0 0;
@@ -203,9 +203,9 @@ h1
         transition-duration: 0.25s;
 }
 
-.bouton-filtre:hover .icon-filtre 
+.bouton-filtre:hover 
 {       cursor: pointer;
-        background: white;
+        background-color: white;
         transition-duration: 0.25s;
 }
 
@@ -223,8 +223,7 @@ h1
   
 .icon-info
 {       display: flex;
-        color: #0065FC ;
-        border: 1px solid grey;
+        border: 1px solid #F2F2F2;
         font-size: 10.5px;
         border-radius:100%;
         min-width: 20px;
@@ -234,12 +233,11 @@ h1
         margin-bottom: 25px;
 }
 
-.texte-info 
-{       font-size: 16px;
-        margin-right: 20px;
+.texte-info   
+{       margin-right: 20px;
         margin-left: 10px;
-        margin-block-start:2px;
-        margin-block-end: 0;
+        margin-top:2px ;
+        margin-bottom: 0;
 } 
 
 .disponibilites
@@ -259,14 +257,7 @@ figure
         margin-left:auto ;
 }
  
-/*étoiles hotels*/
-.starb  
-{       color: #0065FC;
-} /*etoile bleue*/
 
-.starg  
-{       color: grey;
-} /*c'est ce gris qu'il faudra mettre color: #F2F2F2; */
 
 /*Hotels populaires*/
 
@@ -303,7 +294,7 @@ figure
 {       display: flex;
         flex-direction: row;
         background-color:white;
-        box-shadow: 0px 0px 8px 0px #0065FC;
+        box-shadow: 0px 0px 8px 0px #F2F2F2;
         border-radius: 18px;
         width: 88%;
 }
@@ -322,15 +313,13 @@ figure
 
 .nomhotelpop
 {       font-size:15px ;
-        margin-right:30px;
-        margin-block-end: 0;
-        margin-bottom: 5px;
+        margin-right:30px; 
+        margin-bottom: 0;
 }
 
 .tarifpop 
 {       font-size:14px;
-        margin-block-start:0;
-        margin-block-end: 0;
+        margin-top: 5px;
         margin-bottom: 35px;
 }
 
@@ -343,7 +332,7 @@ figure
 .leshotels-populaires 
 {       display: flex;
         flex-direction: column;
-        background-color: lightgray;
+        background-color: #F2F2F2;
         width: 100%;
         padding-bottom:20px;
 }
@@ -369,7 +358,7 @@ figure
 
 .hotelmars
 {       background-color:white;
-        box-shadow: 0px 0px 8px 0px #0065FC;
+        box-shadow: 0px 0px 8px 0px #F2F2F2;
         border-radius: 18px;
         width: 88%;
 }
@@ -428,7 +417,7 @@ figure
 .type-activite
 {       display: flex;
         flex-direction: column;
-        box-shadow: 0px 0px 8px 0px #0065FC;
+        box-shadow: 0px 0px 8px 0px #F2F2F2;
         border-radius: 18px;
         width: 88%;
 }
@@ -447,7 +436,7 @@ figure
 /*FOOTER*/
 
 .classfooter
-{       background-color: lightgrey;
+{       background-color: #F2F2F2;
         padding: 30px 0;
         margin-top: 50px;
 }
@@ -579,7 +568,7 @@ h1
 
 .hotelpop
 {       flex-direction: column;
-        max-width: 30%;
+        width: 30%;
         height: 270px;
 }
 
@@ -631,7 +620,7 @@ h1
 
 /*cartes hotels marseille*/
 .hotelmars
-{       max-width: 30%;
+{       width: 30%;
         height: 270px;
 }
 
@@ -643,7 +632,7 @@ h1
 /* conteneurs hotels marseille*/
 
 .leshotelsmarseille
-{       background-color: lightgray;
+{       background-color: #F2F2F2;
         width: 98%;
         border-radius: 15px;  
         margin-left: auto;
@@ -670,7 +659,7 @@ h1
 /*titre*/
 .titreactivites
 {       font-size: 25px;
-        margin-block-start: 50px;
+       /* margin-block-start: 50px;*/
 }
 
 /*cartes activités*/
@@ -683,7 +672,7 @@ h1
 /*cartes activités*/
 
 .type-activite
-{       max-width: 30%;
+{       width: 30%;
         height: 270px;
 }
 
@@ -706,36 +695,72 @@ filtres et footer pour tablette et desktop*/
 
 @media  all and (min-width: 768px) { 
 
-nav 
-{       display: flex;
-        justify-content: space-between;
+/* mobile
+.logo 
+{       grid-area:logo ;
+        margin-top: 35px;
+        margin-bottom: 25px;
 }
 
-.liensnav 
-{       display: flex;
-        justify-content: space-around;
-        align-items: center; 
-        width: 45%;
-} 
-
-.inscrip-mobile 
-{       display: none;
+.lien-inscription
+{       grid-area: lien-inscription ; 
+        margin: 50px 20px 0 0;
 }
 
-.inscrip-desktop
-{       display: block !important;
+.lien-hebergt
+{       grid-area: lien-hebergt ;
+        margin-left: 40px; 
+        border-bottom: 2px solid #0065FC;
+        width: 50%;
+        padding-bottom: 20px;
 }
 
-/*mise en forme underline*/
-.liensnav > div   
-{       display: flex;
-        flex-direction: column-reverse;
-        width:50%;
+.lien-activite
+{       grid-area: lien-activite ; 
+        border-bottom: 2px solid grey;/* c'est ce gris qu'il faut #F2F2F2*
+        width: 50%;
+        padding-bottom: 20px;
+}*/        
+
+nav
+{       display: grid;
+        grid-template-columns: auto 1fr 1fr auto;
+        grid-template-areas:    
+        "logo . . . lien-hebergt lien-activite lien-inscription" ;
+        
 }
 
-.liensnav > div a
-{       padding: 40px 0;
+
+
+.logo 
+{       grid-area:logo ;
+        
+       /* margin-bottom: 25px; mobile*/
 }
+
+.lien-inscription
+{       grid-area: lien-inscription ; 
+       
+}
+
+.lien-hebergt
+{       grid-area: lien-hebergt ;
+        margin-left: 40px; 
+        border-bottom:none;
+        border-top: 2px solid #0065FC;
+        margin: 0 50px 0 0;
+        padding:48px 0 0 0;
+}
+
+.lien-activite
+{       grid-area: lien-activite ; 
+        border-bottom: none;
+        border-top: 2px solid grey;/* c'est ce gris qu'il faut #F2F2F2*/
+        margin: 0 50px 0 0;
+        padding:48px 0 0 0;
+}
+
+
 
 
 /*recherche*/
@@ -799,7 +824,7 @@ h2
 /*marges cartes hotels populaires et hotels marseille*/
 
 .hotelpop, .hotelmars
-{    margin-block-end:22px ;   
+{       margin-bottom: 22px;
 }
 
 /* padding grille hotels populaires et hotels marseille*/
@@ -817,6 +842,17 @@ h2
 {       height: 140px;
 }
 
+/*texte cartes */
+
+
+.tarif-hotel-matin, .tarif-hotel-bleu
+{       margin-top: 10px;
+        margin-bottom: 40px;
+}
+
+
+
+/*grille hotels populaires*/
 .leshotels-populaires
 {       border-radius:15px;
         width: 35%;}
@@ -830,7 +866,7 @@ h2
 .imgmars img 
 {       width: 95%;
         height: 95%;
-        margin: 5px 0 0 4.5px; 
+        margin: 5px 3px 0 6px; 
 }
 
 /*cartes hotels marseille*/
@@ -841,7 +877,7 @@ h2
 /* conteneur hotels marseille*/
 
 .leshotelsmarseille
-{       background-color: lightgray;
+{       background-color: #F2F2F2;
         border-radius: 15px;
         width:60%;
 }
