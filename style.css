@@ -44,17 +44,39 @@ a
 /* Mobile jusqu'à 767px*/
 
 /*Header navigation*/  /* revoir mobile et desktop!!!*/
-
-nav
-{       display: grid;
-        grid-template-columns: auto 1fr 1fr auto;
-        grid-template-rows: 2fr;
-        grid-template-areas:    
-        "logo . .lien-inscription" 
-        "lien-hebergt lien-hebergt lien-activite lien-activite";
+.nav-underline > div   
+{       display: flex;
+        flex-direction: column;
+        width:100%;
 }
 
+/*.nav-underline > div a.lien-hebergt,lien-activite
+{       padding: 20px 0;
+        text-align: center;
+} padding bottom et text-align*/
 
+.lien-hebergt,lien-activite
+{    text-align: center;   }
+
+.underline
+{       width: 100%;
+        height:2.5px ;
+        background-color: grey ;/* mettre le gris color de la charte*/
+        margin-top: 20px;
+}
+
+.activ-link
+{       background-color: blue;
+}
+
+nav
+ {      display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "logo . . nav-inscription"
+        "nav-hebergement nav-hebergement nav-activite nav-activite";
+}
 
 .logo 
 {       grid-area:logo ;
@@ -62,26 +84,21 @@ nav
         margin-bottom: 25px;
 }
 
-.lien-inscription
-{       grid-area: lien-inscription ; 
+.nav-inscription
+{       grid-area: nav-inscription ; 
         margin: 50px 20px 0 0;
 }
 
-.lien-hebergt
-{       grid-area: lien-hebergt ;
-        margin-left: 40px; 
-        border-bottom: 2px solid #0065FC;
-        width: 50%;
-        padding-bottom: 20px;
+.nav-hebergement
+{       grid-area: nav-hebergement ;
+        
 }
 
-.lien-activite
-{       grid-area: lien-activite ; 
-        border-bottom: 2px solid grey;/* c'est ce gris qu'il faut #F2F2F2*/
-        width: 50%;
-        padding-bottom: 20px;
+.nav-activite
+{       grid-area: nav-activite ; 
+        
 }
-
+      
 /* titre et sous-titre*/
 
 h1
@@ -283,7 +300,7 @@ figure
 .imgpop img 
 {       border-radius: 18px 0 0 18px;
         width: 94%;
-        height: 93%;
+        height: 94%;
         margin:4px 0 0 4px;
         object-fit: cover;
 }
@@ -294,7 +311,7 @@ figure
 {       display: flex;
         flex-direction: row;
         background-color:white;
-        box-shadow: 0px 0px 8px 0px #F2F2F2;
+        box-shadow: 0px 0px 6px 0px  lightgray/*#0000002e*/; /*mettre gris couleur charte*/
         border-radius: 18px;
         width: 88%;
 }
@@ -349,16 +366,16 @@ figure
 .imgmars img
 {       border-radius: 18px 18px 0 0;
         width: 98%;
-        height: 95%;
-        margin: 4px 0 0 3.7px;
+        height: 98%;
+        margin: 4px 0 0 4px;
         object-fit: cover; 
 }
 
 /*cartes hotels marseille*/
 
 .hotelmars
-{       background-color:white;
-        box-shadow: 0px 0px 8px 0px #F2F2F2;
+{       background-color: white;
+        box-shadow: 0px 0px 6px 0px  lightgray/*#0000002e*/; /*mettre gris couleur charte*/
         border-radius: 18px;
         width: 88%;
 }
@@ -417,7 +434,7 @@ figure
 .type-activite
 {       display: flex;
         flex-direction: column;
-        box-shadow: 0px 0px 8px 0px #F2F2F2;
+        box-shadow: 0px 0px 6px 0px  lightgray/*#0000002e*/; /*mettre gris couleur charte*/
         border-radius: 18px;
         width: 88%;
 }
@@ -561,9 +578,9 @@ h1
 
 .imgpop img 
 {       border-radius: 18px 18px 0 0;
-        width: 95%;
-        height: 97%;
-        margin: 4px 2px 0 6.5px;
+        width: 96%;
+        height: 96%;
+        margin: 4px 0 0 4px;
 }
 
 .hotelpop
@@ -613,9 +630,9 @@ h1
 }
 
 .imgmars img 
-{       width: 95%;
-        height: 95%;
-        margin: 5px 0 0 6px; 
+{       width: 96%;
+        height: 96%;
+        margin: 4px 0 0 4px; 
 }
 
 /*cartes hotels marseille*/
@@ -695,73 +712,43 @@ filtres et footer pour tablette et desktop*/
 
 @media  all and (min-width: 768px) { 
 
-/* mobile
-.logo 
-{       grid-area:logo ;
-        margin-top: 35px;
-        margin-bottom: 25px;
-}
+       
 
-.lien-inscription
-{       grid-area: lien-inscription ; 
-        margin: 50px 20px 0 0;
+/*Header navigation*/
+.nav-underline > div   
+{       display: flex;
+        flex-direction:column-reverse;
 }
-
-.lien-hebergt
-{       grid-area: lien-hebergt ;
-        margin-left: 40px; 
-        border-bottom: 2px solid #0065FC;
-        width: 50%;
-        padding-bottom: 20px;
-}
-
-.lien-activite
-{       grid-area: lien-activite ; 
-        border-bottom: 2px solid grey;/* c'est ce gris qu'il faut #F2F2F2*
-        width: 50%;
-        padding-bottom: 20px;
-}*/        
 
 nav
-{       display: grid;
-        grid-template-columns: auto 1fr 1fr auto;
-        grid-template-areas:    
-        "logo . . . lien-hebergt lien-activite lien-inscription" ;
-        
+ {      display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "logo . nav-hebergement nav-activite nav-inscription"
 }
-
-
 
 .logo 
 {       grid-area:logo ;
+}
+
+.nav-hebergement
+{       grid-area: nav-hebergement ;
         
-       /* margin-bottom: 25px; mobile*/
 }
 
-.lien-inscription
-{       grid-area: lien-inscription ; 
-       
+.nav-activite
+{       grid-area: nav-activite ; 
+        
 }
 
-.lien-hebergt
-{       grid-area: lien-hebergt ;
-        margin-left: 40px; 
-        border-bottom:none;
-        border-top: 2px solid #0065FC;
-        margin: 0 50px 0 0;
-        padding:48px 0 0 0;
+.nav-inscription
+{       grid-area: nav-inscription ; 
+       /* margin: 50px 20px 0 0; mobile*/
+        margin: 0 0 20px 0;
 }
-
-.lien-activite
-{       grid-area: lien-activite ; 
-        border-bottom: none;
-        border-top: 2px solid grey;/* c'est ce gris qu'il faut #F2F2F2*/
-        margin: 0 50px 0 0;
-        padding:48px 0 0 0;
-}
-
-
-
 
 /*recherche*/
 .boutonloupe 
