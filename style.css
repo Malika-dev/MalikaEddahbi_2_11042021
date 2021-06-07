@@ -9,7 +9,7 @@ body
 
 a 
 {       text-decoration: none; 
-        color: initial;    
+        color: inherit;    
 }
 
 .fw-bold 
@@ -30,24 +30,13 @@ a
 .bouton-loupe, .bouton-recherche 
 {       color: white;}
 
-/* couleurs hover*/
-
-.lien-activite:hover 
-{       color:#0065FC; 
-        font-weight: bold;
-}
-.lien-hebergt:hover 
-{       color:lightgray; 
-        font-weight: bold;
-}
-
 /* Mobile jusqu'à 767px*/
 
 .chart, .sous-titre-footer 
 {       font-size: 20px;
 }
 
-/*Header navigation*/  /* revoir mobile et desktop!!!*/
+/*Header navigation*/ 
 .nav-underline > div   
 {       display: flex;
         flex-direction: column;
@@ -59,17 +48,24 @@ a
         text-align: center;
 } 
 
-
-
 .underline
 {       width: 100%;
         height:2.5px ;
-        background-color: grey ;/* mettre le gris color de la charte*/
+        background-color:#F2F2F2 ;
         margin-top: 20px;
 }
 
 .activ-link
 {       background-color: blue;
+}
+
+.lien-activite:hover 
+{       color:#0065FC; 
+        font-weight: bold;
+}
+.lien-hebergt:hover 
+{       color:lightgray; 
+        font-weight: bold;
 }
 
 nav
@@ -94,12 +90,10 @@ nav
 
 .nav-hebergement
 {       grid-area: nav-hebergement ;
-        
 }
 
 .nav-activite
 {       grid-area: nav-activite ; 
-        
 }
       
 /* titre et sous-titre*/
@@ -150,7 +144,7 @@ h1
 }
 
 .bouton-recherche:hover 
-{       color: #DEEBFF ;
+{       color: black ;
         transition: ease 0.3s;
 }
 
@@ -161,8 +155,7 @@ h1
 /* bouton loupe version mobile*/ 
 
 .bouton-loupe 
-{       
-        background-color: #0065FC;
+{       background-color: #0065FC;
         border: none; 
         border-radius: 16px;
         min-width: 50px;
@@ -170,7 +163,7 @@ h1
         cursor: pointer;
         font-size: 17px;
         margin-left:30px;
-        padding: 0;/* voir si dû au décalage sur safari*/
+        padding: 0;
 }
 
 .bouton-loupe:hover 
@@ -223,9 +216,9 @@ h1
         transition-duration: 0.25s;
 }
 
-.bouton-filtre:hover 
+.bouton-filtre:hover .icon-filtre 
 {       cursor: pointer;
-        background-color: white;
+        background: white;
         transition-duration: 0.25s;
 }
 
@@ -277,18 +270,12 @@ figure
         margin-left:auto ;
 }
  
-
-
 /*Hotels populaires*/
 
 /*titre + icone chart*/
 .chart  
 {       margin: 4px 25px 0 0;
 }
-
-
-
-
 
 .h2-et-chart
 {       display: flex; 
@@ -317,7 +304,7 @@ figure
 {       display: flex;
         flex-direction: row;
         background-color:white;
-        box-shadow: 0px 0px 6px 0px  lightgray/*#0000002e*/; /*mettre gris couleur charte*/
+        box-shadow: 0px 0px 6px 0px  #F2F2F2;
         border-radius: 18px;
         width: 88%;
 }
@@ -381,7 +368,7 @@ figure
 
 .hotelmars
 {       background-color: white;
-        box-shadow: 0px 0px 6px 0px  lightgray/*#0000002e*/; /*mettre gris couleur charte*/
+        box-shadow: 0px 0px 6px 0px #F2F2F2;
         border-radius: 18px;
         width: 88%;
 }
@@ -440,7 +427,7 @@ figure
 .type-activite
 {       display: flex;
         flex-direction: column;
-        box-shadow: 0px 0px 6px 0px  lightgray/*#0000002e*/; /*mettre gris couleur charte*/
+        box-shadow: 0px 0px 6px 0px #F2F2F2;
         border-radius: 18px;
         width: 88%;
 }
@@ -469,16 +456,15 @@ figure
         text-decoration-line: underline;
 }
 
+ul 
+{       padding-left: 30px;
+}
+
 li 
 {       padding-bottom: 23px;
         list-style: none;
         font-size: 17px;
 }
-
-ul 
-{       padding-left: 30px;
-}
-
 
 
 
@@ -486,7 +472,6 @@ ul
 
 /*téléphone mobile paysage 576 pixels et + */
 @media  all and (min-width: 576px) and (max-width: 767px) {
-
 
 .box-recherche 
 {      margin:0 0 30px 20px;
@@ -507,26 +492,10 @@ ul
 {       height: 260px;
 }
 
-
 /*FOOTER*/
+
 .classfooter 
-{       display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding:30px 30px 0 0;
-}
-
-li 
-{       padding-bottom: 18px;
-        font-size: 15px;
-}
-
-ul 
-{       padding-left: 10px;
-}
-
-.sous-titre-footer
-{      font-size: 18px;
+{       margin-left: 70px;
 }
 
 
@@ -730,8 +699,6 @@ filtres et footer pour tablette et desktop*/
         text-align: center;
 } 
 
-
-
 .underline
 {       width: 100%;
         height:2.5px ;
@@ -743,17 +710,12 @@ filtres et footer pour tablette et desktop*/
 .nav-underline    
 {       display: flex;
         flex-direction:column-reverse;
-        
-        /*padding: 20px 0; mobile*/
-        /*padding: 0 ;*/
-      /*  margin-bottom: 25px;*/
 }
-
-/*.nav-underline a 
-{       margin-top: 50px;}*/
 
 .underline, .activ-link
 { margin-bottom: 50px;}
+
+
 
 nav
  {      display: grid;
@@ -781,10 +743,8 @@ nav
 
 .nav-inscription
 {       grid-area: nav-inscription ; 
-       /* margin: 50px 20px 0 0; mobile*/
         margin: 0 20px 0 0;
 }
-
 
 
 /*recherche*/
@@ -807,7 +767,8 @@ nav
 }
 
 .bouton-filtre
-{    margin: 10px 0 0 30px;   }
+{    margin: 10px 0 0 30px;   
+}
 
 .filtres
 {       display: flex;
@@ -845,13 +806,13 @@ h2
 }
 
  
-/*marges cartes hotels populaires et hotels marseille*/
+/*cartes hotels populaires et hotels marseille*/
 
 .hotelpop, .hotelmars
 {       margin-bottom: 22px;
 }
 
-/* padding grille hotels populaires et hotels marseille*/
+/* grille hotels populaires et hotels marseille*/
 .leshotels-populaires, .leshotels-marseille
 {       padding-top: 40px;
 }
@@ -868,18 +829,16 @@ h2
 
 /*texte cartes */
 
-
 .tarif-hotel-matin, .tarif-hotel-bleu
 {       margin-top: 10px;
         margin-bottom: 40px;
 }
 
-
-
 /*grille hotels populaires*/
 .leshotels-populaires
 {       border-radius:15px;
-        width: 35%;}
+        width: 35%;
+}
 
 /* hotels marseille*/
 
@@ -935,7 +894,7 @@ carte-6-hotelmars
 {       grid-area:carte-6-hotelmars ;      
 }
 
-/*affichage conteneur leshotels-populaires et leshotels-marseille*/
+/*conteneur leshotels-populaires et leshotels-marseille*/
 
 #conteneurlogements
 {       display: flex;
@@ -944,12 +903,10 @@ carte-6-hotelmars
         width: 100%;
 }
 
-
 /* activité marseille*/
 
 .vieux-port, .calanques 
-{       
-        height: 440px;  
+{       height: 440px;  
 }
 
 .pomegues, .frioul, .notre-dame, .longchamp         
