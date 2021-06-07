@@ -27,7 +27,7 @@ a
 {       color: #F2F2F2;
 } 
 
-.boutonloupe, .boutonrecherche 
+.bouton-loupe, .bouton-recherche 
 {       color: white;}
 
 /* couleurs hover*/
@@ -43,6 +43,10 @@ a
 
 /* Mobile jusqu'à 767px*/
 
+.chart, .sous-titre-footer 
+{       font-size: 20px;
+}
+
 /*Header navigation*/  /* revoir mobile et desktop!!!*/
 .nav-underline > div   
 {       display: flex;
@@ -50,13 +54,12 @@ a
         width:100%;
 }
 
-/*.nav-underline > div a.lien-hebergt,lien-activite
+.nav-underline
 {       padding: 20px 0;
         text-align: center;
-} padding bottom et text-align*/
+} 
 
-.lien-hebergt,lien-activite
-{    text-align: center;   }
+
 
 .underline
 {       width: 100%;
@@ -128,17 +131,17 @@ h1
 .input  
 {       border: none;
         margin:auto;
+        font-size: 18px;
 }
 
 ::placeholder   
 {       color:black; 
-        font-size: 18px;
         opacity: 1;
 } 
 
 /* bouton recherche version desktop et tablette*/
 
-.boutonrecherche 
+.bouton-recherche 
 {       background-color: #0065FC;
         border: none;
         border-radius: 0 13px 13px 0;
@@ -146,18 +149,18 @@ h1
         cursor: pointer;
 }
 
-.boutonrecherche:hover 
+.bouton-recherche:hover 
 {       color: #DEEBFF ;
         transition: ease 0.3s;
 }
 
-.boutonrecherche
+.bouton-recherche
 {   display: none;  
 }
 
 /* bouton loupe version mobile*/ 
 
-.boutonloupe 
+.bouton-loupe 
 {       
         background-color: #0065FC;
         border: none; 
@@ -170,7 +173,7 @@ h1
         padding: 0;/* voir si dû au décalage sur safari*/
 }
 
-.boutonloupe:hover 
+.bouton-loupe:hover 
 {       background-color:#DEEBFF ;
         transition: ease 0.3s;
 }
@@ -280,9 +283,12 @@ figure
 
 /*titre + icone chart*/
 .chart  
-{       font-size: 20px;
-        margin: 4px 25px 0 0;
+{       margin: 4px 25px 0 0;
 }
+
+
+
+
 
 .h2-et-chart
 {       display: flex; 
@@ -473,9 +479,7 @@ ul
 {       padding-left: 30px;
 }
 
-.sous-titre-footer
-{       font-size: 20px;
-}
+
 
 
 /*MEDIA QUERIES*/
@@ -648,7 +652,7 @@ h1
 
 /* conteneurs hotels marseille*/
 
-.leshotelsmarseille
+.leshotels-marseille
 {       background-color: #F2F2F2;
         width: 98%;
         border-radius: 15px;  
@@ -712,13 +716,44 @@ filtres et footer pour tablette et desktop*/
 
 @media  all and (min-width: 768px) { 
 
-       
+/*Header - navigation*/
 
-/*Header navigation*/
+/* mobile
 .nav-underline > div   
 {       display: flex;
-        flex-direction:column-reverse;
+        flex-direction: column;
+        width:100%;
 }
+
+.nav-underline
+{       padding: 20px 0;
+        text-align: center;
+} 
+
+
+
+.underline
+{       width: 100%;
+        height:2.5px ;
+        background-color: grey ;/* mettre le gris color de la charte*
+        margin-top: 20px;
+}*/
+
+
+.nav-underline    
+{       display: flex;
+        flex-direction:column-reverse;
+        
+        /*padding: 20px 0; mobile*/
+        /*padding: 0 ;*/
+      /*  margin-bottom: 25px;*/
+}
+
+/*.nav-underline a 
+{       margin-top: 50px;}*/
+
+.underline, .activ-link
+{ margin-bottom: 50px;}
 
 nav
  {      display: grid;
@@ -747,15 +782,17 @@ nav
 .nav-inscription
 {       grid-area: nav-inscription ; 
        /* margin: 50px 20px 0 0; mobile*/
-        margin: 0 0 20px 0;
+        margin: 0 20px 0 0;
 }
 
+
+
 /*recherche*/
-.boutonloupe 
+.bouton-loupe 
 {       display: none;  
 }
 
-.boutonrecherche 
+.bouton-recherche 
 {       display: inherit;
 }
 
@@ -815,7 +852,7 @@ h2
 }
 
 /* padding grille hotels populaires et hotels marseille*/
-.leshotels-populaires, .leshotelsmarseille
+.leshotels-populaires, .leshotels-marseille
 {       padding-top: 40px;
 }
 
@@ -863,7 +900,7 @@ h2
 
 /* conteneur hotels marseille*/
 
-.leshotelsmarseille
+.leshotels-marseille
 {       background-color: #F2F2F2;
         border-radius: 15px;
         width:60%;
@@ -898,7 +935,7 @@ carte-6-hotelmars
 {       grid-area:carte-6-hotelmars ;      
 }
 
-/*affichage conteneur leshotels-populaires et leshotelsmarseille*/
+/*affichage conteneur leshotels-populaires et leshotels-marseille*/
 
 #conteneurlogements
 {       display: flex;
@@ -935,16 +972,16 @@ carte-6-hotelmars
 {       grid-area:carte-activite-1 ;      
 }
 
-.carte-activite-4  /*calanques*/ 
-{       grid-area:carte-activite-4 ;      
-}
-
 .carte-activite-2  /*pomegues*/ 
 {       grid-area:carte-activite-2 ;     
 }
 
 .carte-activite-3 /*frioul*/  
 {       grid-area:carte-activite-3 ;    
+}
+
+.carte-activite-4  /*calanques*/ 
+{       grid-area:carte-activite-4 ;      
 }
 
 .carte-activite-5 /*notre-dame*/ 
