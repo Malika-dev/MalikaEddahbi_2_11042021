@@ -20,7 +20,7 @@ a
 {       margin-left: 20px;
 }
 
-.star-blue, .lien-hebergt, .lien-inscription, .icon-filtre, .icon-info
+.blue
 {       color: #0065FC;
 } 
 .star-grey
@@ -28,7 +28,8 @@ a
 } 
 
 .bouton-loupe, .bouton-recherche 
-{       color: white;}
+{       color: white;
+}
 
 /* Mobile jusqu'à 767px*/
 
@@ -188,7 +189,6 @@ h1
 
 .icon-filtre
 {       display:flex;
-        border: 1px solid #DEEBFF;
         background-color: #DEEBFF;
         font-size: 16px;
         border-radius:100%;
@@ -245,23 +245,19 @@ h1
 }
 
 .texte-info   
-{       margin-right: 20px;
-        margin-left: 10px;
-        margin-top:2px ;
-        margin-bottom: 0;
+{       margin:2px 20px 0 10px ;
 } 
 
 .disponibilites
 {       display: flex;
         flex-direction: row;
-        margin-top:35px;
-        margin-bottom:35px ;
+        margin: 35px 0;
 }
 
 
 /*LES HOTELS*/
 
-/*marges cartes hotels et cartes activités*/
+/*cartes hotels et cartes activités*/
 
 figure 
 {       margin-right:auto;
@@ -465,7 +461,6 @@ li
 }
 
 
-
 /*MEDIA QUERIES*/
 
 /*téléphone mobile paysage 576 pixels et + */
@@ -512,12 +507,14 @@ h1
 }
 
 .box-recherche
-{       margin: 0 0 30px 20px;}
+{       margin: 0 0 30px 20px;
+}
 
 /*filtres*/
 
 .bouton-filtre
-{       margin:10px 24px 0 20px;}
+{       margin:10px 24px 0 20px;
+}
 
 
 /*texte info disponibilités*/
@@ -531,9 +528,9 @@ h1
 .titre-lespluspop
 {       font-size: 25px; 
 }
+
 .chart  
 {       font-size: 25px;
-       
 }
 
 .h2-et-chart 
@@ -625,7 +622,6 @@ h1
         border-radius: 15px;  
         margin-left: auto;
         margin-right: auto;
-        padding-top: 10px;
         padding: 10px 0 5px 0;
 }
 
@@ -647,7 +643,6 @@ h1
 /*titre*/
 .titreactivites
 {       font-size: 25px;
-       /* margin-block-start: 50px;*/
 }
 
 /*cartes activités*/
@@ -686,7 +681,7 @@ filtres et footer pour tablette et desktop*/
 /*Header - navigation*/
 
 .underline 
-{       margin: 0 0 50px 0;
+{       margin: 0 0 54px 0;
 }
 
 .nav-underline    
@@ -721,7 +716,7 @@ nav
 
 .nav-inscription
 {       grid-area: nav-inscription ; 
-        margin-top: 25px; 
+        margin-top: 26px; 
 }
 
 
